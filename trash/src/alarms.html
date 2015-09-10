@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+            <title>Alarms - What they mean and how to fix them - OpenPilot Documentation - OpenPilot Documentation</title>
+	
+        
+    
+    	    
+	
+	    
+
+                        
+    
+                        
+    
+	 
+
+            <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+<meta charset="UTF-8">
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="https://wiki.openpilot.org">
+
+<meta id="atlassian-token" name="atlassian-token" content="2bcdf47530a985b0885a86c4e7dc498df11ac143">
+
+
+<meta id="confluence-space-key" name="confluence-space-key" content="WIKI">
+<script type="text/javascript">
+        var contextPath = '';
+</script>
+
+    
+
+    <meta name="confluence-request-time" content="1441257735792">
+        
+    
+        
+            <meta name="ajs-is-confluence-admin" content="false">
+            <meta name="ajs-connection-timeout" content="10000">
+            <meta name="ajs-discovered-plugin-features" content="$discoveredList">
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-keyboardshortcut-hash" content="1b645be84770762c17aa8cab630b3967">
+            <meta name="ajs-is-space-admin" content=""> <meta name="ajs-has-space-config" content="">
+            <style>.ia-fixed-sidebar, .ia-splitter-left {width: 285px;}.theme-default .ia-splitter #main {margin-left: 285px;}.ia-fixed-sidebar {visibility: hidden;}</style>
+            
+
+    
+            
+    
+    
+            <meta name="ajs-page-id" content="1049196">
+            <meta name="ajs-latest-page-id" content="1049196">
+            <meta name="ajs-content-type" content="page">
+            <meta name="ajs-page-title" content="Alarms - What they mean and how to fix them">
+            <meta name="ajs-parent-page-title" content="First Flight">
+            <meta name="ajs-parent-page-id" content="361122">
+            <meta name="ajs-space-key" content="WIKI">
+            <meta name="ajs-space-name" content="OpenPilot Documentation">
+            <meta name="ajs-show-move-space-dialog" content="true">
+            <meta name="ajs-show-space-layout-dialog" content="true">
+            <meta name="ajs-from-page-title" content="">
+            <meta name="ajs-can-remove-page" content="false">
+            <meta name="ajs-browse-page-tree-mode" content="view">
+            <meta name="ajs-editor.loader.comment.resources" content="&lt;script&gt;
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData[&quot;com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active&quot;]=&quot;{\&quot;linkActive\&quot;:false,\&quot;conditionsMet\&quot;:true,\&quot;admin\&quot;:false}&quot;;
+&lt;/script&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/56535c47dd3d5ab60ff2673444ac15ec/_/download/contextbatch/css/comment-editor,-viewcontent,-page/batch.css&quot; media=&quot;all&quot;&gt;
+">
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-base-url" content="https://wiki.openpilot.org">
+            <meta name="ajs-version-number" content="5.7.1">
+            <meta name="ajs-build-number" content="5781">
+            <meta name="ajs-remote-user" content="">
+            <meta name="ajs-remote-user-key" content="">
+            <meta name="ajs-current-user-fullname" content="">
+            <meta name="ajs-current-user-avatar-url" content="">
+            <meta name="ajs-static-resource-url-prefix" content="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="943718400">
+            <meta name="ajs-user-locale" content="en_GB">
+            <meta name="ajs-enabled-dark-features" content="previews.sharing,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageEditedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentRemoveEvent,previews.conversion-service,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentUpdateEvent,file-annotations.likes,confluence-inline-comments-resolved,confluence-inline-comments-rich-editor,quick-reload-inline-comments,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageMovedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentCreateEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.follow.FollowEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareContentEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentResolveEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.mentions.api.ConfluenceMentionEvent,file-annotations,pdf-preview,notification.plugin.api.enabled.com.atlassian.confluence.plugins.hipchat.api.events.HipChatUserMapped,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostMovedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostCreateEvent,confluence-inline-comments,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentMentionUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.tasklist.event.SendTaskEmailEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentCreateEvent,file-notifications,previews.trigger-all-file-types,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareAttachmentEvent,view-file-thumbnail-polling,previews.sharing.pushstate,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.attachment.AttachmentBatchUploadCompletedEvent,previews.versions,confluence-inline-comments-dangling-comment,notification.plugin.api.enabled.com.atlassian.confluence.event.events.security.ForgotPasswordEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.like.LikeCreatedEvent">
+            <meta name="ajs-atl-token" content="2bcdf47530a985b0885a86c4e7dc498df11ac143">
+            <meta name="ajs-confluence-flavour" content="VANILLA">
+            <meta name="ajs-user-date-pattern" content="dd MMM yyyy">
+            <meta name="ajs-editor.loader.resources" content="&lt;script&gt;
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData[&quot;com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode&quot;]=&quot;false&quot;;
+WRM._unparsedData[&quot;com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details&quot;]=&quot;{\&quot;daysBeforeLicenseExpiry\&quot;:0,\&quot;daysBeforeMaintenanceExpiry\&quot;:0,\&quot;showLicenseExpiryBanner\&quot;:false,\&quot;showMaintenanceExpiryBanner\&quot;:false,\&quot;renewUrl\&quot;:null,\&quot;salesEmail\&quot;:null}&quot;;
+WRM._unparsedData[&quot;com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active&quot;]=&quot;{\&quot;linkActive\&quot;:false,\&quot;conditionsMet\&quot;:true,\&quot;admin\&quot;:false}&quot;;
+&lt;/script&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/498e43f62ba995e3b71e41e5689e570d-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c172bfd186ba19367a2df3d0df1cd832/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general,-page/batch.css&quot; media=&quot;all&quot;&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c172bfd186ba19367a2df3d0df1cd832/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general,-page/batch.css?media=%28max-width%3A+1450px%29&quot; media=&quot;(max-width: 1450px)&quot;&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c172bfd186ba19367a2df3d0df1cd832/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general,-page/batch.css?conditionalComment=lt+IE+9&quot; media=&quot;all&quot;&gt;
+&lt;![endif]--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/8da9251407819c884eb852a39840873c-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c172bfd186ba19367a2df3d0df1cd832/_/download/contextbatch/js/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general,-page/batch.js?locale=en-GB&quot; &gt;&lt;/script&gt;
+">
+            <meta name="ajs-date.format" content="MMM dd, yyyy">
+    
+    <link rel="shortcut icon" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/_/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/_/favicon.ico">
+
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch/osd.action" title="OpenPilot Documentation"/>
+
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager.resource-base-url-pattern"]="\"(?:(?:/s/.*?/_)?/download)\"";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
+</script>
+<link type="text/css" rel="stylesheet" href="/s/0a57ba46d712a457bcea31ef108b6fa7-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/76/_/download/superbatch/css/batch.css?build-number=5781" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/76/_/download/superbatch/css/batch.css?media=print" media="print">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/76/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/76/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d630f907b84d9e2700b7ef76fd669b99-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c40bc5418803b02d73fe950f4eb70641/_/download/contextbatch/css/page,viewcontent,atl.general,main/batch.css?highlightactions=true&amp;locale=en-GB&amp;flavour=VANILLA&amp;quick-reload-inline-comments=true" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/6c0981174e94142364564819dc0d1413-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c40bc5418803b02d73fe950f4eb70641/_/download/contextbatch/css/page,viewcontent,atl.general,main/batch.css?conditionalComment=lt+IE+9&amp;highlightactions=true&amp;locale=en-GB" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/3.6/_/download/batch/confluence.extra.information:information-plugin-adg-styles/confluence.extra.information:information-plugin-adg-styles.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/2.6.12/_/download/batch/org.randombits.confluence.toc:toc-plugin-styles/org.randombits.confluence.toc:toc-plugin-styles.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/1.1.3/_/download/batch/com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit/com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit.css" media="all">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/1.1.3/_/download/batch/com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit/com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit.css?ieonly=true" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/3.5.5/_/download/batch/confluence.macros.advanced:children-resource/confluence.macros.advanced:children-resource.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/4.2.9/_/download/batch/com.refinedwiki.confluence.plugins.theme.original:batch/com.refinedwiki.confluence.plugins.theme.original:batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/4.2.9/_/download/batch/com.refinedwiki.confluence.plugins.theme.original:print-style/com.refinedwiki.confluence.plugins.theme.original:print-style.css?content-type=text%2Fcss&amp;media=print" media="print">
+<script type="text/javascript" src="/s/af67bd305bb497ab539018bf3f3c2336-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/76/_/download/superbatch/js/batch.js?build-number=5781&amp;locale=en-GB" ></script>
+<script type="text/javascript" src="/s/22fb7be8d5e5fe1fa2a119ecd6090b56-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c40bc5418803b02d73fe950f4eb70641/_/download/contextbatch/js/page,viewcontent,atl.general,main/batch.js?highlightactions=true&amp;locale=en-GB&amp;hostenabled=true&amp;flavour=VANILLA&amp;quick-reload-inline-comments=true" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/004b0774fbf9594b1b10b08ac0dada78/_/download/contextbatch/js/atl.comments/batch.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/1.1.3/_/download/batch/com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit/com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit.js" ></script>
+<script type="text/javascript" src="/s/2f827b242ab1e78368a4837542922e31-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/4.2.9/_/download/batch/com.refinedwiki.confluence.plugins.theme.original:batch/com.refinedwiki.confluence.plugins.theme.original:batch.js?locale=en-GB" ></script>
+<link type="text/css" rel="stylesheet" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/1/_/styles/colors.css?spaceKey=WIKI" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/4.2.9/_/download/resources/com.refinedwiki.confluence.plugins.theme.original:RefinedWikiTheme50/default-theme.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/1/_/styles/theme-colors.css?completeModuleKey=com.refinedwiki.confluence.plugins.theme.original%3ARefinedWikiTheme50&amp;stylesheetName=color-scheme.css&amp;spaceKey=WIKI" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/1/_/styles/custom.css?spaceKey=WIKI" media="all">
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
+</script>
+
+
+        
+    
+
+        
+
+
+    
+	
+		
+
+
+
+<script>
+	
+			if (typeof RW === 'undefined') {
+    	var RW = {};
+	}
+	
+		RW.confluenceVersion = 5.71; 
+	
+		
+	
+		RW.isConfluenceAdministrator = false
+	
+				var contextPath = '';
+	
+					RW.scrollSearchActive = true;
+	
+				RW.userDashboardRedirection = true;
+		
+	
+			
+		var originalTheme = RW;
+	
+		RW.cacheSettings = {};
+	RW.cacheSettings.params = {};
+	RW.cacheSettings.lastChange = {}
+
+	    
+    		RW.cacheSettings.params['footer'] = true;
+    	    		RW.cacheSettings.params['category'] = true;
+    	    		RW.cacheSettings.params['globalmenu'] = true;
+    	    		RW.cacheSettings.params['usercategory'] = false;
+    	    		RW.cacheSettings.params['docache'] = false;
+    	            			RW.cacheSettings.lastChange['footer'] = 1438457573651;
+        			RW.cacheSettings.lastChange['category'] = 1439764368351;
+        			RW.cacheSettings.lastChange['globalmenu'] = 1438457573651;
+        			RW.cacheSettings.lastChange['usercategory'] = 1439764368351;
+    </script>
+
+
+
+
+	
+				
+	
+<!--[if !IE]><!-->
+ 	<style type="text/css">
+		.rw_toolbar_menu li .rw_toolbar_dropdown li a:hover
+		{
+			color: #ffffff;	
+			background: #3b73af;
+		}
+		
+		/* Scroll office fix */
+		#com-k15t-confluence-scroll-pdf-launcher:hover
+		{
+			color: #ffffff;	
+			background: #3b73af;
+		}
+	</style>
+<!--<![endif]-->
+
+		
+<!--[if IE 6]>
+	<link type="text/css" rel="stylesheet" href="/download/resources/com.refinedwiki.confluence.plugins.theme.original/styles/legacy/ie6-fix.css" media="all"/>
+<![endif]-->
+
+<!--[if IE 7]>
+	<link type="text/css" rel="stylesheet" href="/download/resources/com.refinedwiki.confluence.plugins.theme.original/styles/legacy/ie7-fix.css" media="all"/>
+<![endif]-->
+
+
+
+
+
+
+        	
+    	    	    			
+    	    				<link type="text/css" rel="stylesheet" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/4.2.9/_/download/resources/com.refinedwiki.confluence.plugins.theme.original:batch/designs/edge/css/style.css" media="all"/>
+			
+				
+				        					        		<script type="text/javascript" src="/download/resources/com.refinedwiki.confluence.plugins.theme.original/designs/edge/js/script.js" ></script>
+    						
+		    	    		
+    		    		    			    			<link type="text/css" rel="stylesheet" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/4.2.9/_/download/resources/com.refinedwiki.confluence.plugins.theme.original:batch/designs/edge/css/blue.css" media="all"/>
+    			
+    		    
+    	    
+
+
+
+
+<style type="text/css">
+	/* Key navigation in popup */
+	li.rw_selected a { background: #fd9602 !important; border-color: #fd9602 !important; }
+	li.rw_selected * { color: #fff !important; }
+	li.rw_selected a span.rw_item_left { background: none !important; border-color:none !important;}
+	
+	/* Key navigation category menu */
+	#rw_category_menu ul li.rw_active.rw_selected a > span { border-color: #fd9602; }
+	
+	/* Key navigation for page tree */
+	.rw_pagetree_list li.rw_selected > div.rw_icon_content { background: #fd9602 !important; border-color: #fd9602 !important; }
+	.rw_pagetree_list li.rw_selected > div.rw_icon_content a { color:#fff !important;}
+	.rw_pagetree_list li.rw_selected a {background: none !important; border-color: none; color:#333 !important;}
+	
+	/* Key navigation for activity popup */
+	li.rw_selected div.rw_no_link { background: #fd9602 !important; border-color: #fd9602 !important; }
+	
+	/* Main Key Navigation */
+	.rw_keynavigation_row > div.rw_selected { background: #fd9602 !important; color:#fff !important;}
+	.rw_keynavigation_container > div.rw_keynavigation_empty_item { background: none;}
+	
+	/* Menu keynav exceptions */
+	#notifications-anchor.rw_selected {background: #fd9602 !important; color:#fff !important;}
+	
+	
+		
+	        
+        
+        #rw_main #rw_create_button .aui-button.aui-button-primary.aui-style 
+        {
+            background-image: -moz-linear-gradient(top, #3b7fc4, #336ea9);
+            background-image: -ms-linear-gradient(top,  #3b7fc4, #336ea9);
+            background-image: -webkit-linear-gradient(top,  #3b7fc4, #336ea9);
+            background-image: -o-linear-gradient(top,  #3b7fc4, #336ea9);
+            background-image: linear-gradient(top,  #3b7fc4, #336ea9);
+            text-shadow: 0 1px 0 #295989;
+        }
+        
+    	#rw_main #rw_create_button .aui-button.aui-button-primary.aui-style 
+    	{
+    		border-color: #3b7fc4;
+    	}
+        #rw_main #rw_create_button .aui-button.aui-button-primary.aui-style:hover, 
+        #rw_main #rw_create_button .aui-button.aui-button-primary.aui-style:focus 
+        {
+            background-image: -moz-linear-gradient(top, #4796e6, #3773af);
+            background-image: -ms-linear-gradient(top, #4796e6, #3773af);
+            background-image: -webkit-linear-gradient(top, #4796e6, #3773af);
+            background-image: -o-linear-gradient(top, #4796e6, #3773af);
+            background-image: linear-gradient(top, #4796e6, #3773af);
+        }
+		
+	
+				
+	
+	
+    	        #com-atlassian-confluence #inline-dialog-notifications-miniview
+        {
+            position:fixed;
+            top: 57px !important;
+            right: 80px !important;
+			margin: 0px !important;
+        }
+        #com-atlassian-confluence #inline-dialog-notifications-miniview:after,
+        #com-atlassian-confluence #inline-dialog-notifications-miniview:before
+        {
+            border: medium solid transparent;
+            bottom: 100%;
+            content: " ";
+            height: 0;
+            pointer-events: none;
+            position: absolute;
+            width: 0;
+        }
+        #com-atlassian-confluence #inline-dialog-notifications-miniview:after
+        {
+            
+            border-color: rgba(237, 237, 237, 0) rgba(237, 237, 237, 0) rgba(237, 237, 237, 0) #fff;
+            border-width: 8px;  
+            top:22px;
+            right: -15px;   
+        }
+        #com-atlassian-confluence #inline-dialog-notifications-miniview:before
+        {
+            border-color: rgba(221, 221, 221, 0) rgba(221, 221, 221, 0) rgba(221, 221, 221, 0) #ddd;
+            border-width: 10px;  
+            top: 20px;
+            right: -19px;
+        }
+        #com-atlassian-confluence #inline-dialog-notifications-miniview #arrow-notifications-miniview
+        {
+            display:none;
+        }
+		
+</style>
+	
+    <link href='https://fonts.googleapis.com/css?family=Karma:300,400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Scada' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    
+                <link rel="canonical" href="https://wiki.openpilot.org/display/WIKI/Alarms+-+What+they+mean+and+how+to+fix+them">
+        <link rel="shortlink" href="https://wiki.openpilot.org/x/bAIQ">
+    <meta name="wikilink" content="[WIKI:Alarms - What they mean and how to fix them]">
+    <meta name="page-version" content="47">
+
+    
+        
+    
+	
+</head>
+    
+<body             onload="placeFocus()"
+     id="com-atlassian-confluence" class="RefinedWikiTheme50 RefinedWikiTheme50  aui-layout aui-theme-default  confluence_5  lighter-editor "> 
+
+
+        
+            <div id='stp-licenseStatus-banner'></div>
+    <ul id="assistive-skip-links" class="assistive">
+    <li><a href="#rw_page_title">Skip to content</a></li>
+    <li><a href="#rw_page_breadcrumbs">Skip to breadcrumbs</a></li>
+    <li><a href="#rw_category_menu">Skip to header menu</a></li>
+    <li><a href="#navigation">Skip to action menu</a></li>
+    <li><a href="#rw_search_query">Skip to quick search</a></li>
+</ul>
+
+
+<div id="page">
+<div id="full-height-container">
+   
+      <div id="header" style="display:none;"></div>
+   
+   <div id="header-precursor">
+        <div class="cell">
+            <!-- BACK TO TOP SMARTLINK -->
+
+<img id="topgif" onclick="window.scrollTo(0,0)" style="cursor:pointer;display:none; position:fixed; bottom:80px; right:164px; z-index:9999" border="0" src="https://www.openpilot.org/wp-content/uploads/2014/11/backtotopoff1.png">
+
+
+<script type="text/javascript">
+$('#topgif').hover(
+	function(){
+		$('#topgif').attr("src","http://www.openpilot.org/wp-content/uploads/2014/11/backtotopon1.png");
+}, function(){
+		$('#topgif').attr("src","https://www.openpilot.org/wp-content/uploads/2014/11/backtotopoff1.png");
+});
+
+window.onscroll = function() {
+    setTimeout(function(){
+        (document.body.scrollTop >= 800 || document.documentElement.scrollTop >= 800) ? $('#topgif').fadeIn() : $('#topgif').fadeOut();
+    },500);
+};
+</script>
+
+<!-- END BACK TO TOP SMARTLINK -->
+                        </div>
+    </div>
+	
+						
+		
+				
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+		
+		
+								
+
+					<div 
+	id="rw_side_menu" 
+	class="rw_theme_dark" 
+	data-mode="responsive" 
+	>
+	<div id="rw_side_menu_handle" class="rw_handle"></div> 
+    <div id="rw_side_menu_container">
+		<ul>
+	                                				
+        
+        
+<li><a  id="login-link" href="/login.action?os_destination=%2Fdisplay%2FWIKI%2FAlarms%2B-%2BWhat%2Bthey%2Bmean%2Band%2Bhow%2Bto%2Bfix%2Bthem" class="  user-item login-link "      title="" >
+        Log in
+</a></li>
+                        			
+								
+		
+        									
+	    				    			
+	    	<li><a id="help-menu-link" href="#" title="Help" class="rw_has_dd rw_tooltip" data-dd="help-menu-link-dd" data-tooltip="Help">
+        <span class="rw_item_icon aui-iconfont-help"></span>
+    </a>
+    <nav id="help-menu-link-dd" class="rw_side_menu_dd" data-owner="help-menu-link">
+                    <div class="rw_section">
+                <ul  id="help-menu-link-leading" class="section-leading first">
+                                            
+    
+        
+<li><a  id="confluence-help-link" href="https://docs.atlassian.com/confluence/docs-57/Getting+Help+And+Support" class="   "      title="Visit the Confluence documentation home"  target="_blank"
+>
+        Online Help
+</a></li>
+                                            
+    
+            
+<li><a  id="keyboard-shortcuts-link" href="#" class="   "      title="View available keyboard shortcuts" >
+        Keyboard Shortcuts
+</a></li>
+                                            
+    
+        
+<li><a  id="feed-builder-link" href="/dashboard/configurerssfeed.action" class="   "      title="Create your custom RSS feed." >
+        Feed Builder
+</a></li>
+                                            
+    
+        
+<li><a  id="whats-new-menu-link" href="https://docs.atlassian.com/confluence/docs-57/whatsnew/iframe" class="   "      title="" >
+        What’s new
+</a></li>
+                                            
+    
+            
+<li><a  id="gadget-directory-link" href="#" class="  user-item administration-link "      title="Browse gadgets provided by Confluence" >
+        Available Gadgets
+</a></li>
+                                            
+    
+        
+<li><a  id="confluence-about-link" href="/aboutconfluencepage.action" class="   "      title="Get more information about Confluence" >
+        About Confluence
+</a></li>
+                                    </ul>
+            </div>
+            </nav>
+	</li>
+    				    </ul>
+		<ul>
+			<li>	
+				<a id="rw_search_popup_button" title="Search">
+        			<span class="rw_item_icon rw_iconfont_search"></span>
+        		</a>
+			</li>
+		</ul>	
+	
+    </div>
+    <div class="rw_done_cover"></div> 
+</div>
+				<div id="rw_wrapper" class="rw_popup_design_default rw_menu_layout_v2 rw_has_side_menu ">
+			
+						
+
+
+                                
+            	
+	    
+		
+			
+			<div id="rw_main">
+				
+								
+											
+<!-- A banner on top of the page -->
+<div id="edge_design_top" class="rw_no_print">
+        
+   	<div id="edge_design_top_right" >
+        
+				   		
+	    	    	<div id="rw_search_container">
+		<div id="rw_search" class="rw_search">
+			
+						<form style="width:0px; height:0px; overflow:hidden; "><input type="text" name="hack" onfocus="this.blur()" /></form>
+			    
+			<form id="rw_search_form" class="rw_search_form" method="get" action="/dosearchsite.action">
+		   		<label for="rw_search_query" class="assistive">Quick Search</label>
+				<input class="rw_search_query" id="rw_search_query" type="text" accessKey="search-pages-action.accesskey" autocomplete="off" name="queryString" size="25" />
+		    
+		   		<div style="clear:both;"></div>
+		        <div id="rw_search_result_container" class="rw_search_result_container rw_corners" style="display:none;">
+		        	
+		        </div>
+		
+		        <fieldset class="hidden parameters">
+		            <input type="hidden" id="quickNavEnabled" value="true" />
+		            		        </fieldset>
+		    </form>	
+	    </div>
+	</div>
+          
+	    	    				
+	
+		                    
+  	</div>     	
+ 
+	  		<div id="edge_design_top_left">
+ 
+						        					
+		    		    		   			    		
+
+
+
+
+<div id="rw_logo_container" class="  ">
+	
+	
+			<a href="/homepage.action">
+			<img src="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/_/images/logo/confluence-logo.png" />
+    	</a>
+			
+		</div>
+		    	  	</div>
+	        
+  	<div 
+  		id="edge_design_top_middle" 
+  		  	>
+                
+	    	    	
+			
+		<div id="rw_category_menu" 
+		class=" rw_version_2  "
+		>
+	
+					<div id="rw_category_menu_scroll_container">
+					<ul>
+								<li id="rw_dashboard_link" class="rw_first">
+					<a  
+						 title="Dashboard ( Type 'n' )" 												>
+						<span class="rw_item_left">
+							
+																					
+							<span>
+																	Dashboard
+															</span>
+						</span>
+						<span class="rw_item_right"></span>
+					</a>
+				</li>	
+			</ul>
+					</div><!-- # rw_category_menu_scroll_container -->
+			</div>		
+	
+	
+		<div id="rw_category_dropdown_wrapper" class="rw_popup rw_corners" style="display:none;">
+		<div id="rw_category_dropdown_users"></div>
+		<div id="rw_category_dropdown_container" class="rw_popup_container"></div>
+		<div id="rw_category_dropdown_loader" class="rw_popup_loader">
+			<div class="rw_popup_loader_image"></div>
+		</div>
+	</div>
+	
+		<script type="text/x-template" id="rw_category_menu_right_button_template">
+	 	<div id="rw_category_menu_right_container" style="display:none;">
+		 	<a id="rw_category_menu_right_button" class="rw_corners">
+		 		<span class="rw_icon_container_16"></span>
+		 	</a>
+		 </div>
+	</script>
+	
+		<script type="text/x-template" id="rw_category_menu_left_button_template">
+		<div id="rw_category_menu_left_container" style="display:none;">	 		
+	 		<a id="rw_category_menu_left_button" class="rw_corners">
+	 			<span class="rw_icon_container_16"></span>
+	 		</a>
+ 		</div>
+	</script>
+
+		<script type="text/x-template" id="rw_category_menu_item_template">
+		<li>
+			<a>
+				<!-- rw_item_left & rw_item_right is deprecated since RWOT 3.3 -->
+				<span class="rw_item_left">
+					<span class="rw_item_logo"></span>
+					<span class="rw_item_name"></span>
+					<span class="rw_item_icon"></span>
+				</span>
+				<span class="rw_item_right"></span>
+			</a>
+		</li>
+	</script>
+	
+	
+		<div id="rw_category_menu_parameters" style="display:none;">
+	
+				<div id="rw_category_dd_disabled">false</div>
+		<div id="rw_category_dd_layout">dynamic_column</div>
+		<div id="rw_sub_category_collapsed">false</div>
+		<div id="rw_show_category_logo">false</div>
+		<div id="rw_exclude_archived_spaces">false</div>
+		<div id="rw_show_space_logo">false</div>
+		<div id="rw_show_space_icon">true</div>
+		<div id="rw_min_column_width">340</div>
+		<div id="rw_active_category_key"></div>
+		<div id="rw_is_dashboard"></div>
+		<div id="rw_manual_permissions">false</div>
+		<div id="rw_disable_subdashboards">false</div>
+	</div>
+                
+  	</div>                  
+	
+</div> <!-- #edge_design_top -->
+
+<!-- This div tag wrapps the wiki content. 
+The Closing tag is located in the bottom section -->
+<div id="edge_design_content" >
+<div style="clear:both;"></div>
+								
+					
+										
+                
+                                	
+        	            	<div id="rw_menu_bar_wrapper" >
+    		                		
+    		    			<div id="rw_menu_bar_icon" >
+    					
+    				<div class="space-logo " data-key="WIKI" data-name="OpenPilot Documentation" data-entity-type="confluence.space">
+            <a><img class="logo space custom" src="/download/attachments/361094/WIKI?version=1&amp;modificationDate=1413407762000&amp;api=v2" alt=""></a>
+        </div>    				
+    			</div>
+    			<div id="rw_menu_bar_content">
+    		        
+    <div id="rw_menu_bar" class="rw_corners" >
+    	
+    	    	
+    <div id="navigation" class="view">
+        <fieldset class="hidden parameters">
+            <input type="hidden" id="pageId" value="1049196">
+        </fieldset>
+        <ul id="rw_content_menu" class="rw_toolbar_menu">
+            
+			
+							                        
+        <li class="normal ajs-menu-item">
+        <a id="action-menu-link" class="action aui-dropdown2-trigger-arrowless ajs-menu-title aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation">
+            <span>
+                                Tools
+            </span>
+        </a>         <div id="action-menu" class="aui-dropdown2 aui-style-default">
+                            <ul  id="action-menu-primary"                     class="section-primary first aui-dropdown2-section">
+                                            <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-attachments-link" href="/pages/viewpageattachments.action?pageId=1049196" rel="nofollow" class="action-view-attachments"  accessKey="t"  title="View Attachments">
+                <span>
+                        A<u>t</u>tachments (121)
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-view-history-link" href="/pages/viewpreviousversions.action?pageId=1049196" rel="nofollow" class="action-view-history"   title="">
+                <span>
+                        Page History
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-page-permissions-link" href="/pages/viewinfo.action?pageId=1049196" rel="nofollow" class="action-page-permissions"   title="Edit restrictions">
+                <span>
+                        Restrictions
+        </span>    </a>
+</li>
+                                </ul>
+                            <ul  id="action-menu-secondary"                     class="section-secondary aui-dropdown2-section">
+                                            <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-page-info-link" href="/pages/viewinfo.action?pageId=1049196" rel="nofollow" class="action-view-info"   title="">
+                <span>
+                        Page Information
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+            
+                                            
+    
+    
+    <a  id="view-resolved-comments" href="#" rel="nofollow" class=""   title="">
+                <span>
+                        Resolved comments
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="link-to-page-link" href="/pages/viewinfo.action?pageId=1049196" rel="nofollow" class=""   title="Link to this Page">
+                <span>
+                        Link to this Page…
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-in-hierarchy-link" href="/pages/listpages-dirview.action?key=WIKI&amp;openId=1049196#selectedPageInHierarchy" rel="nofollow" class=""   title="">
+                <span>
+                        View in Hierarchy
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-view-source-link" href="/plugins/viewsource/viewpagesrc.action?pageId=1049196" rel="nofollow" class="action-view-source popup-link"   title="">
+                <span>
+                        View Source
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-export-pdf-link" href="/spaces/flyingpdf/pdfpageexport.action?pageId=1049196" rel="nofollow" class=""   title="">
+                <span>
+                        Export to PDF
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-export-word-link" href="/exportword?pageId=1049196" rel="nofollow" class="action-export-word"   title="">
+                <span>
+                        Export to Word
+        </span>    </a>
+</li>
+                                </ul>
+                    </div>
+    </li>
+    			        </ul>
+    </div>
+
+    		
+    	    	    	    	    	    	
+    	    	    	
+    	
+    	    	    	    	    	
+    
+    	    	        	
+        	        	        		
+        		<ul id="rw_space_menu" class="rw_toolbar_menu">
+            		<li>
+            			<a href="/display/WIKI" title="OpenPilot Documentation" class="rw_primary">
+            				<span class="rw_no_icon">
+            					OpenPilot Documentation
+            				</span>	
+            			</a>
+            		</li>
+    				
+    				    				    				
+    				        				
+				 
+		
+	
+	
+	        <li class="normal ajs-menu-item">
+        <a id="browse-space-menu-link" class="ajs-menu-title aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="browse-space-menu" ><span class="rw_item_icon rw_iconfont_menu"></span></a> 
+        	<div id="browse-space-menu" class="aui-dropdown2 aui-style-default rw_style_padded">
+                    <ul  id="browse-space-menu-leading"                 class="section-leading first aui-dropdown2-section">
+                                    
+
+    
+        
+    <li><a  href="/collector/pages.action?key=WIKI"  class="wiki"   title="Pages">
+        		
+								<span class="rw_item_icon rw_iconfont_pages"></span>
+        <span class="rw_item_content">Pages</span>
+    </a></li>
+                                    
+
+    
+        
+    <li><a  href="/pages/viewrecentblogposts.action?key=WIKI"  class="blog"   title="Blog">
+        		
+								<span class="rw_item_icon rw_iconfont_feed"></span>
+        <span class="rw_item_content">Blog</span>
+    </a></li>
+                            </ul>
+				
+				<ul class="aui-dropdown2-section" >
+			
+									
+						<li>
+				<a title="Space Tools" href="/spaces/spacetools.action?key=WIKI">
+					<span class="rw_item_icon aui-iconfont-configure"></span>
+					<span class="rw_item_content">Space Tools</span>    
+				</a>
+			</li>
+			
+									
+					</ul>
+	</div>
+    </li>
+		
+        			    			</ul>
+    			
+        	    		
+    		    			
+	            
+    		
+    	    		
+    </div> <!-- #rw_menu_bar -->
+    
+        	    		</div>
+    	    	</div> <!-- #rw_menu_bar_wrapper -->
+		
+	
+					
+					
+			
+		
+			<div style="clear:both;"></div>
+		
+		    <div id="main" >
+		           
+		       											
+		
+		        
+		
+							 							
+		        
+    
+
+        
+
+
+
+
+        <!-- this is page.vmd -->
+
+
+
+
+
+
+    
+
+		
+		
+	
+		
+			
+	
+			    	    
+
+
+    
+    
+        
+    
+    
+                    
+    
+
+    
+
+
+
+
+
+<!-- 
+	#rw_page_container is @deprecated @since RWOT 3.1 this tag will be 
+	removed in future version of this theme. Use #rw_wrapper as parent 
+	selected in your CSS code. 
+-->
+	<div id="rw_page_container">
+
+	<!--
+		When styling RefinedWiki Original Theme, use .rw_content_section instaed of #content
+	-->
+			<div class="rw_content_section page view">
+		    
+
+<div id="action-messages">
+                        </div>
+
+
+
+        <script type="text/x-template" title="searchResultsGrid">
+    <table class="aui">
+        <thead>
+            <tr class="header">
+                <th class="search-result-title">Page Title</th>
+                <th class="search-result-space">Space</th>
+                <th class="search-result-date">Updated</th>
+            </tr>
+        </thead>
+    </table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+    <p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+    <tr class="search-result">
+        <td class="search-result-title"><a href="{1}" class="content-type-{2}"><span>{0}</span></a></td>
+        <td class="search-result-space"><a class="space" href="/display/{4}/" title="{3}">{3}</a></td>
+        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
+    </tr>
+</script>	
+	    	    
+	    	
+	    	
+			                    
+    
+	
+	        	            
+	
+						
+			
+						
+
+
+
+
+
+
+	
+						<div id="rw_splitter"><div id="rw_splitter_handle" class="rw_hidden"></div></div>
+					
+	
+	
+	<div id="rw_left_column" class="rw_custom_section rw_corners wiki-content">	
+		    
+    
+<div class="rw_page_tree_wrapper">
+    	<div class="rw_param_start_page_id" style="display:none" data-value=""></div>
+    <div class="rw_param_theme" style="display:none" data-value=""></div>
+	<div class="rw_param_search" style="display:none" data-value=""></div>
+	<div class="rw_param_expand_collapse" style="display:none" data-value=""></div>
+	<div class="rw_param_page_id" style="display:none" data-value="1049196"></div>
+	<div class="rw_param_space_key" style="display:none" data-value="WIKI"></div>
+	<div class="rw_param_space_admin" style="display:none" data-value="false"></div> 	<div class="rw_param_space_shortcuts" style="display:none" data-value=""></div>
+	
+			
+	<div id="rw_sidebar_icon_quicklinks" class="rw_sidebar_icon rw_hidden" data-tooltip="Space shortcuts"></div>
+	<div id="rw_sidebar_icon_pagetree" class="rw_sidebar_icon" data-tooltip="Pagetree"></div>
+	
+</div>
+
+<script type="text/x-template" id="rw_page_tree_wrapper_template">
+	<div class="rw_pagetree rw_corners">
+		<div class="rw_expand_collapse">
+            <a href="#" class="rw_expand_all">Expand all</a>
+            <a href="#" class="rw_collapse_all">Collapse all</a>
+        </div>
+	</div>
+</script>
+
+<script type="text/x-template" id="rw_page_item_container_template">
+	<li>
+		<div class="rw_icon_content">
+    		<div class="rw_item_icon">
+                <span></span>
+    	    </div>
+    	    <div class="rw_item_content">
+    			<a></a>
+    	    </div>
+		</div>
+    </li>
+</script>
+
+<script type="text/x-template" id="rw_page_children_list_container">
+	<ul class="rw_pagetree_list" >
+            
+    </ul>
+</script>
+	</div>
+	
+	
+<div id="rw_main_column" class="rw_has_left_column">	
+	
+	<!-- 
+		#rw_page_right is @deprecated @since RWOT 3.1 the id of this tag will be 
+		removed in future version of this theme. NOTE: The div-tag will remain 
+		it's just the ID which will be removed.
+	-->
+	<div id="rw_page_right" class="rw_content">
+		
+				<div class="rw_custom_section">
+			
+									
+												
+			
+
+    
+	
+	    	        
+<ul id="rw_page_breadcrumbs" class="rw_inline_menu">
+	<li class="rw_more_breadcrumbs">
+		<a class="rw_button rw_small rw_discrete rw_breadcrumbs_link" id="rw_breadcrumbs_link" title='Show breadcrumbs'>
+			<span></span>
+		</a>
+	</li>
+	
+		
+			
+    	    	    		<li >
+        		<a href="/display/WIKI/First+Flight" title="First Flight" >First Flight</a>
+           	</li>
+				
+	
+		
+</ul>
+		
+	
+	
+	
+                
+	<div id="rw_page_toolbar">
+                <a id="rw_open_fullscreen" class="rw_icon_button" title="Open page in fullscreen ( Type 'f' )"><span class="rw_icon_container_20 rw_open_fullscreen"></span></a>
+<a id="rw_close_fullscreen" class="rw_icon_button_active" style="display:none;"  title="Exit fullscreen mode ( Type 'esc' )"><span class="rw_icon_container_20 rw_close_fullscreen"></span></a>
+        
+                         
+          	          	<script>
+          		RW.leftColumnState = "$pageInfoBean.leftColumnState";	  		
+          	</script>
+          	<a id="rw_hide_left_column" class="rw_icon_button rw_hide_left_column rw_margin_right_5px" title="Collapse left column ( Type '[' )"><span class="rw_icon_container_20 rw_hide_left_column"></span></a>
+        	<a id="rw_show_left_column" class="rw_icon_button_active rw_show_left_column rw_margin_right_5px" style="display:none;" title="Expand left column ( Type '[' )"><span class="rw_icon_container_20 rw_show_left_column"></span></a>
+        
+            	  	
+                  	          	<div id="abstractPageIdVar" style="display:none;">1049196</div>
+          	<a id="rw_attachment_dialog_button" class="rw_icon_button rw_margin_right_5px" title="Show attachments ( Type 'a' )" href="#"  >	
+	<span class="rw_icon_container_20 rw_open_attachments"></span>
+</a>		
+				
+                
+                
+
+<div id="rw_page_optional_functions" class="rw_right">
+	
+			
+		</div>
+	
+	</div>	
+
+
+	<h1 id="rw_page_title" class="rw_page_title">
+		<span id="title-text">
+			Alarms - What they mean and how to fix them
+		</span>
+	</h1>
+
+    
+
+
+
+    <div style="clear:both;"></div>
+	
+		<div id="attachments_wrapper" style="display:none;">
+	</div>
+	<div id="attachments_loader" class="rw_macro_loader" style="display:none;margin-top:15px;">
+		<div class="rw_loader_16_image"></div>
+	</div>	
+	
+		
+									
+		</div>
+
+		<div style="clear:both;"></div>
+							
+		                        		
+		<div id="content" class="page view">
+						<article>
+		        <div id="main-content" class="wiki-content">
+		                           
+        <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p> </p><p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1441257735922 {padding: 0px;}
+div.rbtoc1441257735922 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1441257735922 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1441257735922'>
+<ul class='toc-indentation'>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Statuswidgetoverview'>Status widget overview</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Statusobjectexplanations'>Status object explanations</a>
+<ul class='toc-indentation'>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Auto(Autonomous)'>Auto (Autonomous)</a>
+<ul class='toc-indentation'>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Atti'>Atti</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Stab'>Stab</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Path'>Path</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Plan'>Plan</a></li>
+</ul>
+</li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Sensor'>Sensor</a>
+<ul class='toc-indentation'>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-GPS'>GPS</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Sensor.1'>Sensor</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Airspd'>Airspd</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Mag'>Mag</a></li>
+</ul>
+</li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-I/O(Input/Output)'>I/O (Input / Output)</a>
+<ul class='toc-indentation'>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Input'>Input</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Output'>Output</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-I2C'>I2C</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Telemetry'>Telemetry</a></li>
+</ul>
+</li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Pwr(Power)'>Pwr (Power)</a>
+<ul class='toc-indentation'>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Batt'>Batt</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Time'>Time</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Config'>Config</a></li>
+</ul>
+</li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Sys(System)'>Sys (System)</a>
+<ul class='toc-indentation'>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Boot'>Boot</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Mem'>Mem</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Stack'>Stack</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-Event'>Event</a></li>
+<li><a href='#Alarms-Whattheymeanandhowtofixthem-CPU'>CPU</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p><h1 id="Alarms-Whattheymeanandhowtofixthem-Statuswidgetoverview"><strong style="font-size: 24.0px;line-height: 1.25;">Status widget overview</strong></h1><p>The OpenPilot flight control firmware has a built-in status system that gives you an overview about what's happening with the board. The System Health Status widget in the Ground Control Station can be used to diagnose various problems, and to check which modules of the firmware are running.</p><div class="confluence-information-macro confluence-information-macro-note">
+            <p class="title">Arming</p>
+    
+            <span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span>
+    
+    <div class="confluence-information-macro-body"><p><span>The flight control board cannot be armed until crossed-out alarms and red alarms have been solved. All objects, except for the special &quot;Plan&quot;, should be green for optimal flight performance. </span><span>The information corresponds to the <strong>UAVObject DataObjects</strong> &gt; <strong>SystemAlarms</strong> &gt; <strong>Alarm</strong>.</span></p></div>    </div>
+<p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail image-left" width="300" src="/download/thumbnails/1049196/System_Health_1.png?version=1&amp;modificationDate=1419212809000&amp;api=v2" data-image-src="/download/attachments/1049196/System_Health_1.png?version=1&amp;modificationDate=1419212809000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245792" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="System_Health_1.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span></p><p>The System Health gadget pictured on the left is just an example of what the widget can look like. It shows a <strong>Revolution</strong> board that has been set up using Vehicle Setup Wizard, but has not had the calibrations performed, other than level calibration. The flight battery is not connected, so no input is shown coming from the receiver. There is no valid data coming from the GPS (the GPS is only powered from the flight battery, and will not receive power via USB.) The board is set to use OpenPilot Platinum GPSv9 which has integrated magnetometer, so MAG does not show any status until the GPS has power. </p><p> </p><p> </p><h1 id="Alarms-Whattheymeanandhowtofixthem-Statusobjectexplanations"><strong>Status object explanations</strong></h1><p>Information about various System Health statuses are listed below. The listing has quick tips about what causes alarms and gives you information on how to proceed when alarms come up. It is important not to panic when there are alarms and solve any problems in a logical manner.  If this page does not give an answer to a specific system health issue, t<span>he <a href="http://forums.openpilot.org/" class="external-link" rel="nofollow">OpenPilot Forum</a> can help further.</span></p><h2 id="Alarms-Whattheymeanandhowtofixthem-Auto(Autonomous)"><strong style="font-size: 20.0px;line-height: 1.5;">Auto (Autonomous)</strong></h2><h3 id="Alarms-Whattheymeanandhowtofixthem-Atti">Atti</h3><p>Shows the status of the board's attitude data. If all is well with gyroscope and accelerometer, it turns green after gyroscope calibration upon power up, or if you are using &quot;GPS Navigation (INS13GPSOutdoor)&quot; stabilization mode, when the Inertial Navigation System's <strong>Extended Kalman Filter (EKF)</strong> has fired up. EKF is a sophisticated sensor fusion algorithm that takes data from relevant sensors and creates a best possible estimation of the board's angle, velocity and position.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/atti-disabled.png?version=1&amp;modificationDate=1419211647000&amp;api=v2" data-image-src="/download/attachments/1049196/atti-disabled.png?version=1&amp;modificationDate=1419211647000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245688" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="atti-disabled.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Attitude data not available, waiting for gyroscope calibration. <span>Don't move the vehicle while gyros are being calibrated upon board power-up.</span></p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/atti-error.png?version=1&amp;modificationDate=1419211655000&amp;api=v2" data-image-src="/download/attachments/1049196/atti-error.png?version=1&amp;modificationDate=1419211655000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245689" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="atti-error.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> There is no data coming in from the sensors, which usually indicates faulty onboard sensors on CC3D and unknown home location on Revo. For Revo this is normal when you have not had GPS fix yet on a new build. The home location will be automatically set when GPS gets enough satellites and good fix. The sensors can be damaged in a bad crash. Otherwise, contact board seller.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/atti-critical.png?version=1&amp;modificationDate=1419211639000&amp;api=v2" data-image-src="/download/attachments/1049196/atti-critical.png?version=1&amp;modificationDate=1419211639000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245687" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="atti-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Data is received from the sensors, but attitude information is not available. This usually happens when the EKF is not running yet. <strong>Make sure that GPS and MAG alarms are green</strong>, and that all calibrations have been done properly. It sometimes helps to move the vehicle around a bit to give EKF a better view of what's going on with sensors.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/atti-warning.png?version=1&amp;modificationDate=1419211672000&amp;api=v2" data-image-src="/download/attachments/1049196/atti-warning.png?version=1&amp;modificationDate=1419211672000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245691" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="atti-warning.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> EKF is running, but the state estimation is not optimal. Good calibration and moving the vehicle a bit helps this situation.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/atti-ok.png?version=1&amp;modificationDate=1419211665000&amp;api=v2" data-image-src="/download/attachments/1049196/atti-ok.png?version=1&amp;modificationDate=1419211665000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245690" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="atti-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> The system has a clear view of the state of the vehicle.</p>
+</div></div><div class="confluence-information-macro confluence-information-macro-information">
+            <p class="title">&quot;The Bug&quot;</p>
+    
+            <span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span>
+    
+    <div class="confluence-information-macro-body"><p>There is a very specific condition that can arise within the system that can sometimes occur after the EKF has been initialised, and the vehicle has been left stationary for an extended period of time.</p><p>Fortunately this condition is easily detected and the flight firmware mitigates the event. However, the solution is extremely complicated and beyond the capability of most people, and until such stage as the developers have a chance to address the matter, it's occurrence is indicated as follows:</p><ul><li><span>A large red X appears over the PFD.</span><br /><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" width="300" confluence-query-params="effects=drop-shadow" src="/download/thumbnails/1049196/TheBug_1.png?version=1&amp;modificationDate=1421222355000&amp;api=v2&amp;effects=drop-shadow" data-image-src="/download/attachments/1049196/TheBug_1.png?version=1&amp;modificationDate=1421222355000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3146090" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="TheBug_1.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span></li><li>A Yellow ATTI alarm with STAB green<br /><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" width="150" confluence-query-params="effects=drop-shadow" src="/download/thumbnails/1049196/TheBug_2.png?version=2&amp;modificationDate=1421223039000&amp;api=v2&amp;effects=drop-shadow" data-image-src="/download/attachments/1049196/TheBug_2.png?version=2&amp;modificationDate=1421223039000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3146091" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="TheBug_2.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span></li></ul><p>This event has been nicknamed &quot;The Bug&quot;, and it is still possible to arm and fly the vehicle in this condition.</p><p>Should you wish to clear the indication, one can reset the Revolution flight controller, or alternatively, change the Attitude Estimation Algorithm to <em style="line-height: 1.4285715;">Basic(Complementary)</em>, and then change back to <em style="line-height: 1.4285715;">GPS Navigation(INS13). </em>This action will cause the EKF to reinitialise and the indications will be cleared.</p></div>    </div>
+<p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Stab">Stab</h3><p>Shows whether the board is capable of stabilizing flight. This status goes very much hand in hand with Atti.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/stab-disabled.png?version=1&amp;modificationDate=1419212006000&amp;api=v2" data-image-src="/download/attachments/1049196/stab-disabled.png?version=1&amp;modificationDate=1419212006000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245763" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="stab-disabled.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Waiting for gyroscope calibration. Don't move the vehicle while gyros are being calibrated upon board power-up.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/stab-critical.png?version=1&amp;modificationDate=1419212002000&amp;api=v2" data-image-src="/download/attachments/1049196/stab-critical.png?version=1&amp;modificationDate=1419212002000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245762" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="stab-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> The stabilization module cannot stabilize flight. See red Atti status for explanation.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/stab-ok.png?version=1&amp;modificationDate=1419212021000&amp;api=v2" data-image-src="/download/attachments/1049196/stab-ok.png?version=1&amp;modificationDate=1419212021000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245765" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="stab-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Stabilization of flight can be performed.</p>
+</div></div><p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Path">Path</h3><p>Shows whether the <strong>Revolution </strong>board is capable of autonomous path following. Autonomous flight requires a GPS and a stabilization algorithm set up as GPS navigation.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/path-disabled.png?version=1&amp;modificationDate=1419211938000&amp;api=v2" data-image-src="/download/attachments/1049196/path-disabled.png?version=1&amp;modificationDate=1419211938000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245748" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="path-disabled.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> <span>The flight controller has not been configured to do autonomous flying. Autonomous flight is only possible with stabilization mode &quot;GPS Navigation&quot;.</span></p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/path-critical.png?version=1&amp;modificationDate=1419211933000&amp;api=v2" data-image-src="/download/attachments/1049196/path-critical.png?version=1&amp;modificationDate=1419211933000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245747" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="path-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> The system has been configured to initialize Path Follower module, but it can't be used at the moment. It happens usually because EKF is not running, see Atti red explanation.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/path-ok.png?version=1&amp;modificationDate=1419211947000&amp;api=v2" data-image-src="/download/attachments/1049196/path-ok.png?version=1&amp;modificationDate=1419211947000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245750" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="path-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> All is good with the Path Follower module. You can use GPS flight modes.</p>
+</div></div><p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Plan">Plan</h3><p>Shows the status of an autonomous flight plan that can be uploaded to <strong>Revolution</strong> using the <strong>Ground Control Station</strong>. The status of Path remains yellow until a proper plan has been uploaded, and turns green if all is good with the plan. A valid plan can be activated with a path follower flight mode.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/plan-disabled.png?version=1&amp;modificationDate=1419211961000&amp;api=v2" data-image-src="/download/attachments/1049196/plan-disabled.png?version=1&amp;modificationDate=1419211961000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245753" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="plan-disabled.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> The flight controller has not been configured to do autonomous flying. Autonomous flight is only possible with stabilization mode &quot;GPS Navigation&quot;.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/plan-critical.png?version=1&amp;modificationDate=1419211956000&amp;api=v2" data-image-src="/download/attachments/1049196/plan-critical.png?version=1&amp;modificationDate=1419211956000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245752" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="plan-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Path has been uploaded, but data is invalid and cannot be used for autonomous missions.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/plan-warning.png?version=1&amp;modificationDate=1419211974000&amp;api=v2" data-image-src="/download/attachments/1049196/plan-warning.png?version=1&amp;modificationDate=1419211974000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245756" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="plan-warning.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> No path plan has been uploaded, but the system is ready to receive a plan. This is okay if you don't intend to do autonomous missions right now.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/plan-ok.png?version=1&amp;modificationDate=1419211970000&amp;api=v2" data-image-src="/download/attachments/1049196/plan-ok.png?version=1&amp;modificationDate=1419211970000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245755" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="plan-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> A valid and usable flight plan has been uploaded and stored on <strong>Revolution</strong>.</p>
+</div></div><p> </p><hr /><p> </p><h2 id="Alarms-Whattheymeanandhowtofixthem-Sensor"><strong>Sensor</strong></h2><h3 id="Alarms-Whattheymeanandhowtofixthem-GPS">GPS</h3><p>Shows the status of the GPS that can be connected to an OpenPilot flight controller. GPS is required for autonomous missions and more sophisticated flight modes.<div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/gps-disabled.png?version=1&amp;modificationDate=1419211798000&amp;api=v2" data-image-src="/download/attachments/1049196/gps-disabled.png?version=1&amp;modificationDate=1419211798000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245718" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="gps-disabled.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> A GPS has not been configured to be used.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/gps-error.png?version=1&amp;modificationDate=1419211802000&amp;api=v2" data-image-src="/download/attachments/1049196/gps-error.png?version=1&amp;modificationDate=1419211802000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245719" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="gps-error.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> The GPS has been configured, but no valid data is coming in. This is normal if flight battery is not connected, because GPS only gets power from external sources, not USB. Check the baud rate and the used protocol of your GPS.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/gps-critical.png?version=1&amp;modificationDate=1419211793000&amp;api=v2" data-image-src="/download/attachments/1049196/gps-critical.png?version=1&amp;modificationDate=1419211793000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245717" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="gps-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Valid data is received but the GPS has no valid fix. Wait for GPS to gather satellites, and preferably have your vehicle in an open area.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/gps-warning.png?version=1&amp;modificationDate=1419211811000&amp;api=v2" data-image-src="/download/attachments/1049196/gps-warning.png?version=1&amp;modificationDate=1419211811000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245721" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="gps-warning.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> The GPS has a fix and navigation can be used. However, the position quality is very low (the indication &lt;7 satellites and/or PDOP &gt; 3.5m). A blue LED will flash on the OP v8 and v9 GPS.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/gps-ok.png?version=1&amp;modificationDate=1419211807000&amp;api=v2" data-image-src="/download/attachments/1049196/gps-ok.png?version=1&amp;modificationDate=1419211807000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245720" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="gps-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> The GPS has a valid 3D fix.</p>
+</div></div></p><div class="confluence-information-macro confluence-information-macro-information">
+            <p class="title">Initial GPS setup information</p>
+    
+            <span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span>
+    
+    <div class="confluence-information-macro-body"><p>When powering up the GPS for the first time, it might take over 30 minutes for the GPS to download almanac information from the satellites and acquire a good lock. Be patient, and have a clear view of the sky.</p></div>    </div>
+<p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Sensor.1">Sensor</h3><p>Shows the status of the sensor handler module.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/sensor-disabled.png?version=1&amp;modificationDate=1419211984000&amp;api=v2" data-image-src="/download/attachments/1049196/sensor-disabled.png?version=1&amp;modificationDate=1419211984000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245758" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="sensor-disabled.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Sensor module is not being used in current configuration.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/sensor-ok.png?version=1&amp;modificationDate=1419211993000&amp;api=v2" data-image-src="/download/attachments/1049196/sensor-ok.png?version=1&amp;modificationDate=1419211993000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245760" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="sensor-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Sensor communications are up and ok.</p>
+</div></div><p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Airspd">Airspd</h3><p>Shows the status of an optional air speed sensor that can be used with fixed wing aircraft.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/airspeed-disabled.png?version=1&amp;modificationDate=1419211616000&amp;api=v2" data-image-src="/download/attachments/1049196/airspeed-disabled.png?version=1&amp;modificationDate=1419211616000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245684" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="airspeed-disabled.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Airspeed sensor has not been configured to be used.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/airspeed-ok.png?version=1&amp;modificationDate=1419211627000&amp;api=v2" data-image-src="/download/attachments/1049196/airspeed-ok.png?version=1&amp;modificationDate=1419211627000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245685" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="airspeed-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Valid data is coming in from the airspeed sensor.</p>
+</div></div><p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Mag">Mag</h3><p>Shows the status of <strong>Revolution's </strong>magnetometer, or the status of an auxiliary magnetometer on board the OpenPilot GPSv9 if the GPS is configured to be used.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/mag-disabled.png?version=1&amp;modificationDate=1419211867000&amp;api=v2" data-image-src="/download/attachments/1049196/mag-disabled.png?version=1&amp;modificationDate=1419211867000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245733" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="mag-disabled.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Magnetometer is not being used in current configuration, or auxiliary magnetometer is not feeding data. If using GPSv9, power up the board externally. Home location has to be set to enable magnetometer.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/mag-critical.png?version=1&amp;modificationDate=1419211862000&amp;api=v2" data-image-src="/download/attachments/1049196/mag-critical.png?version=1&amp;modificationDate=1419211862000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245732" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="mag-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Data is coming from the magnetometer, but the readings are off by over 15%. This can be caused by various reasons:</p><ul><li style="list-style-type: none;background-image: none;"><ul><li style="list-style-type: none;background-image: none;"><ul><li>Magnetometer has not been calibrated with current vehicle (or after recent modifications to vehicle)</li><li>There are high currents in wires, interfering with the magnetometer. Twist wires and route them away from magnetometer.</li><li>Calibration was <span>properly </span>done outside, away from metallic objects, but the vehicle is now inside in a different magnetic environment. This is ok.</li></ul></li></ul></li></ul><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/mag-warning.png?version=1&amp;modificationDate=1419211880000&amp;api=v2" data-image-src="/download/attachments/1049196/mag-warning.png?version=1&amp;modificationDate=1419211880000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245736" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="mag-warning.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Magnetometer readings are off by over 5%</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/mag-ok.png?version=1&amp;modificationDate=1419211875000&amp;api=v2" data-image-src="/download/attachments/1049196/mag-ok.png?version=1&amp;modificationDate=1419211875000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245735" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="mag-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Magnetometer is working properly and the quality of the measurements is good.</p>
+</div></div><p><strong><br /></strong></p><hr /><p> </p><h2 id="Alarms-Whattheymeanandhowtofixthem-I/O(Input/Output)"><strong>I/O (Input / Output)</strong></h2><h3 id="Alarms-Whattheymeanandhowtofixthem-Input">Input</h3><p>Input module handles the data that is coming from your receiver.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/input-critical.png?version=1&amp;modificationDate=1419211840000&amp;api=v2" data-image-src="/download/attachments/1049196/input-critical.png?version=1&amp;modificationDate=1419211840000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245727" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="input-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> R/C input has not been configured. Use Input tab or <strong>Transmitter Setup Wizard</strong> to configure your radio channel inputs.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/input-warning.png?version=1&amp;modificationDate=1419211858000&amp;api=v2" data-image-src="/download/attachments/1049196/input-warning.png?version=1&amp;modificationDate=1419211858000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245731" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="input-warning.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> No R/C input data. Power up receiver with the flight battery.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/input-ok.png?version=1&amp;modificationDate=1419211854000&amp;api=v2" data-image-src="/download/attachments/1049196/input-ok.png?version=1&amp;modificationDate=1419211854000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245730" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="input-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Valid R/C input data is coming in.</p>
+</div></div><p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Output">Output</h3><p>Output module takes motor speed and servo position data from stabilization algorithms, and feeds it into output channels.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/output-critical.png?version=1&amp;modificationDate=1419211910000&amp;api=v2" data-image-src="/download/attachments/1049196/output-critical.png?version=1&amp;modificationDate=1419211910000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245742" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="output-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Channel outputs have not been configured. Use <strong>Vehicle Setup Wizard </strong>to configure them automatically.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/output-ok.png?version=1&amp;modificationDate=1419211923000&amp;api=v2" data-image-src="/download/attachments/1049196/output-ok.png?version=1&amp;modificationDate=1419211923000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245745" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="output-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Outputs are configured can be updated.</p>
+</div></div><p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-I2C">I2C</h3><p>I2C is a bus that connects onboard or auxiliary sensors and handles the data transmissions.  I2C is designed for communications internal to a PCB, and does not work well via wire connections.  It is okay to use for LED controls and similar functions, but is absolutely not recommended for flight-critical sensor connections.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/i2c-disabled.png?version=1&amp;modificationDate=1419211821000&amp;api=v2" data-image-src="/download/attachments/1049196/i2c-disabled.png?version=1&amp;modificationDate=1419211821000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245723" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="i2c-disabled.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> I2C module is not being used.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/i2c-critical.png?version=1&amp;modificationDate=1419211816000&amp;api=v2" data-image-src="/download/attachments/1049196/i2c-critical.png?version=1&amp;modificationDate=1419211816000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245722" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="i2c-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> I2C module is in error state.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/i2c-ok.png?version=1&amp;modificationDate=1419211830000&amp;api=v2" data-image-src="/download/attachments/1049196/i2c-ok.png?version=1&amp;modificationDate=1419211830000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245725" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="i2c-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> I2C communications are up and working properly.</p>
+</div></div><p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Telemetry">Telemetry</h3><p>Shows the status of Telemetry communications module</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/telemetry-critical.png?version=1&amp;modificationDate=1419212053000&amp;api=v2" data-image-src="/download/attachments/1049196/telemetry-critical.png?version=1&amp;modificationDate=1419212053000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245772" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="telemetry-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Telemetry module has encountered an error. Set up only one telemetry output port.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/telemetry-ok.png?version=1&amp;modificationDate=1419212066000&amp;api=v2" data-image-src="/download/attachments/1049196/telemetry-ok.png?version=1&amp;modificationDate=1419212066000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245775" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="telemetry-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Telemetry data communications are working properly.</p>
+</div></div><p> </p><hr /><p> </p><h2 id="Alarms-Whattheymeanandhowtofixthem-Pwr(Power)"><strong>Pwr (Power)</strong></h2><h3 id="Alarms-Whattheymeanandhowtofixthem-Batt">Batt</h3><p>Battery status shows whether you have enough voltage in the battery to fly. Set limits for this in FlightBatt (CHECK this) settings. It requires a battery voltage sensor to work. Battery monitoring module can be enabled in system settings' optional modules.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/bat-disabled.png?version=1&amp;modificationDate=1419211684000&amp;api=v2" data-image-src="/download/attachments/1049196/bat-disabled.png?version=1&amp;modificationDate=1419211684000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245693" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="bat-disabled.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Battery monitoring module is not enabled</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/bat-critical.png?version=1&amp;modificationDate=1419211678000&amp;api=v2" data-image-src="/download/attachments/1049196/bat-critical.png?version=1&amp;modificationDate=1419211678000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245692" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="bat-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Not enough battery voltage to safely take off.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/bat-warning.png?version=1&amp;modificationDate=1419211699000&amp;api=v2" data-image-src="/download/attachments/1049196/bat-warning.png?version=1&amp;modificationDate=1419211699000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245696" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="bat-warning.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Battery voltage is low, but flying is possible.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/bat-ok.png?version=1&amp;modificationDate=1419211695000&amp;api=v2" data-image-src="/download/attachments/1049196/bat-ok.png?version=1&amp;modificationDate=1419211695000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245695" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="bat-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Battery voltage is ok.</p>
+</div></div><p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Time">Time</h3><p>Shows whether you have enough energy in the battery left for flying, and requires a battery voltage and current sensor to work. Currently has a bug when not using a current sensor; s<span>et the battery capacity to 0. This disables the estimated flight time counter and associated alarms.</span></p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/time-disabled.png?version=1&amp;modificationDate=1419212080000&amp;api=v2" data-image-src="/download/attachments/1049196/time-disabled.png?version=1&amp;modificationDate=1419212080000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245778" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="time-disabled.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Battery monitoring module is not enabled, see above Batt explanation.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/time-critical.png?version=1&amp;modificationDate=1419212075000&amp;api=v2" data-image-src="/download/attachments/1049196/time-critical.png?version=1&amp;modificationDate=1419212075000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245777" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="time-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Battery energy is low, flying cannot be performed safely.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/time-warning.png?version=1&amp;modificationDate=1419212095000&amp;api=v2" data-image-src="/download/attachments/1049196/time-warning.png?version=1&amp;modificationDate=1419212095000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245781" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="time-warning.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Low amount of energy in the battery, flying is still possible.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/time-ok.png?version=1&amp;modificationDate=1419212090000&amp;api=v2" data-image-src="/download/attachments/1049196/time-ok.png?version=1&amp;modificationDate=1419212090000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245780" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="time-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Good amount of energy left in the battery to fly.</p>
+</div></div><p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Config">Config</h3><p>Shows whether your flight controller board has been properly set up.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/config-critical.png?version=1&amp;modificationDate=1419211727000&amp;api=v2" data-image-src="/download/attachments/1049196/config-critical.png?version=1&amp;modificationDate=1419211727000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245702" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="config-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Board configuration problem. If you have set up GPS modes to flight mode switch, then make sure that &quot;GPS Navigation&quot; stabilization mode is selected.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/config-ok.png?version=1&amp;modificationDate=1419211740000&amp;api=v2" data-image-src="/download/attachments/1049196/config-ok.png?version=1&amp;modificationDate=1419211740000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245705" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="config-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Board configuration ok.</p>
+</div></div><p><strong><br /></strong></p><hr /><p> </p><h2 id="Alarms-Whattheymeanandhowtofixthem-Sys(System)"><strong>Sys (System)</strong></h2><h3 id="Alarms-Whattheymeanandhowtofixthem-Boot">Boot</h3><p>Shows that a board reboot is required, or fail-safe settings have been loaded upon boot.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/boot-critical.png?version=1&amp;modificationDate=1419211703000&amp;api=v2" data-image-src="/download/attachments/1049196/boot-critical.png?version=1&amp;modificationDate=1419211703000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245697" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="boot-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Boot alarm can be caused by various reasons:</p><ul><li style="list-style-type: none;background-image: none;"><ul><li style="list-style-type: none;background-image: none;"><ul><li>No valid telemetry option selected, so board will boot with default USB telemetry</li><li>Board init failed due to driver, module or RAM issues, and the board has been booted up in fail-safe state</li><li>Board has been put to safe mode by the user</li><li>Board needs a reboot after hardware configuration changes</li></ul></li></ul></li></ul><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/boot-ok.png?version=1&amp;modificationDate=1419211717000&amp;api=v2" data-image-src="/download/attachments/1049196/boot-ok.png?version=1&amp;modificationDate=1419211717000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245700" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="boot-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Flight controller booted up properly.</p>
+</div></div><p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Mem">Mem</h3><p>Displays the status of remaining memory (RAM) that are used by processes internal to the flight controller.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/mem-critical.png?version=1&amp;modificationDate=1419211884000&amp;api=v2" data-image-src="/download/attachments/1049196/mem-critical.png?version=1&amp;modificationDate=1419211884000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245737" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="mem-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Very low RAM left, flying cannot be done safely.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/mem-warning.png?version=1&amp;modificationDate=1419211905000&amp;api=v2" data-image-src="/download/attachments/1049196/mem-warning.png?version=1&amp;modificationDate=1419211905000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245741" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="mem-warning.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Low amount of RAM left, flying can be done but don't enable more software modules. This is common with older flight controllers such as CopterControl.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/mem-ok.png?version=1&amp;modificationDate=1419211900000&amp;api=v2" data-image-src="/download/attachments/1049196/mem-ok.png?version=1&amp;modificationDate=1419211900000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245740" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="mem-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Sufficient amount of RAM left for system to operate and expand.</p>
+</div></div><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Stack">Stack</h3><p>Shows the status of the microcontroller's stack, which is a place where low-level functions store data.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/stack-ok.png?version=1&amp;modificationDate=1419212044000&amp;api=v2" data-image-src="/download/attachments/1049196/stack-ok.png?version=1&amp;modificationDate=1419212044000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245770" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="stack-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Stack status ok.</p>
+</div></div><p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-Event">Event</h3><p>Shows the status of event system. A very heavy load can cause the event system to be overloaded.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/event-critical.png?version=1&amp;modificationDate=1419211771000&amp;api=v2" data-image-src="/download/attachments/1049196/event-critical.png?version=1&amp;modificationDate=1419211771000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245712" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="event-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Event system error or overloaded. This can be caused by a bug or too high telemetry update rates when OPLink has low baud, for example.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/event-warning.png?version=1&amp;modificationDate=1419211788000&amp;api=v2" data-image-src="/download/attachments/1049196/event-warning.png?version=1&amp;modificationDate=1419211788000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245716" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="event-warning.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Event system at high stress. See above.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/event-ok.png?version=1&amp;modificationDate=1419211784000&amp;api=v2" data-image-src="/download/attachments/1049196/event-ok.png?version=1&amp;modificationDate=1419211784000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245715" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="event-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> Event system ok.</p>
+</div></div><p> </p><hr /><p> </p><h3 id="Alarms-Whattheymeanandhowtofixthem-CPU">CPU</h3><p>Indicates CPU load.</p><div class="panel" style="background-color: white;border-color: grey;border-width: 1px;"><div class="panelContent" style="background-color: white;">
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/cpu-critical.png?version=1&amp;modificationDate=1419211750000&amp;api=v2" data-image-src="/download/attachments/1049196/cpu-critical.png?version=1&amp;modificationDate=1419211750000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245707" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="cpu-critical.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> CPU load is very high, flight cannot be performed safely.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/cpu-warning.png?version=1&amp;modificationDate=1419211767000&amp;api=v2" data-image-src="/download/attachments/1049196/cpu-warning.png?version=1&amp;modificationDate=1419211767000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245711" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="cpu-warning.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> CPU load is high, but flight can be performed. Don't enable more software modules.</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="/download/attachments/1049196/cpu-ok.png?version=1&amp;modificationDate=1419211762000&amp;api=v2" data-image-src="/download/attachments/1049196/cpu-ok.png?version=1&amp;modificationDate=1419211762000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1245710" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="cpu-ok.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1049196" data-linked-resource-container-version="47"></span> CPU load is at an acceptable level, and flying is safe.</p>
+</div></div><p> </p><p><strong class="bbc">    
+
+
+<a 
+
+	href="/display/WIKI/First+Flight"
+	 
+	class="rwui_button
+		rwui_color_gray 		rwui_inline-block 			"
+		
+	title="&lt; Previous: First Flight"
+>
+		
+			
+	<span 
+		class="rwui_content 
+										
+			"
+	>&lt; Previous: First Flight</span>
+</a>
+      
+
+
+<a 
+
+	href="/display/WIKI/Finding+Your+Way+Around+the+GCS"
+	 
+	class="rwui_button
+		rwui_color_blue 		rwui_inline-block 			"
+		
+	title="Next: Finding Your Way Around the GCS &gt;"
+>
+		
+			
+	<span 
+		class="rwui_content 
+										
+			"
+	>Next: Finding Your Way Around the GCS &gt;</span>
+</a>
+</strong></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>In this section</b></div><div class="panelContent">
+<p><ul class='childpages-macro'><li><a href="/display/WIKI/Alarms+-+What+they+mean+and+how+to+fix+them">Alarms - What they mean and how to fix them</a></li></ul></p>
+</div></div></div>
+</div>
+</div>
+</div>
+
+                
+        
+    
+		        </div>
+			</article> 					
+		</div>
+			
+		<div style="clear:both;"></div>
+		
+						
+		<div style="clear:both;"></div>
+		
+		<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="https://wiki.openpilot.org/display/WIKI/Alarms+-+What+they+mean+and+how+to+fix+them"
+    dc:identifier="https://wiki.openpilot.org/display/WIKI/Alarms+-+What+they+mean+and+how+to+fix+them"
+    dc:title="Alarms - What they mean and how to fix them"
+    trackback:ping="https://wiki.openpilot.org/rpc/trackback/1049196"/>
+</rdf:RDF>
+-->
+	
+							                <script type="text/x-template" title="labels-dialog-div">
+        <div id="labels-dialog">
+        <div class="labels-editor">
+            <form method="GET" action="" id="add-labels-form" class="aui">
+                <div id="labelOperationErrorContainer">
+                    <span class="error"><span class="errorMessage" id="labelOperationErrorMessage"></span></span>
+                </div>
+    
+                <div id="label-input-fields">
+                    <input autocomplete="off" id="labelsString" name="labelsString" value="" class="text">
+                    <input id="add-labels-editor-button" type="submit" class="add-labels aui-button" value="Add">
+                </div>
+                <div id="labelsAutocompleteList" class="aui-dd-parent resize-to-input" style="width: 417px"></div>
+                <div id="dialog-label-list">
+                    <!-- DIV placeholder for labels list, is copied into in labels-dialog.js -->
+                </div>
+                <div id="waitImageAndStatus">
+                    <img class="waiting" alt="Please wait" src="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/_/images/icons/wait.gif">&nbsp;
+                    <span id="labelOperationStatus" class="smalltext"></span>
+                </div>
+                <div class="labels-tip"></div>
+            </form>
+        </div>
+        <div style="display: none;">
+            <div class="labels-section-content content-column" entityid="1049196" entitytype="page">
+	<div class="labels-content">
+		
+    <ul class="label-list ">
+            <li class="no-labels-message">
+            No labels
+        </li>
+            </ul>
+
+    </div>
+</div>        </div>
+    </div>
+</script>
+                    
+    
+
+
+
+<div id="labels-section" class="pageSection group">
+    <div class="labels-section-content content-column" entityid="1049196" entitytype="page">
+	<div class="labels-content">
+		
+    <ul class="label-list label-list-right ">
+            <li class="no-labels-message">
+            No labels
+        </li>
+            </ul>
+
+    </div>
+</div></div>
+			        		
+		<div style="clear:both;"></div>
+		
+						
+		<div style="clear:both;"></div>
+		
+				    		    
+
+
+
+
+            
+    
+
+
+
+
+
+
+
+
+                    
+    
+<div id="comments-section" class="pageSection group">
+        
+    
+    
+    
+            <div class="bottom-comment-panels comment-panels">
+                                    
+    
+
+
+    
+            </div>
+    
+    </div>
+
+		
+					</div>	
+</div>
+<div class="rw_clear"></div>
+	        
+				
+	    	    	    
+	</div>
+	
+	</div>
+
+
+
+
+	    
+
+
+
+
+	
+    
+	
+
+    
+    
+    
+
+
+
+
+
+
+    
+
+
+
+		        <div style="clear:both;"></div>
+		    </div><!-- \#main -->
+	
+	
+			
+						
+			    					</div> <!-- #edge_design_content -->
+
+
+
+
+	<div 
+		id="rw_footer_wrapper"
+		
+					class="rw_theme_default"
+				>
+    	<div id="rw_footer_container">
+			
+									
+							<div id="rw_footer_content">
+					<p>Powered by <a href="http://www.atlassian.com/software/confluence" class="external-link" rel="nofollow">Atlassian Confluence</a>, <a href="http://www.refinedwiki.com" class="external-link" rel="nofollow">a Confluence theme by RefinedWiki</a></p>	
+				</div>
+			    	</div>
+	</div>
+			
+						
+			
+			 
+			
+			</div> <!-- rw_main -->
+		
+						<script type="text/x-template" id="rw_popup_loader_template">
+	<div class='rw_popup_loader'>
+		<div class="rw_popup_loader_image"></div>
+	</div>
+</script>
+
+
+<script type="text/x-template" id="rw_search_item">
+    <li>
+		<a>
+			<span class="rw_search_item_title"></span>
+			<span class="rw_search_item_space"></span>
+		</a>
+	</li>
+</script>
+
+
+<script type="text/x-template" id="rw_icon_text_item">
+    <li>
+		<a>
+			<span class="rw_item_icon">
+				<img style="display:none;" />
+			</span>
+			<span class="rw_item_content">
+			</span>
+		</a>
+	</li>
+</script>
+
+<script type="text/x-template" id="rw_icon_content_item_template">
+    <li>
+		<a>
+			<span class="rw_item_icon">
+			</span>
+			<span class="rw_item_content">
+			</span>
+		</a>
+	</li>
+</script>
+
+
+<script type="text/x-template" id="rw_section_template">
+    <ul>
+	</ul>
+</script>
+
+<script type="text/x-template" id="rw_items_template">
+    <ul class="rw_items">
+	</ul>
+</script>
+
+<script type="text/x-template" id="rw_section_with_heading_template">
+    <div>
+    	<h2></h2>
+    	<ul>
+    	</ul>
+    </div>
+</script>
+
+
+<script type="text/x-template" id="rw_span_icon_template">
+		<span class="rw_icon_container_16"></span>  </script>
+
+<script type="text/x-template" id="rw_clear_template">
+	<div style="clear:both;"></div>
+</script>
+
+
+<script type="text/x-template" id="rw_category_section_template">
+   
+   <div class="rw_dd_category">
+       <h2><a class="rw_sub_category_link"></a></h2>
+       <ul></ul>
+   </div>
+</script>
+
+
+<script type="text/x-template" id="rw_category_bottom_template">
+	<div class="rw_popup_bottom">
+		<a href="#" class="rw_dashboard_link" >Dashboard</a>
+		<a href="#" class="rw_close_link">Close</a>
+	</div>
+</script>
+
+
+
+
+<script type="text/x-template" id="rw_popup_template">
+	<div class='rw_popup rw_corners' style='display:none;'>
+		<div class="rw_popup_container rw_corners">
+			<div class="rw_popup_top">
+				<h1 style="border:0px;"></h1>
+			</div>
+			<div class="rw_popup_content">
+				
+			</div>
+			<div class="rw_popup_bottom">
+				<a href="#"></a>
+			</div>
+		</div>
+		<div class='rw_popup_loader'>
+			<div class="rw_popup_loader_image"></div>
+		</div>
+	</div>	
+</script>
+
+
+
+<script type="text/x-template" id="rw_load_more_template">
+	
+	<a class="rw_load_more_link rw_corners rw_menu_color" >			
+	    <span class="rw_load_more_text">More</span>
+	</a>
+	
+</script>
+
+<script type="text/x-template" id="rw_more_button_template">
+	
+	<a class="rw_load_more_link rw_menu_color" >			
+	    <span class="rw_load_more_text">More</span>
+	</a>
+	
+</script>
+
+
+<script type="text/x-template" id="rw_load_more_section_template">
+	
+	<ul>
+		<li class="rw_corners">
+			<a class="rw_load_more_link rw_corners" >			
+			    <span class="rw_load_more_text">More</span>
+			</a>
+		</li>
+	</ul>
+	
+</script>
+
+
+<script type="text/x-template" id="rw_button_template">
+	<a class="rw_button"><span></span></a>
+</script>
+
+
+<div id='rw_popup_bg' style='display:none;'></div>
+
+
+<div id="rw_keyboard_shortcuts" style="display:none;"></div>
+	
+<script type="text/x-template" id="rw_keynavigation_container_template">
+	<div class="rw_keynavigation_container" style="display:none;"></div>
+</script>
+
+<script type="text/x-template" id="rw_keynavigation_row_template">
+	<div class="rw_keynavigation_row">
+	</div>
+</script>
+
+<script type="text/x-template" id="rw_keynavigation_item_template">
+	<div class="rw_keynavigation_item">
+		<span class="rw_item_icon"></span><br />
+		<span class="rw_item_content">Navigate Menu</span>
+		<div class="rw_keynavigation_item_target" style="display:none"></div>
+	</div>
+</script>
+
+<script type="text/x-template" id="rw_keynavigation_empty_item_template">
+	<div class="rw_keynavigation_empty_item">
+	
+	</div>
+</script>
+
+<script type="text/x-template" id="rw_favourite_no_spaces_template">
+	<span class="rw_text_gray">You currently do not have any spaces on your favourites list. To add one, click the <em>All</em> tab and then on <img src=/download/resources/com.refinedwiki.confluence.plugins.theme.original/images/gray_star.png> next to the spaces you want to add as favourites.</div>	
+</script>
+
+<script type="text/x-template" id="rw_favourite_no_pages_template">
+	<span class="rw_text_gray">There are currently no pages on your favourites list. You can add pages to this list by selecting Favourite from the Tools menu on the page you're viewing.</div>	
+</script>
+
+
+<script type="text/x-template" id="rw_board_template">
+	<div class="rw_board"></div>
+</script>
+
+<script type="text/x-template" id="rw_board_column_template">
+	<div class="rw_board_column"></div>
+</script>
+
+<script type="text/x-template" id="rw_popup_cancel_button_template">
+	<button class="button-panel-button rw_button rw_right">
+		<span class="rw_del">Close</span>
+	</button>
+</script>
+			
+		</div><!-- rw_wrapper -->
+		
+	
+			<div id="rw_fullscreen_bg" style="display:none;"></div>
+	
+		
+	
+			
+	
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12851274-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</div><!-- \#full-height-container -->
+</div><!-- \#page -->
+</body>
+</html>

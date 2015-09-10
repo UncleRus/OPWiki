@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+            <title>OPLM Vehicle Control Link - OpenPilot Documentation - OpenPilot Documentation</title>
+	
+        
+    
+    	    
+	
+	    
+
+                        
+    
+                        
+    
+	 
+
+            <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+<meta charset="UTF-8">
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="https://wiki.openpilot.org">
+
+<meta id="atlassian-token" name="atlassian-token" content="49d6e193816f289a0139aaf72c8a265b95d75479">
+
+
+<meta id="confluence-space-key" name="confluence-space-key" content="WIKI">
+<script type="text/javascript">
+        var contextPath = '';
+</script>
+
+    
+
+    <meta name="confluence-request-time" content="1440822172469">
+        
+    
+        
+            <meta name="ajs-is-confluence-admin" content="false">
+            <meta name="ajs-connection-timeout" content="10000">
+            <meta name="ajs-discovered-plugin-features" content="$discoveredList">
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-keyboardshortcut-hash" content="1b645be84770762c17aa8cab630b3967">
+            <meta name="ajs-is-space-admin" content=""> <meta name="ajs-has-space-config" content="">
+            <style>.ia-fixed-sidebar, .ia-splitter-left {width: 285px;}.theme-default .ia-splitter #main {margin-left: 285px;}.ia-fixed-sidebar {visibility: hidden;}</style>
+            
+
+    
+            
+    
+    
+            <meta name="ajs-page-id" content="8225003">
+            <meta name="ajs-latest-page-id" content="8225003">
+            <meta name="ajs-content-type" content="page">
+            <meta name="ajs-page-title" content="OPLM Vehicle Control Link">
+            <meta name="ajs-parent-page-title" content="OPLink and Bluetooth Setup">
+            <meta name="ajs-parent-page-id" content="1049184">
+            <meta name="ajs-space-key" content="WIKI">
+            <meta name="ajs-space-name" content="OpenPilot Documentation">
+            <meta name="ajs-show-move-space-dialog" content="true">
+            <meta name="ajs-show-space-layout-dialog" content="true">
+            <meta name="ajs-from-page-title" content="">
+            <meta name="ajs-can-remove-page" content="false">
+            <meta name="ajs-browse-page-tree-mode" content="view">
+            <meta name="ajs-editor.loader.comment.resources" content="&lt;script&gt;
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData[&quot;com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active&quot;]=&quot;{\&quot;linkActive\&quot;:false,\&quot;conditionsMet\&quot;:true,\&quot;admin\&quot;:false}&quot;;
+&lt;/script&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/56535c47dd3d5ab60ff2673444ac15ec/_/download/contextbatch/css/comment-editor,-viewcontent,-page/batch.css&quot; media=&quot;all&quot;&gt;
+">
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-base-url" content="https://wiki.openpilot.org">
+            <meta name="ajs-version-number" content="5.7.1">
+            <meta name="ajs-build-number" content="5781">
+            <meta name="ajs-remote-user" content="">
+            <meta name="ajs-remote-user-key" content="">
+            <meta name="ajs-current-user-fullname" content="">
+            <meta name="ajs-current-user-avatar-url" content="">
+            <meta name="ajs-static-resource-url-prefix" content="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="943718400">
+            <meta name="ajs-user-locale" content="en_GB">
+            <meta name="ajs-enabled-dark-features" content="previews.sharing,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageEditedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentRemoveEvent,previews.conversion-service,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentUpdateEvent,file-annotations.likes,confluence-inline-comments-resolved,confluence-inline-comments-rich-editor,quick-reload-inline-comments,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageMovedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentCreateEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.follow.FollowEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareContentEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentResolveEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.mentions.api.ConfluenceMentionEvent,file-annotations,pdf-preview,notification.plugin.api.enabled.com.atlassian.confluence.plugins.hipchat.api.events.HipChatUserMapped,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostMovedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostCreateEvent,confluence-inline-comments,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentMentionUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.tasklist.event.SendTaskEmailEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentCreateEvent,file-notifications,previews.trigger-all-file-types,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareAttachmentEvent,view-file-thumbnail-polling,previews.sharing.pushstate,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.attachment.AttachmentBatchUploadCompletedEvent,previews.versions,confluence-inline-comments-dangling-comment,notification.plugin.api.enabled.com.atlassian.confluence.event.events.security.ForgotPasswordEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.like.LikeCreatedEvent">
+            <meta name="ajs-atl-token" content="49d6e193816f289a0139aaf72c8a265b95d75479">
+            <meta name="ajs-confluence-flavour" content="VANILLA">
+            <meta name="ajs-user-date-pattern" content="dd MMM yyyy">
+            <meta name="ajs-editor.loader.resources" content="&lt;script&gt;
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData[&quot;com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode&quot;]=&quot;false&quot;;
+WRM._unparsedData[&quot;com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details&quot;]=&quot;{\&quot;daysBeforeLicenseExpiry\&quot;:0,\&quot;daysBeforeMaintenanceExpiry\&quot;:0,\&quot;showLicenseExpiryBanner\&quot;:false,\&quot;showMaintenanceExpiryBanner\&quot;:false,\&quot;renewUrl\&quot;:null,\&quot;salesEmail\&quot;:null}&quot;;
+WRM._unparsedData[&quot;com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active&quot;]=&quot;{\&quot;linkActive\&quot;:false,\&quot;conditionsMet\&quot;:true,\&quot;admin\&quot;:false}&quot;;
+&lt;/script&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/498e43f62ba995e3b71e41e5689e570d-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c172bfd186ba19367a2df3d0df1cd832/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general,-page/batch.css&quot; media=&quot;all&quot;&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c172bfd186ba19367a2df3d0df1cd832/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general,-page/batch.css?media=%28max-width%3A+1450px%29&quot; media=&quot;(max-width: 1450px)&quot;&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c172bfd186ba19367a2df3d0df1cd832/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general,-page/batch.css?conditionalComment=lt+IE+9&quot; media=&quot;all&quot;&gt;
+&lt;![endif]--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/8da9251407819c884eb852a39840873c-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c172bfd186ba19367a2df3d0df1cd832/_/download/contextbatch/js/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general,-page/batch.js?locale=en-GB&quot; &gt;&lt;/script&gt;
+">
+            <meta name="ajs-date.format" content="MMM dd, yyyy">
+    
+    <link rel="shortcut icon" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/_/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/_/favicon.ico">
+
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch/osd.action" title="OpenPilot Documentation"/>
+
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager.resource-base-url-pattern"]="\"(?:(?:/s/.*?/_)?/download)\"";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
+</script>
+<link type="text/css" rel="stylesheet" href="/s/0a57ba46d712a457bcea31ef108b6fa7-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/76/_/download/superbatch/css/batch.css?build-number=5781" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/76/_/download/superbatch/css/batch.css?media=print" media="print">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/76/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/76/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d630f907b84d9e2700b7ef76fd669b99-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c40bc5418803b02d73fe950f4eb70641/_/download/contextbatch/css/page,viewcontent,atl.general,main/batch.css?highlightactions=true&amp;locale=en-GB&amp;flavour=VANILLA&amp;quick-reload-inline-comments=true" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/6c0981174e94142364564819dc0d1413-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c40bc5418803b02d73fe950f4eb70641/_/download/contextbatch/css/page,viewcontent,atl.general,main/batch.css?conditionalComment=lt+IE+9&amp;highlightactions=true&amp;locale=en-GB" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/3.6/_/download/batch/confluence.extra.information:information-plugin-adg-styles/confluence.extra.information:information-plugin-adg-styles.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/1.1.3/_/download/batch/com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit/com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit.css" media="all">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/1.1.3/_/download/batch/com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit/com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit.css?ieonly=true" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/3.5.5/_/download/batch/confluence.macros.advanced:children-resource/confluence.macros.advanced:children-resource.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/4.2.9/_/download/batch/com.refinedwiki.confluence.plugins.theme.original:batch/com.refinedwiki.confluence.plugins.theme.original:batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/4.2.9/_/download/batch/com.refinedwiki.confluence.plugins.theme.original:print-style/com.refinedwiki.confluence.plugins.theme.original:print-style.css?content-type=text%2Fcss&amp;media=print" media="print">
+<script type="text/javascript" src="/s/af67bd305bb497ab539018bf3f3c2336-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/76/_/download/superbatch/js/batch.js?build-number=5781&amp;locale=en-GB" ></script>
+<script type="text/javascript" src="/s/22fb7be8d5e5fe1fa2a119ecd6090b56-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/c40bc5418803b02d73fe950f4eb70641/_/download/contextbatch/js/page,viewcontent,atl.general,main/batch.js?highlightactions=true&amp;locale=en-GB&amp;hostenabled=true&amp;flavour=VANILLA&amp;quick-reload-inline-comments=true" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/004b0774fbf9594b1b10b08ac0dada78/_/download/contextbatch/js/atl.comments/batch.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/1.1.3/_/download/batch/com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit/com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit.js" ></script>
+<script type="text/javascript" src="/s/2f827b242ab1e78368a4837542922e31-CDN/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/4.2.9/_/download/batch/com.refinedwiki.confluence.plugins.theme.original:batch/com.refinedwiki.confluence.plugins.theme.original:batch.js?locale=en-GB" ></script>
+<link type="text/css" rel="stylesheet" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/1/_/styles/colors.css?spaceKey=WIKI" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/4.2.9/_/download/resources/com.refinedwiki.confluence.plugins.theme.original:RefinedWikiTheme50/default-theme.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/1/_/styles/theme-colors.css?completeModuleKey=com.refinedwiki.confluence.plugins.theme.original%3ARefinedWikiTheme50&amp;stylesheetName=color-scheme.css&amp;spaceKey=WIKI" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/1/_/styles/custom.css?spaceKey=WIKI" media="all">
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
+</script>
+
+
+        
+    
+
+        
+
+
+    
+	
+		
+
+
+
+<script>
+	
+			if (typeof RW === 'undefined') {
+    	var RW = {};
+	}
+	
+		RW.confluenceVersion = 5.71; 
+	
+		
+	
+		RW.isConfluenceAdministrator = false
+	
+				var contextPath = '';
+	
+					RW.scrollSearchActive = true;
+	
+				RW.userDashboardRedirection = true;
+		
+	
+			
+		var originalTheme = RW;
+	
+		RW.cacheSettings = {};
+	RW.cacheSettings.params = {};
+	RW.cacheSettings.lastChange = {}
+
+	    
+    		RW.cacheSettings.params['footer'] = true;
+    	    		RW.cacheSettings.params['category'] = true;
+    	    		RW.cacheSettings.params['globalmenu'] = true;
+    	    		RW.cacheSettings.params['usercategory'] = false;
+    	    		RW.cacheSettings.params['docache'] = false;
+    	            			RW.cacheSettings.lastChange['footer'] = 1438457573651;
+        			RW.cacheSettings.lastChange['category'] = 1439764368351;
+        			RW.cacheSettings.lastChange['globalmenu'] = 1438457573651;
+        			RW.cacheSettings.lastChange['usercategory'] = 1439764368351;
+    </script>
+
+
+
+
+	
+				
+	
+<!--[if !IE]><!-->
+ 	<style type="text/css">
+		.rw_toolbar_menu li .rw_toolbar_dropdown li a:hover
+		{
+			color: #ffffff;	
+			background: #3b73af;
+		}
+		
+		/* Scroll office fix */
+		#com-k15t-confluence-scroll-pdf-launcher:hover
+		{
+			color: #ffffff;	
+			background: #3b73af;
+		}
+	</style>
+<!--<![endif]-->
+
+		
+<!--[if IE 6]>
+	<link type="text/css" rel="stylesheet" href="/download/resources/com.refinedwiki.confluence.plugins.theme.original/styles/legacy/ie6-fix.css" media="all"/>
+<![endif]-->
+
+<!--[if IE 7]>
+	<link type="text/css" rel="stylesheet" href="/download/resources/com.refinedwiki.confluence.plugins.theme.original/styles/legacy/ie7-fix.css" media="all"/>
+<![endif]-->
+
+
+
+
+
+
+        	
+    	    	    			
+    	    				<link type="text/css" rel="stylesheet" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/4.2.9/_/download/resources/com.refinedwiki.confluence.plugins.theme.original:batch/designs/edge/css/style.css" media="all"/>
+			
+				
+				        					        		<script type="text/javascript" src="/download/resources/com.refinedwiki.confluence.plugins.theme.original/designs/edge/js/script.js" ></script>
+    						
+		    	    		
+    		    		    			    			<link type="text/css" rel="stylesheet" href="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/4.2.9/_/download/resources/com.refinedwiki.confluence.plugins.theme.original:batch/designs/edge/css/blue.css" media="all"/>
+    			
+    		    
+    	    
+
+
+
+
+<style type="text/css">
+	/* Key navigation in popup */
+	li.rw_selected a { background: #fd9602 !important; border-color: #fd9602 !important; }
+	li.rw_selected * { color: #fff !important; }
+	li.rw_selected a span.rw_item_left { background: none !important; border-color:none !important;}
+	
+	/* Key navigation category menu */
+	#rw_category_menu ul li.rw_active.rw_selected a > span { border-color: #fd9602; }
+	
+	/* Key navigation for page tree */
+	.rw_pagetree_list li.rw_selected > div.rw_icon_content { background: #fd9602 !important; border-color: #fd9602 !important; }
+	.rw_pagetree_list li.rw_selected > div.rw_icon_content a { color:#fff !important;}
+	.rw_pagetree_list li.rw_selected a {background: none !important; border-color: none; color:#333 !important;}
+	
+	/* Key navigation for activity popup */
+	li.rw_selected div.rw_no_link { background: #fd9602 !important; border-color: #fd9602 !important; }
+	
+	/* Main Key Navigation */
+	.rw_keynavigation_row > div.rw_selected { background: #fd9602 !important; color:#fff !important;}
+	.rw_keynavigation_container > div.rw_keynavigation_empty_item { background: none;}
+	
+	/* Menu keynav exceptions */
+	#notifications-anchor.rw_selected {background: #fd9602 !important; color:#fff !important;}
+	
+	
+		
+	        
+        
+        #rw_main #rw_create_button .aui-button.aui-button-primary.aui-style 
+        {
+            background-image: -moz-linear-gradient(top, #3b7fc4, #336ea9);
+            background-image: -ms-linear-gradient(top,  #3b7fc4, #336ea9);
+            background-image: -webkit-linear-gradient(top,  #3b7fc4, #336ea9);
+            background-image: -o-linear-gradient(top,  #3b7fc4, #336ea9);
+            background-image: linear-gradient(top,  #3b7fc4, #336ea9);
+            text-shadow: 0 1px 0 #295989;
+        }
+        
+    	#rw_main #rw_create_button .aui-button.aui-button-primary.aui-style 
+    	{
+    		border-color: #3b7fc4;
+    	}
+        #rw_main #rw_create_button .aui-button.aui-button-primary.aui-style:hover, 
+        #rw_main #rw_create_button .aui-button.aui-button-primary.aui-style:focus 
+        {
+            background-image: -moz-linear-gradient(top, #4796e6, #3773af);
+            background-image: -ms-linear-gradient(top, #4796e6, #3773af);
+            background-image: -webkit-linear-gradient(top, #4796e6, #3773af);
+            background-image: -o-linear-gradient(top, #4796e6, #3773af);
+            background-image: linear-gradient(top, #4796e6, #3773af);
+        }
+		
+	
+				
+	
+	
+    	        #com-atlassian-confluence #inline-dialog-notifications-miniview
+        {
+            position:fixed;
+            top: 57px !important;
+            right: 80px !important;
+			margin: 0px !important;
+        }
+        #com-atlassian-confluence #inline-dialog-notifications-miniview:after,
+        #com-atlassian-confluence #inline-dialog-notifications-miniview:before
+        {
+            border: medium solid transparent;
+            bottom: 100%;
+            content: " ";
+            height: 0;
+            pointer-events: none;
+            position: absolute;
+            width: 0;
+        }
+        #com-atlassian-confluence #inline-dialog-notifications-miniview:after
+        {
+            
+            border-color: rgba(237, 237, 237, 0) rgba(237, 237, 237, 0) rgba(237, 237, 237, 0) #fff;
+            border-width: 8px;  
+            top:22px;
+            right: -15px;   
+        }
+        #com-atlassian-confluence #inline-dialog-notifications-miniview:before
+        {
+            border-color: rgba(221, 221, 221, 0) rgba(221, 221, 221, 0) rgba(221, 221, 221, 0) #ddd;
+            border-width: 10px;  
+            top: 20px;
+            right: -19px;
+        }
+        #com-atlassian-confluence #inline-dialog-notifications-miniview #arrow-notifications-miniview
+        {
+            display:none;
+        }
+		
+</style>
+	
+    <link href='https://fonts.googleapis.com/css?family=Karma:300,400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Scada' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    
+                <link rel="canonical" href="https://wiki.openpilot.org/display/WIKI/OPLM+Vehicle+Control+Link">
+        <link rel="shortlink" href="https://wiki.openpilot.org/x/64B9">
+    <meta name="wikilink" content="[WIKI:OPLM Vehicle Control Link]">
+    <meta name="page-version" content="18">
+
+    
+        
+    
+	
+</head>
+    
+<body             onload="placeFocus()"
+     id="com-atlassian-confluence" class="RefinedWikiTheme50 RefinedWikiTheme50  aui-layout aui-theme-default  confluence_5  lighter-editor "> 
+
+
+        
+            <div id='stp-licenseStatus-banner'></div>
+    <ul id="assistive-skip-links" class="assistive">
+    <li><a href="#rw_page_title">Skip to content</a></li>
+    <li><a href="#rw_page_breadcrumbs">Skip to breadcrumbs</a></li>
+    <li><a href="#rw_category_menu">Skip to header menu</a></li>
+    <li><a href="#navigation">Skip to action menu</a></li>
+    <li><a href="#rw_search_query">Skip to quick search</a></li>
+</ul>
+
+
+<div id="page">
+<div id="full-height-container">
+   
+      <div id="header" style="display:none;"></div>
+   
+   <div id="header-precursor">
+        <div class="cell">
+            <!-- BACK TO TOP SMARTLINK -->
+
+<img id="topgif" onclick="window.scrollTo(0,0)" style="cursor:pointer;display:none; position:fixed; bottom:80px; right:164px; z-index:9999" border="0" src="https://www.openpilot.org/wp-content/uploads/2014/11/backtotopoff1.png">
+
+
+<script type="text/javascript">
+$('#topgif').hover(
+	function(){
+		$('#topgif').attr("src","http://www.openpilot.org/wp-content/uploads/2014/11/backtotopon1.png");
+}, function(){
+		$('#topgif').attr("src","https://www.openpilot.org/wp-content/uploads/2014/11/backtotopoff1.png");
+});
+
+window.onscroll = function() {
+    setTimeout(function(){
+        (document.body.scrollTop >= 800 || document.documentElement.scrollTop >= 800) ? $('#topgif').fadeIn() : $('#topgif').fadeOut();
+    },500);
+};
+</script>
+
+<!-- END BACK TO TOP SMARTLINK -->
+                        </div>
+    </div>
+	
+						
+		
+				
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+		
+		
+								
+
+					<div 
+	id="rw_side_menu" 
+	class="rw_theme_dark" 
+	data-mode="responsive" 
+	>
+	<div id="rw_side_menu_handle" class="rw_handle"></div> 
+    <div id="rw_side_menu_container">
+		<ul>
+	                                				
+        
+        
+<li><a  id="login-link" href="/login.action?os_destination=%2Fdisplay%2FWIKI%2FOPLM%2BVehicle%2BControl%2BLink" class="  user-item login-link "      title="" >
+        Log in
+</a></li>
+                        			
+								
+		
+        									
+	    				    			
+	    	<li><a id="help-menu-link" href="#" title="Help" class="rw_has_dd rw_tooltip" data-dd="help-menu-link-dd" data-tooltip="Help">
+        <span class="rw_item_icon aui-iconfont-help"></span>
+    </a>
+    <nav id="help-menu-link-dd" class="rw_side_menu_dd" data-owner="help-menu-link">
+                    <div class="rw_section">
+                <ul  id="help-menu-link-leading" class="section-leading first">
+                                            
+    
+        
+<li><a  id="confluence-help-link" href="https://docs.atlassian.com/confluence/docs-57/Getting+Help+And+Support" class="   "      title="Visit the Confluence documentation home"  target="_blank"
+>
+        Online Help
+</a></li>
+                                            
+    
+            
+<li><a  id="keyboard-shortcuts-link" href="#" class="   "      title="View available keyboard shortcuts" >
+        Keyboard Shortcuts
+</a></li>
+                                            
+    
+        
+<li><a  id="feed-builder-link" href="/dashboard/configurerssfeed.action" class="   "      title="Create your custom RSS feed." >
+        Feed Builder
+</a></li>
+                                            
+    
+        
+<li><a  id="whats-new-menu-link" href="https://docs.atlassian.com/confluence/docs-57/whatsnew/iframe" class="   "      title="" >
+        What’s new
+</a></li>
+                                            
+    
+            
+<li><a  id="gadget-directory-link" href="#" class="  user-item administration-link "      title="Browse gadgets provided by Confluence" >
+        Available Gadgets
+</a></li>
+                                            
+    
+        
+<li><a  id="confluence-about-link" href="/aboutconfluencepage.action" class="   "      title="Get more information about Confluence" >
+        About Confluence
+</a></li>
+                                    </ul>
+            </div>
+            </nav>
+	</li>
+    				    </ul>
+		<ul>
+			<li>	
+				<a id="rw_search_popup_button" title="Search">
+        			<span class="rw_item_icon rw_iconfont_search"></span>
+        		</a>
+			</li>
+		</ul>	
+	
+    </div>
+    <div class="rw_done_cover"></div> 
+</div>
+				<div id="rw_wrapper" class="rw_popup_design_default rw_menu_layout_v2 rw_has_side_menu ">
+			
+						
+
+
+                                
+            	
+	    
+		
+			
+			<div id="rw_main">
+				
+								
+											
+<!-- A banner on top of the page -->
+<div id="edge_design_top" class="rw_no_print">
+        
+   	<div id="edge_design_top_right" >
+        
+				   		
+	    	    	<div id="rw_search_container">
+		<div id="rw_search" class="rw_search">
+			
+						<form style="width:0px; height:0px; overflow:hidden; "><input type="text" name="hack" onfocus="this.blur()" /></form>
+			    
+			<form id="rw_search_form" class="rw_search_form" method="get" action="/dosearchsite.action">
+		   		<label for="rw_search_query" class="assistive">Quick Search</label>
+				<input class="rw_search_query" id="rw_search_query" type="text" accessKey="search-pages-action.accesskey" autocomplete="off" name="queryString" size="25" />
+		    
+		   		<div style="clear:both;"></div>
+		        <div id="rw_search_result_container" class="rw_search_result_container rw_corners" style="display:none;">
+		        	
+		        </div>
+		
+		        <fieldset class="hidden parameters">
+		            <input type="hidden" id="quickNavEnabled" value="true" />
+		            		        </fieldset>
+		    </form>	
+	    </div>
+	</div>
+          
+	    	    				
+	
+		                    
+  	</div>     	
+ 
+	  		<div id="edge_design_top_left">
+ 
+						        					
+		    		    		   			    		
+
+
+
+
+<div id="rw_logo_container" class="  ">
+	
+	
+			<a href="/homepage.action">
+			<img src="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/_/images/logo/confluence-logo.png" />
+    	</a>
+			
+		</div>
+		    	  	</div>
+	        
+  	<div 
+  		id="edge_design_top_middle" 
+  		  	>
+                
+	    	    	
+			
+		<div id="rw_category_menu" 
+		class=" rw_version_2  "
+		>
+	
+					<div id="rw_category_menu_scroll_container">
+					<ul>
+								<li id="rw_dashboard_link" class="rw_first">
+					<a  
+						 title="Dashboard ( Type 'n' )" 												>
+						<span class="rw_item_left">
+							
+																					
+							<span>
+																	Dashboard
+															</span>
+						</span>
+						<span class="rw_item_right"></span>
+					</a>
+				</li>	
+			</ul>
+					</div><!-- # rw_category_menu_scroll_container -->
+			</div>		
+	
+	
+		<div id="rw_category_dropdown_wrapper" class="rw_popup rw_corners" style="display:none;">
+		<div id="rw_category_dropdown_users"></div>
+		<div id="rw_category_dropdown_container" class="rw_popup_container"></div>
+		<div id="rw_category_dropdown_loader" class="rw_popup_loader">
+			<div class="rw_popup_loader_image"></div>
+		</div>
+	</div>
+	
+		<script type="text/x-template" id="rw_category_menu_right_button_template">
+	 	<div id="rw_category_menu_right_container" style="display:none;">
+		 	<a id="rw_category_menu_right_button" class="rw_corners">
+		 		<span class="rw_icon_container_16"></span>
+		 	</a>
+		 </div>
+	</script>
+	
+		<script type="text/x-template" id="rw_category_menu_left_button_template">
+		<div id="rw_category_menu_left_container" style="display:none;">	 		
+	 		<a id="rw_category_menu_left_button" class="rw_corners">
+	 			<span class="rw_icon_container_16"></span>
+	 		</a>
+ 		</div>
+	</script>
+
+		<script type="text/x-template" id="rw_category_menu_item_template">
+		<li>
+			<a>
+				<!-- rw_item_left & rw_item_right is deprecated since RWOT 3.3 -->
+				<span class="rw_item_left">
+					<span class="rw_item_logo"></span>
+					<span class="rw_item_name"></span>
+					<span class="rw_item_icon"></span>
+				</span>
+				<span class="rw_item_right"></span>
+			</a>
+		</li>
+	</script>
+	
+	
+		<div id="rw_category_menu_parameters" style="display:none;">
+	
+				<div id="rw_category_dd_disabled">false</div>
+		<div id="rw_category_dd_layout">dynamic_column</div>
+		<div id="rw_sub_category_collapsed">false</div>
+		<div id="rw_show_category_logo">false</div>
+		<div id="rw_exclude_archived_spaces">false</div>
+		<div id="rw_show_space_logo">false</div>
+		<div id="rw_show_space_icon">true</div>
+		<div id="rw_min_column_width">340</div>
+		<div id="rw_active_category_key"></div>
+		<div id="rw_is_dashboard"></div>
+		<div id="rw_manual_permissions">false</div>
+		<div id="rw_disable_subdashboards">false</div>
+	</div>
+                
+  	</div>                  
+	
+</div> <!-- #edge_design_top -->
+
+<!-- This div tag wrapps the wiki content. 
+The Closing tag is located in the bottom section -->
+<div id="edge_design_content" >
+<div style="clear:both;"></div>
+								
+					
+										
+                
+                                	
+        	            	<div id="rw_menu_bar_wrapper" >
+    		                		
+    		    			<div id="rw_menu_bar_icon" >
+    					
+    				<div class="space-logo " data-key="WIKI" data-name="OpenPilot Documentation" data-entity-type="confluence.space">
+            <a><img class="logo space custom" src="/download/attachments/361094/WIKI?version=1&amp;modificationDate=1413407762000&amp;api=v2" alt=""></a>
+        </div>    				
+    			</div>
+    			<div id="rw_menu_bar_content">
+    		        
+    <div id="rw_menu_bar" class="rw_corners" >
+    	
+    	    	
+    <div id="navigation" class="view">
+        <fieldset class="hidden parameters">
+            <input type="hidden" id="pageId" value="8225003">
+        </fieldset>
+        <ul id="rw_content_menu" class="rw_toolbar_menu">
+            
+			
+							                        
+        <li class="normal ajs-menu-item">
+        <a id="action-menu-link" class="action aui-dropdown2-trigger-arrowless ajs-menu-title aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation">
+            <span>
+                                Tools
+            </span>
+        </a>         <div id="action-menu" class="aui-dropdown2 aui-style-default">
+                            <ul  id="action-menu-primary"                     class="section-primary first aui-dropdown2-section">
+                                            <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-attachments-link" href="/pages/viewpageattachments.action?pageId=8225003" rel="nofollow" class="action-view-attachments"  accessKey="t"  title="View Attachments">
+                <span>
+                        A<u>t</u>tachments (11)
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-view-history-link" href="/pages/viewpreviousversions.action?pageId=8225003" rel="nofollow" class="action-view-history"   title="">
+                <span>
+                        Page History
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-page-permissions-link" href="/pages/viewinfo.action?pageId=8225003" rel="nofollow" class="action-page-permissions"   title="Edit restrictions">
+                <span>
+                        Restrictions
+        </span>    </a>
+</li>
+                                </ul>
+                            <ul  id="action-menu-secondary"                     class="section-secondary aui-dropdown2-section">
+                                            <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-page-info-link" href="/pages/viewinfo.action?pageId=8225003" rel="nofollow" class="action-view-info"   title="">
+                <span>
+                        Page Information
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+            
+                                            
+    
+    
+    <a  id="view-resolved-comments" href="#" rel="nofollow" class=""   title="">
+                <span>
+                        Resolved comments
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="link-to-page-link" href="/pages/viewinfo.action?pageId=8225003" rel="nofollow" class=""   title="Link to this Page">
+                <span>
+                        Link to this Page…
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-in-hierarchy-link" href="/pages/listpages-dirview.action?key=WIKI&amp;openId=8225003#selectedPageInHierarchy" rel="nofollow" class=""   title="">
+                <span>
+                        View in Hierarchy
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-view-source-link" href="/plugins/viewsource/viewpagesrc.action?pageId=8225003" rel="nofollow" class="action-view-source popup-link"   title="">
+                <span>
+                        View Source
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-export-pdf-link" href="/spaces/flyingpdf/pdfpageexport.action?pageId=8225003" rel="nofollow" class=""   title="">
+                <span>
+                        Export to PDF
+        </span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-export-word-link" href="/exportword?pageId=8225003" rel="nofollow" class="action-export-word"   title="">
+                <span>
+                        Export to Word
+        </span>    </a>
+</li>
+                                </ul>
+                    </div>
+    </li>
+    			        </ul>
+    </div>
+
+    		
+    	    	    	    	    	    	
+    	    	    	
+    	
+    	    	    	    	    	
+    
+    	    	        	
+        	        	        		
+        		<ul id="rw_space_menu" class="rw_toolbar_menu">
+            		<li>
+            			<a href="/display/WIKI" title="OpenPilot Documentation" class="rw_primary">
+            				<span class="rw_no_icon">
+            					OpenPilot Documentation
+            				</span>	
+            			</a>
+            		</li>
+    				
+    				    				    				
+    				        				
+				 
+		
+	
+	
+	        <li class="normal ajs-menu-item">
+        <a id="browse-space-menu-link" class="ajs-menu-title aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="browse-space-menu" ><span class="rw_item_icon rw_iconfont_menu"></span></a> 
+        	<div id="browse-space-menu" class="aui-dropdown2 aui-style-default rw_style_padded">
+                    <ul  id="browse-space-menu-leading"                 class="section-leading first aui-dropdown2-section">
+                                    
+
+    
+        
+    <li><a  href="/collector/pages.action?key=WIKI"  class="wiki"   title="Pages">
+        		
+								<span class="rw_item_icon rw_iconfont_pages"></span>
+        <span class="rw_item_content">Pages</span>
+    </a></li>
+                                    
+
+    
+        
+    <li><a  href="/pages/viewrecentblogposts.action?key=WIKI"  class="blog"   title="Blog">
+        		
+								<span class="rw_item_icon rw_iconfont_feed"></span>
+        <span class="rw_item_content">Blog</span>
+    </a></li>
+                            </ul>
+				
+				<ul class="aui-dropdown2-section" >
+			
+									
+						<li>
+				<a title="Space Tools" href="/spaces/spacetools.action?key=WIKI">
+					<span class="rw_item_icon aui-iconfont-configure"></span>
+					<span class="rw_item_content">Space Tools</span>    
+				</a>
+			</li>
+			
+									
+					</ul>
+	</div>
+    </li>
+		
+        			    			</ul>
+    			
+        	    		
+    		    			
+	            
+    		
+    	    		
+    </div> <!-- #rw_menu_bar -->
+    
+        	    		</div>
+    	    	</div> <!-- #rw_menu_bar_wrapper -->
+		
+	
+					
+					
+			
+		
+			<div style="clear:both;"></div>
+		
+		    <div id="main" >
+		           
+		       											
+		
+		        
+		
+							 							
+		        
+    
+
+        
+
+
+
+
+        <!-- this is page.vmd -->
+
+
+
+
+
+
+    
+
+		
+		
+	
+		
+			
+	
+			    	    
+
+
+    
+    
+        
+    
+    
+                    
+    
+
+    
+
+
+
+
+
+<!-- 
+	#rw_page_container is @deprecated @since RWOT 3.1 this tag will be 
+	removed in future version of this theme. Use #rw_wrapper as parent 
+	selected in your CSS code. 
+-->
+	<div id="rw_page_container">
+
+	<!--
+		When styling RefinedWiki Original Theme, use .rw_content_section instaed of #content
+	-->
+			<div class="rw_content_section page view">
+		    
+
+<div id="action-messages">
+                        </div>
+
+
+
+        <script type="text/x-template" title="searchResultsGrid">
+    <table class="aui">
+        <thead>
+            <tr class="header">
+                <th class="search-result-title">Page Title</th>
+                <th class="search-result-space">Space</th>
+                <th class="search-result-date">Updated</th>
+            </tr>
+        </thead>
+    </table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+    <p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+    <tr class="search-result">
+        <td class="search-result-title"><a href="{1}" class="content-type-{2}"><span>{0}</span></a></td>
+        <td class="search-result-space"><a class="space" href="/display/{4}/" title="{3}">{3}</a></td>
+        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
+    </tr>
+</script>	
+	    	    
+	    	
+	    	
+			                    
+    
+	
+	        	            
+	
+						
+			
+						
+
+
+
+
+
+
+	
+						<div id="rw_splitter"><div id="rw_splitter_handle" class="rw_hidden"></div></div>
+					
+	
+	
+	<div id="rw_left_column" class="rw_custom_section rw_corners wiki-content">	
+		    
+    
+<div class="rw_page_tree_wrapper">
+    	<div class="rw_param_start_page_id" style="display:none" data-value=""></div>
+    <div class="rw_param_theme" style="display:none" data-value=""></div>
+	<div class="rw_param_search" style="display:none" data-value=""></div>
+	<div class="rw_param_expand_collapse" style="display:none" data-value=""></div>
+	<div class="rw_param_page_id" style="display:none" data-value="8225003"></div>
+	<div class="rw_param_space_key" style="display:none" data-value="WIKI"></div>
+	<div class="rw_param_space_admin" style="display:none" data-value="false"></div> 	<div class="rw_param_space_shortcuts" style="display:none" data-value=""></div>
+	
+			
+	<div id="rw_sidebar_icon_quicklinks" class="rw_sidebar_icon rw_hidden" data-tooltip="Space shortcuts"></div>
+	<div id="rw_sidebar_icon_pagetree" class="rw_sidebar_icon" data-tooltip="Pagetree"></div>
+	
+</div>
+
+<script type="text/x-template" id="rw_page_tree_wrapper_template">
+	<div class="rw_pagetree rw_corners">
+		<div class="rw_expand_collapse">
+            <a href="#" class="rw_expand_all">Expand all</a>
+            <a href="#" class="rw_collapse_all">Collapse all</a>
+        </div>
+	</div>
+</script>
+
+<script type="text/x-template" id="rw_page_item_container_template">
+	<li>
+		<div class="rw_icon_content">
+    		<div class="rw_item_icon">
+                <span></span>
+    	    </div>
+    	    <div class="rw_item_content">
+    			<a></a>
+    	    </div>
+		</div>
+    </li>
+</script>
+
+<script type="text/x-template" id="rw_page_children_list_container">
+	<ul class="rw_pagetree_list" >
+            
+    </ul>
+</script>
+	</div>
+	
+	
+<div id="rw_main_column" class="rw_has_left_column">	
+	
+	<!-- 
+		#rw_page_right is @deprecated @since RWOT 3.1 the id of this tag will be 
+		removed in future version of this theme. NOTE: The div-tag will remain 
+		it's just the ID which will be removed.
+	-->
+	<div id="rw_page_right" class="rw_content">
+		
+				<div class="rw_custom_section">
+			
+									
+												
+			
+
+    
+	
+	    	        
+<ul id="rw_page_breadcrumbs" class="rw_inline_menu">
+	<li class="rw_more_breadcrumbs">
+		<a class="rw_button rw_small rw_discrete rw_breadcrumbs_link" id="rw_breadcrumbs_link" title='Show breadcrumbs'>
+			<span></span>
+		</a>
+	</li>
+	
+		
+			
+    	    	    		<li >
+        		<a href="/display/WIKI/OPLink+and+Bluetooth+Setup" title="OPLink and Bluetooth Setup" >OPLink and Bluetooth Setup</a>
+           	</li>
+				
+	
+		
+</ul>
+		
+	
+	
+	
+                
+	<div id="rw_page_toolbar">
+                <a id="rw_open_fullscreen" class="rw_icon_button" title="Open page in fullscreen ( Type 'f' )"><span class="rw_icon_container_20 rw_open_fullscreen"></span></a>
+<a id="rw_close_fullscreen" class="rw_icon_button_active" style="display:none;"  title="Exit fullscreen mode ( Type 'esc' )"><span class="rw_icon_container_20 rw_close_fullscreen"></span></a>
+        
+                         
+          	          	<script>
+          		RW.leftColumnState = "$pageInfoBean.leftColumnState";	  		
+          	</script>
+          	<a id="rw_hide_left_column" class="rw_icon_button rw_hide_left_column rw_margin_right_5px" title="Collapse left column ( Type '[' )"><span class="rw_icon_container_20 rw_hide_left_column"></span></a>
+        	<a id="rw_show_left_column" class="rw_icon_button_active rw_show_left_column rw_margin_right_5px" style="display:none;" title="Expand left column ( Type '[' )"><span class="rw_icon_container_20 rw_show_left_column"></span></a>
+        
+            	  	
+                  	          	<div id="abstractPageIdVar" style="display:none;">8225003</div>
+          	<a id="rw_attachment_dialog_button" class="rw_icon_button rw_margin_right_5px" title="Show attachments ( Type 'a' )" href="#"  >	
+	<span class="rw_icon_container_20 rw_open_attachments"></span>
+</a>		
+				
+                
+                
+
+<div id="rw_page_optional_functions" class="rw_right">
+	
+			
+		</div>
+	
+	</div>	
+
+
+	<h1 id="rw_page_title" class="rw_page_title">
+		<span id="title-text">
+			OPLM Vehicle Control Link
+		</span>
+	</h1>
+
+    
+
+
+
+    <div style="clear:both;"></div>
+	
+		<div id="attachments_wrapper" style="display:none;">
+	</div>
+	<div id="attachments_loader" class="rw_macro_loader" style="display:none;margin-top:15px;">
+		<div class="rw_loader_16_image"></div>
+	</div>	
+	
+		
+									
+		</div>
+
+		<div style="clear:both;"></div>
+							
+		                        		
+		<div id="content" class="page view">
+						<article>
+		        <div id="main-content" class="wiki-content">
+		                           
+        <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="OPLMVehicleControlLink-Summary">Summary</h1><p>These instructions will walk you through on how to use your existing OPLink telemetry connection for vehicle control. The instructions consist of hardware and software side. Set up the hardware side first and then do the necessary hardware configuration changes. If you have not done binding yet for the OPLink modules, do that first using <a href="/display/WIKI/OPLM+Binding+and+Basic+Telemetry">OPLM Binding and Basic Telemetry</a> page instructions, and return to this tutorial after that.</p><p>For <strong>Revolution</strong>, no hardware configuration is required at the flight controller side. For CC, CC3D and Atom, a PPM wire has to be connected from the OPLink module to the flight controller. The instructions for how to prepare those flight controllers for control link can be found on the <a href="/display/WIKI/OPLM+CC+-+CC3D+-+Atom+Hardware+Setup">OPLM CC - CC3D - Atom Hardware Setup</a> page. If you do not have the PPM wire connected, do it now, and then return to this page.</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="850" src="/download/attachments/8225003/Revo-TX-with-OPLM-Control.png?version=1&amp;modificationDate=1427709690000&amp;api=v2" data-image-src="/download/attachments/8225003/Revo-TX-with-OPLM-Control.png?version=1&amp;modificationDate=1427709690000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="9764878" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Revo-TX-with-OPLM-Control.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="8225003" data-linked-resource-container-version="18"></span></p><p> </p><p> </p><h1 id="OPLMVehicleControlLink-Transmittersidehardwaresetup">Transmitter side hardware setup</h1><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="500" src="/download/attachments/8225003/TX-with-OPLM-TX-module.jpg?version=1&amp;modificationDate=1427709710000&amp;api=v2" data-image-src="/download/attachments/8225003/TX-with-OPLM-TX-module.jpg?version=1&amp;modificationDate=1427709710000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="9764880" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="TX-with-OPLM-TX-module.jpg" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="8225003" data-linked-resource-container-version="18"></span></p><p> </p><h2 id="OPLMVehicleControlLink-OPLinkwiring">OPLink wiring</h2><p><span class="confluence-embedded-file-wrapper image-right-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail image-right" width="300" src="/download/thumbnails/8225003/OPLM-TX-pinout.png?version=1&amp;modificationDate=1427709741000&amp;api=v2" data-image-src="/download/attachments/8225003/OPLM-TX-pinout.png?version=1&amp;modificationDate=1427709741000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="9764881" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="OPLM-TX-pinout.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="8225003" data-linked-resource-container-version="18"></span>You will need to supply power and control data from the transmitter to the OPLink module. The OPLink Mini module requires three wires for normal operation with a transmitter.</p><ul><li>Ground</li><li>Voltage (recommended 5V - 8.4V)</li><li>PPM Out from the transmitter</li></ul><p> </p><p>The voltage wire, Vcc in the picture, is a bit tricky. A regular transmitter usually uses 3S LiPo for power and it outputs that 3S voltage to the trainer port and radio module connections. That voltage is too high to be directly used. Y<span>ou should use a linear regulator or UBEC to bring the voltage down to 5 volts</span></p><p>The PPM wire can be directly connected and does not need anything in between the OPLink module and transmitter. You can cut a regular OpenPilot 4-pin serial cable in half and use that to connect the wires to your OPLink module. The blue wire in the 4-pin cable is not used for this application, so you can remove it.</p><div class="confluence-information-macro confluence-information-macro-information">
+            <p class="title">OPLink PPM input</p>
+    
+            <span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span>
+    
+    <div class="confluence-information-macro-body"><p>OPLink module is programmed to accept PPM sum between 4 and 8 channels. Recommended PPM frame length is 22,5 milliseconds.</p></div>    </div>
+<div class="confluence-information-macro confluence-information-macro-warning">
+            <p class="title">OPLink input voltage</p>
+    
+            <span class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"></span>
+    
+    <div class="confluence-information-macro-body"> Do not input higher than 8.4 volts (2S) to the OPLink module! Higher voltage will cause permanent damage to the electronics.</div>    </div>
+<h3 id="OPLMVehicleControlLink-PinoutsforconnectingOPLinktothetransmitter">Pinouts for connecting OPLink to the transmitter</h3><p>Here are two pinout diagrams that might help to connect the OPLink module to your transmitter. The JR type module bay outputs PPM, which can be connected directly to your OPLink module. A 5V UBEC is needed between +BAT and GND. You can connect the UBEC output to OPLink Vcc and GND. The +6V wire can be used to power the OPLink directly if your radio has it, but most radios don't.</p><p>The Futaba and Hitec trainer ports have similar pins that you can use, called GROUND, PPM<sub>out</sub> and V<sub>battery</sub> in the diagram. A nice trick is to cut a trainer cable in half and use that to make a neat connection to the transmitter. If you cut a trainer cable, you'll have to identify the correct wires with a multimeter.</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="250" src="/download/attachments/8225003/TX-JR-pinout.jpg?version=1&amp;modificationDate=1427709789000&amp;api=v2" data-image-src="/download/attachments/8225003/TX-JR-pinout.jpg?version=1&amp;modificationDate=1427709789000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="9764882" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="TX-JR-pinout.jpg" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="8225003" data-linked-resource-container-version="18"></span><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="500" src="/download/attachments/8225003/futabatrainer_cut.png?version=1&amp;modificationDate=1427709427000&amp;api=v2" data-image-src="/download/attachments/8225003/futabatrainer_cut.png?version=1&amp;modificationDate=1427709427000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="8192056" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="futabatrainer_cut.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="8225003" data-linked-resource-container-version="18"></span></p><p> </p><p> </p><h2 id="OPLMVehicleControlLink-MountingtheOPLinkmoduletothetransmitter">Mounting the OPLink module to the transmitter</h2><p><span class="confluence-embedded-file-wrapper image-right-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail image-right" width="250" src="/download/thumbnails/8225003/IMG_20141207_134926_preview_featured.jpg?version=1&amp;modificationDate=1427709389000&amp;api=v2" data-image-src="/download/attachments/8225003/IMG_20141207_134926_preview_featured.jpg?version=1&amp;modificationDate=1427709389000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="8192055" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="IMG_20141207_134926_preview_featured.jpg" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="8225003" data-linked-resource-container-version="18"></span></p><p style="text-align: left;">There are many ways to attach the OPLink mini module to your transmitter. The options listed here are just ideas and possible inspiration for the job.</p><ul><li>You can install the OPLink module inside an existing JR or Futaba transmitter case</li><li>3D print a JR module: <a href="http://www.thingiverse.com/thing:585245" class="external-link" rel="nofollow">http://www.thingiverse.com/thing:585245</a></li><li>Heat shrink the module and attach it to the transmitter with velcro</li><li>Install the OPLink and UBEC inside the module bay <a href="https://forums.openpilot.org/topic/37839-oplink-connections-a-how-to-guide/#entry308730" class="external-link" rel="nofollow">without a case</a><a href="https://forums.openpilot.org/topic/37839-oplink-connections-a-how-to-guide/#entry308730" class="external-link" rel="nofollow"></a></li><li>Invent a new method and contact a forum moderator to add your idea here!</li></ul><p> </p><p> </p><p> </p><hr /><p> </p><h1 id="OPLMVehicleControlLink-OPLinkconfigurationforcontrollink">OPLink configuration for control link</h1><p>The hard part is now done. There are only a few configuration changes needed to enable vehicle control when OPLink bind has already been established.</p><h2 id="OPLMVehicleControlLink-Groundmoduleconfiguration">Ground module configuration</h2><p>To enable the necessary PPM information in addition to the basic telemetry data, there are just a few steps:</p><ol><li>Connect to the ground module with USB</li><li>From the <strong>Configuration</strong> tab &gt; <strong>OPLink</strong> page &gt; <strong>Flexi Port</strong> drop down menu &gt; select <strong>PPM</strong></li><li>Click<strong> Save</strong> settings, wait for the Telemetry gadget (the meter at the bottom of the page) to calm down.</li><li>Disconnect USB. </li><li>Easy, right? <img class="emoticon emoticon-smile" src="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/_/images/icons/emoticons/smile.png" data-emoticon-name="smile" alt="(smile)" /></li></ol><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="850" src="/download/attachments/8225003/GCS_OPLink_coordinator_PPM.png?version=1&amp;modificationDate=1427709175000&amp;api=v2" data-image-src="/download/attachments/8225003/GCS_OPLink_coordinator_PPM.png?version=1&amp;modificationDate=1427709175000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="8192072" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="GCS_OPLink_coordinator_PPM.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="8225003" data-linked-resource-container-version="18"></span></p><h2 id="OPLMVehicleControlLink-Flightsidemoduleconfiguration">Flight side module configuration</h2><p>Now there are two options: You either have an OpenPilot Revolution that has an integrated OPLink module, or CC/CC3D/Atom that requires a PPM wire to be connected from the OPLink receiver module to the flight controller. If you still have not connected PPM wire at flight side, do it now using the <a href="/display/WIKI/OPLM+CC+-+CC3D+-+Atom+Hardware+Setup">OPLM CC - CC3D - Atom Hardware Setup</a> page instructions.</p><h3 id="OPLMVehicleControlLink-Revolutionsetup">Revolution setup</h3><ol><li>Connect to the Revolution with USB cable, navigate to the <strong>Hardware</strong> tab, and make sure that all inputs such as PPM or SBUS are disabled.</li><li>Navigate to the <strong>OPLink</strong> page, and tick the <strong>PPM</strong> checkbox.</li><li>Click <strong>Save</strong> and wait for the Telemetry gadget (the meter at the bottom of the page) to calm down.</li><li>Disconnect the flight controller to power cycle the board.</li></ol><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="850" src="/download/attachments/8225003/GCS_Revolution_ControlSetUp.png?version=1&amp;modificationDate=1427709218000&amp;api=v2" data-image-src="/download/attachments/8225003/GCS_Revolution_ControlSetUp.png?version=1&amp;modificationDate=1427709218000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="8192064" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="GCS_Revolution_ControlSetUp.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="8225003" data-linked-resource-container-version="18"></span></p><p> </p><p><span style="line-height: 1.4285715;">     5. After waiting a few seconds, reconnect the USB.</span></p><p><span style="line-height: 1.4285715;"> </span><span style="line-height: 1.4285715;">    6. From </span><strong style="line-height: 1.4285715;">Configuration</strong><span style="line-height: 1.4285715;"> tab &gt; </span><strong style="line-height: 1.4285715;">Input</strong><span style="line-height: 1.4285715;"> page &gt; </span><strong style="line-height: 1.4285715;">RCInput</strong><span style="line-height: 1.4285715;"> tab, change inputs to <strong>OPLink</strong></span></p><p><span style="line-height: 1.4285715;"><strong> </strong>    7. </span><span style="line-height: 1.4285715;">Click </span><strong style="line-height: 1.4285715;">Save</strong><span style="line-height: 1.4285715;"> and wait for the Telemetry gadget (the meter at the bottom of the page) to calm down</span></p><p><span style="line-height: 1.4285715;"> </span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="850" src="/download/attachments/8225003/GCS_Revolution_RCInput.png?version=1&amp;modificationDate=1427709193000&amp;api=v2" data-image-src="/download/attachments/8225003/GCS_Revolution_RCInput.png?version=1&amp;modificationDate=1427709193000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="8192065" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="GCS_Revolution_RCInput.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="8225003" data-linked-resource-container-version="18"></span></p><p>     8. <strong>Go through the Transmitter Setup Wizard</strong></p><p><strong><br /></strong></p><h3 id="OPLMVehicleControlLink-CC/CC3D/Atomsetup">CC/CC3D/Atom setup</h3><ol><li>Connect USB to the flight side OPLink.</li><li>From the <strong>Configuration</strong> tab &gt; <strong>OPLink</strong> page &gt; <strong>Flexi Port</strong> drop down menu &gt; select <strong>PPM</strong></li><li><span>Click </span><strong>Save</strong><span> and wait for the Telemetry gadget (the meter at the bottom of the page) to calm down</span></li><li>Disconnect from OPLink module.</li><li>Connect to the flight controller and set up the PPM control link just like you would set up any other PPM type receiver</li></ol><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="850" src="/download/attachments/8225003/GCS_CC3D_OPLink_Slave.png?version=1&amp;modificationDate=1427709264000&amp;api=v2" data-image-src="/download/attachments/8225003/GCS_CC3D_OPLink_Slave.png?version=1&amp;modificationDate=1427709264000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="8192063" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="GCS_CC3D_OPLink_Slave.png" data-base-url="https://wiki.openpilot.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="8225003" data-linked-resource-container-version="18"></span></p><p> </p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;"><b>In this section</b></div><div class="panelContent">
+<p><ul class='childpages-macro'><li><a href="/display/WIKI/OPLM+CC+-+CC3D+-+Atom+Hardware+Setup">OPLM CC - CC3D - Atom Hardware Setup</a></li><li><a href="/display/WIKI/OPLM+Binding+and+Basic+Telemetry">OPLM Binding and Basic Telemetry</a></li><li><a href="/display/WIKI/OPLM+Vehicle+Control+Link">OPLM Vehicle Control Link</a></li><li><a href="/display/WIKI/Bluetooth+Setup+for+Telemetry">Bluetooth Setup for Telemetry</a></li></ul></p>
+</div></div><p>    
+
+
+<a 
+
+	href="/display/WIKI/OpenPilot+User+Manual"
+	 
+	class="rwui_button
+		rwui_color_gray 		rwui_inline-block 			"
+		
+	title="&lt; Go to:  OpenPilot User Manual"
+>
+		
+			
+	<span 
+		class="rwui_content 
+										
+			"
+	>&lt; Go to:  OpenPilot User Manual</span>
+</a>
+</p></div>
+</div>
+</div>
+</div>
+
+                
+        
+    
+		        </div>
+			</article> 					
+		</div>
+			
+		<div style="clear:both;"></div>
+		
+						
+		<div style="clear:both;"></div>
+		
+		<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="https://wiki.openpilot.org/display/WIKI/OPLM+Vehicle+Control+Link"
+    dc:identifier="https://wiki.openpilot.org/display/WIKI/OPLM+Vehicle+Control+Link"
+    dc:title="OPLM Vehicle Control Link"
+    trackback:ping="https://wiki.openpilot.org/rpc/trackback/8225003"/>
+</rdf:RDF>
+-->
+	
+							                <script type="text/x-template" title="labels-dialog-div">
+        <div id="labels-dialog">
+        <div class="labels-editor">
+            <form method="GET" action="" id="add-labels-form" class="aui">
+                <div id="labelOperationErrorContainer">
+                    <span class="error"><span class="errorMessage" id="labelOperationErrorMessage"></span></span>
+                </div>
+    
+                <div id="label-input-fields">
+                    <input autocomplete="off" id="labelsString" name="labelsString" value="" class="text">
+                    <input id="add-labels-editor-button" type="submit" class="add-labels aui-button" value="Add">
+                </div>
+                <div id="labelsAutocompleteList" class="aui-dd-parent resize-to-input" style="width: 417px"></div>
+                <div id="dialog-label-list">
+                    <!-- DIV placeholder for labels list, is copied into in labels-dialog.js -->
+                </div>
+                <div id="waitImageAndStatus">
+                    <img class="waiting" alt="Please wait" src="/s/en_GB/5781/06be774e49836f55365352484cdb0bdbe01e119b.99/_/images/icons/wait.gif">&nbsp;
+                    <span id="labelOperationStatus" class="smalltext"></span>
+                </div>
+                <div class="labels-tip"></div>
+            </form>
+        </div>
+        <div style="display: none;">
+            <div class="labels-section-content content-column" entityid="8225003" entitytype="page">
+	<div class="labels-content">
+		
+    <ul class="label-list ">
+            <li class="no-labels-message">
+            No labels
+        </li>
+            </ul>
+
+    </div>
+</div>        </div>
+    </div>
+</script>
+                    
+    
+
+
+
+<div id="labels-section" class="pageSection group">
+    <div class="labels-section-content content-column" entityid="8225003" entitytype="page">
+	<div class="labels-content">
+		
+    <ul class="label-list label-list-right ">
+            <li class="no-labels-message">
+            No labels
+        </li>
+            </ul>
+
+    </div>
+</div></div>
+			        		
+		<div style="clear:both;"></div>
+		
+						
+		<div style="clear:both;"></div>
+		
+				    		    
+
+
+
+
+            
+    
+
+
+
+
+
+
+
+
+                    
+    
+<div id="comments-section" class="pageSection group">
+        
+    
+    
+    
+            <div class="bottom-comment-panels comment-panels">
+                                    
+    
+
+
+    
+            </div>
+    
+    </div>
+
+		
+					</div>	
+</div>
+<div class="rw_clear"></div>
+	        
+				
+	    	    	    
+	</div>
+	
+	</div>
+
+
+
+
+	    
+
+
+
+
+	
+    
+	
+
+    
+    
+    
+
+
+
+
+
+
+    
+
+
+
+		        <div style="clear:both;"></div>
+		    </div><!-- \#main -->
+	
+	
+			
+						
+			    					</div> <!-- #edge_design_content -->
+
+
+
+
+	<div 
+		id="rw_footer_wrapper"
+		
+					class="rw_theme_default"
+				>
+    	<div id="rw_footer_container">
+			
+									
+							<div id="rw_footer_content">
+					<p>Powered by <a href="http://www.atlassian.com/software/confluence" class="external-link" rel="nofollow">Atlassian Confluence</a>, <a href="http://www.refinedwiki.com" class="external-link" rel="nofollow">a Confluence theme by RefinedWiki</a></p>	
+				</div>
+			    	</div>
+	</div>
+			
+						
+			
+			 
+			
+			</div> <!-- rw_main -->
+		
+						<script type="text/x-template" id="rw_popup_loader_template">
+	<div class='rw_popup_loader'>
+		<div class="rw_popup_loader_image"></div>
+	</div>
+</script>
+
+
+<script type="text/x-template" id="rw_search_item">
+    <li>
+		<a>
+			<span class="rw_search_item_title"></span>
+			<span class="rw_search_item_space"></span>
+		</a>
+	</li>
+</script>
+
+
+<script type="text/x-template" id="rw_icon_text_item">
+    <li>
+		<a>
+			<span class="rw_item_icon">
+				<img style="display:none;" />
+			</span>
+			<span class="rw_item_content">
+			</span>
+		</a>
+	</li>
+</script>
+
+<script type="text/x-template" id="rw_icon_content_item_template">
+    <li>
+		<a>
+			<span class="rw_item_icon">
+			</span>
+			<span class="rw_item_content">
+			</span>
+		</a>
+	</li>
+</script>
+
+
+<script type="text/x-template" id="rw_section_template">
+    <ul>
+	</ul>
+</script>
+
+<script type="text/x-template" id="rw_items_template">
+    <ul class="rw_items">
+	</ul>
+</script>
+
+<script type="text/x-template" id="rw_section_with_heading_template">
+    <div>
+    	<h2></h2>
+    	<ul>
+    	</ul>
+    </div>
+</script>
+
+
+<script type="text/x-template" id="rw_span_icon_template">
+		<span class="rw_icon_container_16"></span>  </script>
+
+<script type="text/x-template" id="rw_clear_template">
+	<div style="clear:both;"></div>
+</script>
+
+
+<script type="text/x-template" id="rw_category_section_template">
+   
+   <div class="rw_dd_category">
+       <h2><a class="rw_sub_category_link"></a></h2>
+       <ul></ul>
+   </div>
+</script>
+
+
+<script type="text/x-template" id="rw_category_bottom_template">
+	<div class="rw_popup_bottom">
+		<a href="#" class="rw_dashboard_link" >Dashboard</a>
+		<a href="#" class="rw_close_link">Close</a>
+	</div>
+</script>
+
+
+
+
+<script type="text/x-template" id="rw_popup_template">
+	<div class='rw_popup rw_corners' style='display:none;'>
+		<div class="rw_popup_container rw_corners">
+			<div class="rw_popup_top">
+				<h1 style="border:0px;"></h1>
+			</div>
+			<div class="rw_popup_content">
+				
+			</div>
+			<div class="rw_popup_bottom">
+				<a href="#"></a>
+			</div>
+		</div>
+		<div class='rw_popup_loader'>
+			<div class="rw_popup_loader_image"></div>
+		</div>
+	</div>	
+</script>
+
+
+
+<script type="text/x-template" id="rw_load_more_template">
+	
+	<a class="rw_load_more_link rw_corners rw_menu_color" >			
+	    <span class="rw_load_more_text">More</span>
+	</a>
+	
+</script>
+
+<script type="text/x-template" id="rw_more_button_template">
+	
+	<a class="rw_load_more_link rw_menu_color" >			
+	    <span class="rw_load_more_text">More</span>
+	</a>
+	
+</script>
+
+
+<script type="text/x-template" id="rw_load_more_section_template">
+	
+	<ul>
+		<li class="rw_corners">
+			<a class="rw_load_more_link rw_corners" >			
+			    <span class="rw_load_more_text">More</span>
+			</a>
+		</li>
+	</ul>
+	
+</script>
+
+
+<script type="text/x-template" id="rw_button_template">
+	<a class="rw_button"><span></span></a>
+</script>
+
+
+<div id='rw_popup_bg' style='display:none;'></div>
+
+
+<div id="rw_keyboard_shortcuts" style="display:none;"></div>
+	
+<script type="text/x-template" id="rw_keynavigation_container_template">
+	<div class="rw_keynavigation_container" style="display:none;"></div>
+</script>
+
+<script type="text/x-template" id="rw_keynavigation_row_template">
+	<div class="rw_keynavigation_row">
+	</div>
+</script>
+
+<script type="text/x-template" id="rw_keynavigation_item_template">
+	<div class="rw_keynavigation_item">
+		<span class="rw_item_icon"></span><br />
+		<span class="rw_item_content">Navigate Menu</span>
+		<div class="rw_keynavigation_item_target" style="display:none"></div>
+	</div>
+</script>
+
+<script type="text/x-template" id="rw_keynavigation_empty_item_template">
+	<div class="rw_keynavigation_empty_item">
+	
+	</div>
+</script>
+
+<script type="text/x-template" id="rw_favourite_no_spaces_template">
+	<span class="rw_text_gray">You currently do not have any spaces on your favourites list. To add one, click the <em>All</em> tab and then on <img src=/download/resources/com.refinedwiki.confluence.plugins.theme.original/images/gray_star.png> next to the spaces you want to add as favourites.</div>	
+</script>
+
+<script type="text/x-template" id="rw_favourite_no_pages_template">
+	<span class="rw_text_gray">There are currently no pages on your favourites list. You can add pages to this list by selecting Favourite from the Tools menu on the page you're viewing.</div>	
+</script>
+
+
+<script type="text/x-template" id="rw_board_template">
+	<div class="rw_board"></div>
+</script>
+
+<script type="text/x-template" id="rw_board_column_template">
+	<div class="rw_board_column"></div>
+</script>
+
+<script type="text/x-template" id="rw_popup_cancel_button_template">
+	<button class="button-panel-button rw_button rw_right">
+		<span class="rw_del">Close</span>
+	</button>
+</script>
+			
+		</div><!-- rw_wrapper -->
+		
+	
+			<div id="rw_fullscreen_bg" style="display:none;"></div>
+	
+		
+	
+			
+	
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12851274-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</div><!-- \#full-height-container -->
+</div><!-- \#page -->
+</body>
+</html>
