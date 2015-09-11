@@ -60,7 +60,8 @@ Connection diagram
 
 The diagram below summarizes how the overall Revolution system is connected.
 
-.. image:: /img/RevoConnection.png
+.. image:: /img/revo-full.jpg
+   :width: 600
 
 
 Technical description
@@ -206,6 +207,8 @@ Just like CC & CC3D, the Revo has many ports, but a key new addition is the
 Flexi-IO Port. A lot of thought went into creating a small device that’s flexible
 for use with multirotor platforms, helicopters and fixed wing aircraft, as well
 as making connectivity as future proof as possible.
+
+.. image:: /img/revo-ports-2.jpg
 
 .. image:: /img/RevoMainPort.jpg
    :alt: MainPort

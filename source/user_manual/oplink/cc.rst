@@ -34,7 +34,7 @@ Configuration steps below. Connect the boards like in the diagram:
 Telemetry and vehicle control
 """""""""""""""""""""""""""""
 
-If you also want to use OPLink modem for :doc:`control <vehicle control>`,
+If you also want to use OPLink modem for :doc:`vehicle control <control>`,
 you'll need to add one additional wire from the TX pin of the OPLink to the PPM
 input pin on the flight controller. In this diagram the wire goes to PIN 8 on
 the controller, because that is the pin that allows OneShot125 and PWM Sync with
