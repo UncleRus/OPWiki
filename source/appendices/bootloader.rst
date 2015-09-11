@@ -121,7 +121,7 @@ Version 4 bootloaders can only be used with GCS versions 13.06.01 and newer.
 | OPLMini   | 4       | OPLM                                                                                                             | For use with GCS    |
 |           |         | :download:`bu_oplinkmini.opfw </files/bootloaders/bu_oplinkmini.opfw>`                                           | 13.06.01 and higher |
 +-----------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
-| OSD       | 5       | OSD bu_osd.opfw                                                                                                  | For use with GCS    |
+| OSD       | 5       | OSD                                                                                                              | For use with GCS    |
 |           |         | :download:`bu_osd.opfw </files/bootloaders/bu_osd.opfw>`                                                         | 13.06.01 and higher |
 +-----------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
 

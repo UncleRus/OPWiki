@@ -85,12 +85,12 @@ It can be used to establish a short telemetry link directly to the vehicle,
 or a telemetry link between a computer and a transmitter, that has an OPLink
 module connected to it.
 
-* Chipset CSR BC417143
-* Bluetooth version V2.0+EDR (Enhanced Data Rate)
-* Output power Class II (±2.5mW range ±10m)
-* Flash 8Mbit
-* Power Supply 3.3V (5VDC via breakout board)
-* Interface UART
+* Chipset **CSR BC417143**
+* Bluetooth version **V2.0+EDR (Enhanced Data Rate)**
+* Output power **Class II (±2.5mW range ±10m)**
+* Flash **8Mbit**
+* Power Supply **3.3V (5VDC via breakout board)**
+* Interface **UART**
 
 This configuration guide covers the displayed serial Bluetooth module. It's
 available in many different internet shops (e.g. Ebay, Goodluckbuy, BlueSkyRC).
