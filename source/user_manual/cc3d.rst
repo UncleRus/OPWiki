@@ -181,7 +181,7 @@ Power
 * Power consumption = ±70mA.
 * You can connect the USB and the receiver (with the power) at the same time.
 
-.. warning:: The PWR Out pins provide unregulated voltage to the ports. If the
+.. caution:: The PWR Out pins provide unregulated voltage to the ports. If the
    CC is powered from a +15V (max. allowed) source then +15V will be on the
    PWR Out pins and can damage connected receivers, GPS, telemetry modems or
    other add-on boards.
@@ -281,10 +281,10 @@ MainPort and FlexiPort serial cable pinout
 
 .. image:: /img/JSH-SH-4pin.png
 
-.. warning:: The Spektrum adapter should only be powered by 3.3V, a step down
+.. caution:: The Spektrum adapter should only be powered by 3.3V, a step down
    adapter must be used.
 
-.. warning:: The PWR Out voltage is dependent on the CC supplied voltage.
+.. caution:: The PWR Out voltage is dependent on the CC supplied voltage.
    Verify that you use the correct voltage for your S.BUS receiver.
 
 Receiver PWM connection

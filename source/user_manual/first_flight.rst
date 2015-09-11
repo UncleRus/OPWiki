@@ -64,7 +64,7 @@ motors are spinning up. If the opposite motors spin up, then you would flip
 your multi-rotor immediately upon lift off. In this case, you need to recheck
 your configuration.
 
-.. warning:: IMPORTANT! Check fail-safe.
+.. important:: Check fail-safe!
 
 Arm the aircraft and run your motors, now turn off the transmitter and confirm
 that all motors stop.
@@ -89,7 +89,7 @@ a road. A grass field is better for first flights, rather than concrete or
 tarmac. Ideally there will be no wind, but a very slight breeze shouldn't be
 a problem.
 
-.. warning:: **IMPORTANT**
+.. important::
 
    You may be disconnecting and connecting power to the model several times
    during these first steps - you must wait at least 30 seconds before
