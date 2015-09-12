@@ -172,14 +172,14 @@ Banks.
 
 .. rubric:: Full stick angle in Attitude mode
 
-+--------------+-------------------------------------------------------------------+
-| Location     | Stabilization panel, Responsiveness, Attitude mode response (deg) |
-+--------------+-------------------------------------------------------------------+
-| Standard     | 55°                                                               |
-| value        |                                                                   |
-+--------------+-------------------------------------------------------------------+
-| Tuned+ value | 65° or more                                                       |
-+--------------+-------------------------------------------------------------------+
++--------------------+--------------------------------------+
+| **Location**       | Stabilization panel, Responsiveness, |
+|                    | Attitude mode response (deg)         |
++--------------------+--------------------------------------+
+| **Standard value** | 55°                                  |
++--------------------+--------------------------------------+
+| **Tuned+ value**   | 65° or more                          |
++--------------------+--------------------------------------+
 
 Specifies how many degrees the vehicle will bank on a full stick deflection
 when in attitude mode.
@@ -190,14 +190,14 @@ for a beginner.
 
 .. rubric:: Full stick response in Rate mode
 
-+--------------+-----------------------------------------------------------------+
-| Location     | Stabilization panel, Responsiveness, Rate mode response (deg/s) |
-+--------------+-----------------------------------------------------------------+
-| Standard     | 220°/s                                                          |
-| value        |                                                                 |
-+--------------+-----------------------------------------------------------------+
-| Tuned+ value | 360°/s or more                                                  |
-+--------------+-----------------------------------------------------------------+
++--------------------+--------------------------------------+
+| **Location**       | Stabilization panel, Responsiveness, |
+|                    | Rate mode response (deg/s)           |
++--------------------+--------------------------------------+
+| **Standard value** | 220°/s                               |
++--------------------+--------------------------------------+
+| **Tuned+ value**   | 360°/s or more                       |
++--------------------+--------------------------------------+
 
 Specifies how many degrees per second a full stick deflection commands in all
 modes **except Attitude mode**.
@@ -211,14 +211,14 @@ flip taking one second to complete - that would equate to 360°/s.
 
 .. rubric:: Full stick response limit in any mode
 
-+--------------+-------------------------------------------------------------+
-| Location     | Stabilization panel, Responsiveness, Max rate limit (deg/s) |
-+--------------+-------------------------------------------------------------+
-| Standard     | 300°/s                                                      |
-| value        |                                                             |
-+--------------+-------------------------------------------------------------+
-| Tuned+ value | 360°/s or more                                              |
-+--------------+-------------------------------------------------------------+
++--------------------+--------------------------------------+
+| **Location**       | Stabilization panel, Responsiveness, |
+|                    | Max rate limit (deg/s)               |
++--------------------+--------------------------------------+
+| **Standard value** | 300°/s                               |
++--------------------+--------------------------------------+
+| **Tuned+ value**   | 360°/s or more                       |
++--------------------+--------------------------------------+
 
 Specifies the maximum rotation rate in degrees per second commanded by a full
 stick deflection on the associated axis **in any mode**.
@@ -227,14 +227,14 @@ Make sure this is the same or higher than Rate mode response above.
 
 .. rubric:: MaxAxisLock
 
-+--------------+--------------------------------------------+
-| Location     | Stabilization panel, Expert Tab, Axis Lock |
-+--------------+--------------------------------------------+
-| Standard     | 5°                                         |
-| value        |                                            |
-+--------------+--------------------------------------------+
-| Tuned+ value | 15°                                        |
-+--------------+--------------------------------------------+
++--------------------+----------------------------------+
+| **Location**       | Stabilization panel, Expert Tab, |
+|                    | Axis Lock                        |
++--------------------+----------------------------------+
+| **Standard value** | 5°                               |
++--------------------+----------------------------------+
+| **Tuned+ value**   | 15°                              |
++--------------------+----------------------------------+
 
 The maximum number of degrees that the control accumulates error. The default
 setting is changed to 15° in newer firmware & should be a good value for

@@ -86,6 +86,8 @@ CopterControl / CC3D / Atom have 4 ports.
 
 .. image:: /img/CopterControlPorts.png
 
+.. image:: /img/Atom-ports.png
+
 * **Servo Output 1-6**: These are the PWM outputs that go to servos or ESCs.
   Power is typically applied through these headers from only one of the ESCs.
   The positive (Vcc) and negative (Gnd) pins are indicated on this diagram and
