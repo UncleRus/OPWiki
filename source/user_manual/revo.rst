@@ -39,9 +39,9 @@ your air frame, follow the Video Tutorial below.
 Vehicle Setup Wizard
 --------------------
 
-Once you have mounted your Revo on your frame you need to configure it through the
-Ground Control Station (GCS) using the Vehicle Setup Wizard, follow the Video Tutorial
-below for setting up on a Multirotor.
+Once you have mounted your Revo on your frame you need to configure it through
+the Ground Control Station (GCS) using the Vehicle Setup Wizard, follow the
+**Video Tutorial** below for setting up on a Multirotor.
 
 `<https://vimeo.com/65454262>`_
 
@@ -196,17 +196,17 @@ Magnetometer
 
 Whether you are in ‘Position Hold’ while taking aerial photographs, or you are
 flying a fixed-wing UAV on a pre-planned flight path, it's vitally important to
-have accurate heading information. The Honeywell HMC5883L is a three-axis digital
-compass module which provides rapid updates to changes in orientation which
-are accurate to a tolerance of 1° to 2°.
+have accurate heading information. The Honeywell HMC5883L is a three-axis
+digital compass module which provides rapid updates to changes in orientation
+which are accurate to a tolerance of 1° to 2°.
 
 Connectivity
 ------------
 
 Just like CC & CC3D, the Revo has many ports, but a key new addition is the
-Flexi-IO Port. A lot of thought went into creating a small device that’s flexible
-for use with multirotor platforms, helicopters and fixed wing aircraft, as well
-as making connectivity as future proof as possible.
+Flexi-IO Port. A lot of thought went into creating a small device that’s
+flexible for use with multirotor platforms, helicopters and fixed wing aircraft,
+as well as making connectivity as future proof as possible.
 
 .. image:: /img/revo-ports-2.jpg
 
@@ -434,9 +434,14 @@ additional power supply.
 Of course, the on-board modem will have the same functionality as the OPLink
 Mini. Both are fully configurable from the GCS.
 
-Operating on the 433MHz band (a 900Mhz version will be released at a later date),
-the modem provides a direct telemetry link between the GCS and your flight
-controller. And just as with the OPLink Mini, you can adjust the output RF
-power for compliance with any governmental RF regulations, or it can be
+Operating on the 433MHz band (a 900Mhz version will be released at a later
+date), the modem provides a direct telemetry link between the GCS and your
+flight controller. And just as with the OPLink Mini, you can adjust the output
+RF power for compliance with any governmental RF regulations, or it can be
 disabled entirely.
 
+DIY Board
+---------
+
+Schematics, PCB Layout, Gerbers, BOM:
+:download:`Revolution.zip </files/hw/Revolution.zip>`

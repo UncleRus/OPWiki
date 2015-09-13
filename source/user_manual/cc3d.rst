@@ -360,7 +360,20 @@ Sensors and Components
 
 
 .. [#f1] On CC3D the IDG-500, ISZ-500 and ADXL345 is replaced by the MPU6000.
-  
+
+
+DIY Boards
+----------
+
+Schematics, PCB Layout, Gerbers, BOM for **CopterControl**:
+:download:`CopterControl.zip </files/hw/CopterControl.zip>`
+
+Schematics, PCB Layout, Gerbers, BOM for **CopterControl 3D**:
+:download:`CopterControl 3D.zip </files/hw/CopterControl 3D.zip>`
+
+Schematics, PCB Layout, Gerbers, BOM for **Atom**:
+:download:`Atom.zip </files/hw/Atom.zip>`
+
 
 Other Information
 -----------------

@@ -39,6 +39,7 @@ receive telemetry data at the ground station, then the Revo should be configured
 as the Co-ordinator. Configuration instructions are provided below and linked-to
 pages.
 
+
 First time use with OPLM
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -72,6 +73,14 @@ OPLink Revo
 - :doc:`cc`
 - :doc:`binding`
 - :doc:`control`
+
+
+DIY Board
+---------
+
+Schematics, PCB Layout, Gerbers, BOM:
+:download:`OPLink Mini.zip </files/hw/OPLink Mini.zip>`
+
 
 Serial Bluetooth RF Transceiver Module RS232
 --------------------------------------------
