@@ -1,4 +1,3 @@
-
 Downloading and Installing the Ground Control Station
 =====================================================
 
@@ -28,7 +27,113 @@ Visit the `OpenPilot forums <http://forums.openpilot.org/>`_  if you have
 questions and/or suggestions. Extensive documentation about how the system
 works and how to install and configure it is available in this wiki.
 
-.. todo:: LINKS
+Latest version can be found here: `<http://www.openpilot.org/download/>`_.
+
+RELEASE – 15.05.02 – Revolution Nano, Revo, OPLM and Platinum GPS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note:: Please note that **CC3D is NOT supported by this release**. To find
+   the latest release for the CC3D, please see Release – 15.02.02 below. 
+
+.. rubric:: Windows NSIS Installer
+
+`OpenPilot-RELEASE-15.05.2-win32.exe <http://www.openpilot.org/wp-content/uploads/OP-Downloads/OpenPilot-RELEASE-15.05.2-win32.exe>`_
+
+Uninstall previous version first.
+
+.. rubric:: Mac OS X distribution image
+
+`OpenPilot-RELEASE-15.05.2-osx.dmg <http://www.openpilot.org/wp-content/uploads/OP-Downloads/OpenPilot-RELEASE-15.05.2-osx.dmg>`_
+
+Open as a standard distribution image.
+
+.. rubric:: Linux 64 bit Debian package
+
+`openpilot_15.05.2-1_amd64.deb <http://www.openpilot.org/wp-content/uploads/OP-Downloads/openpilot_15.05.2-1_amd64.deb>`_
+
+Uninstall previous version first, then use your system package installer to
+install.
+
+.. note:: Please note that Linux .debs will only work with Linux versions Ubuntu
+   14.04 or later, due to lack of popularity we are no longer building 32 Bit
+   .debs but if needed you can build them easily using the source below and the
+   ‘make package’ command.
+
+.. rubric:: Source code
+
+`SRC-OpenPilot-RELEASE-15.05.2.tar.gz <http://www.openpilot.org/wp-content/uploads/OP-Downloads/SRC-OpenPilot-RELEASE-15.05.2.tar.gz>`_
+
+
+::
+
+   Note that the CC3D is not supported by this release.
+   
+   This release fixes an important bug of Nano attitude drift with Basic
+   attitude estimation. 
+   
+   All Revolution hardware running 15.05.01 should upgrade to 15.05.02.
+   
+   Note that this is a hotfix; to get the new defaults a full erase settings
+   is required.
+   
+   Stabilization settings and banks can be imported back after upgrade
+   
+   Furthermore, please review your vtolpathfollowersettings:HorizontalVelMax;
+   a value of around 4m/s would be more appropriate for preliminary trialing of
+   a new release and will be changed in future.
+   
+   This version supports Revolution Nano, Revolution, OPLink Modems, and
+   Platinum GPS.
+
+
+(Previous) RELEASE – 15.02.02 – Revo, CC3D, Atom, CC and v9 GPS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This version supports the CopterControl, CC3D, Atom, and Revo as well as the
+OPLink Modems.
+
+.. rubric:: Windows NSIS Installer
+
+`OpenPilot-RELEASE-15.02.02-win32.exe <http://www.openpilot.org/wp-content/uploads/OP-Downloads/OpenPilot-RELEASE-15.02.02-win32.exe>`_
+
+Uninstall previous version first.
+
+.. rubric:: Mac OS X distribution image
+
+`OpenPilot-RELEASE-15.02.02-osx.dmg <http://www.openpilot.org/wp-content/uploads/OP-Downloads/OpenPilot-RELEASE-15.02.02-osx.dmg>`_
+
+Open as a standard distribution image.
+
+.. rubric:: Linux Debian packages
+
+32 bit: `openpilot_15.02.02-1_i386.deb <http://www.openpilot.org/wp-content/uploads/OP-Downloads/openpilot_15.02.02-1_i386.deb>`_
+64 bit: `openpilot_15.02.02-1_amd64.deb <http://www.openpilot.org/wp-content/uploads/OP-Downloads/openpilot_15.02.02-1_amd64.deb>`_
+
+Uninstall previous version first, then use your system package installer to
+install.
+
+.. note:: Please note that Linux .debs will only work with Linux versions Ubuntu
+   14.04 or later.
+
+::
+
+   This release fixes a bug that prevents revo onboard mag to work correctly.
+   
+   Release Notes - OpenPilot - Version RELEASE-15.02.02
+   
+   The full list of bugfixes in this release is accessible here:
+   https://progress.openpilot.org/issues/?filter=12262
+   
+   ** Bug
+   * [OP-1820] - fix onboard mag orientation
+   * [OP-1821] - Tricopter tail servo wrong speed on wizard
+   * [OP-1827] - Version ID wrong in Windows uninstaller
+   * [OP-1857] - PPM on Flexi does not work on CC/CC3D
+   
+   ** Task
+   * [OP-1831] - due to oneshot higher pid values ki now shows "red" warning in
+   stabilization page
+   
 
 Installation of the GCS
 -----------------------
