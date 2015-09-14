@@ -106,8 +106,8 @@ Open as a standard distribution image.
 
 .. rubric:: Linux Debian packages
 
-32 bit: `openpilot_15.02.02-1_i386.deb <http://www.openpilot.org/wp-content/uploads/OP-Downloads/openpilot_15.02.02-1_i386.deb>`_
-64 bit: `openpilot_15.02.02-1_amd64.deb <http://www.openpilot.org/wp-content/uploads/OP-Downloads/openpilot_15.02.02-1_amd64.deb>`_
+:32 bit: `openpilot_15.02.02-1_i386.deb <http://www.openpilot.org/wp-content/uploads/OP-Downloads/openpilot_15.02.02-1_i386.deb>`_
+:64 bit: `openpilot_15.02.02-1_amd64.deb <http://www.openpilot.org/wp-content/uploads/OP-Downloads/openpilot_15.02.02-1_amd64.deb>`_
 
 Uninstall previous version first, then use your system package installer to
 install.
