@@ -78,10 +78,11 @@ The first thing to do is to configure the hardware settings:
    **Enable**
 
 #. Set the analog input pins for voltage and current:
+
    * **ADCRouting** > **adc0** > **BatteryCurrent**
    * **ADCRouting** > **adc1** > **BatteryVoltage**
 
-#. Save changes, click Upload button
+#. Save changes, click **Upload** button
 
 #. Reboot your board: disconnect **all power sources** and reconnect to
    your computer.
