@@ -9,6 +9,9 @@ your vehicle, but the GCS is also capable of doing so.
 All OpenPilot products use the same Ground Control Station. OpenPilot GCS is
 currently available for the Windows, Mac, and Linux operating systems.
 
+.. warning:: **OPENPILOT DEVELOPMENT AND SUPPORT WAS DISCONTINUED!**
+   Instead of OpenPilot please use `LibrePilot <http://www.librepilot.org/>`_.
+
 Downloading the GCS installer
 -----------------------------
 
@@ -29,8 +32,8 @@ works and how to install and configure it is available in this wiki.
 
 Latest version can be found here: `<http://www.openpilot.org/download/>`_.
 
-RELEASE – 15.05.02 – Revolution Nano, Revo, OPLM and Platinum GPS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RELEASE – OP-15.05.02 – Revolution Nano, Revo, OPLM and Platinum GPS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. note:: Please note that **CC3D is NOT supported by this release**. To find
    the latest release for the CC3D, please see Release – 15.02.02 below. 
@@ -86,8 +89,8 @@ install.
    Platinum GPS.
 
 
-(Previous) RELEASE – 15.02.02 – Revo, CC3D, Atom, CC and v9 GPS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(Previous) RELEASE – OP-15.02.02 – Revo, CC3D, Atom, CC and v9 GPS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This version supports the CopterControl, CC3D, Atom, and Revo as well as the
 OPLink Modems.

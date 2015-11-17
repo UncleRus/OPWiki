@@ -48,7 +48,7 @@ master_doc = u'index'
 # General information about the project.
 project = u'OpenPilot Wiki'
 
-copyright = u'OpenPilot community'
+copyright = u'OpenPilot/LibrePilot community'
 
 
 # The version info for the project you're documenting, acts as replacement for
