@@ -9,8 +9,9 @@ your vehicle, but the GCS is also capable of doing so.
 All OpenPilot products use the same Ground Control Station. OpenPilot GCS is
 currently available for the Windows, Mac, and Linux operating systems.
 
-.. warning:: **OPENPILOT DEVELOPMENT AND SUPPORT WAS DISCONTINUED!**
-   Instead of OpenPilot please use `LibrePilot <http://www.librepilot.org/>`_.
+.. warning:: **OPENPILOT WAS DISCONTINUED!**
+
+   Use `LibrePilot <http://www.librepilot.org/>`_ instead.
 
 Downloading the GCS installer
 -----------------------------
