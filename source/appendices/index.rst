@@ -6,6 +6,5 @@ Appendicies
    :maxdepth: 2
 
    bootloader
-   revo_sensors
    jst-sh
 

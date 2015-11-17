@@ -23,7 +23,7 @@ particularly useful.
 Hardware Connections
 --------------------
 
-.. image:: /img/ws2812.jpg
+.. image:: img/ws2812.jpg
 
 The OpenPilot firmware supports LEDs wired in both parallel and series
 configurations. A single LED is capable of displaying all of the data. Both
@@ -70,4 +70,4 @@ Light Codes
 The following graphic shows different notifications Revolution will display
 with the LED(s).
 
-.. image:: /img/Revo-External-Leds.png
+.. image:: img/Revo-External-Leds.png

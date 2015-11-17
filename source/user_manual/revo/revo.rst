@@ -24,9 +24,9 @@ The Revolution is a flight control computer with autopilot, intended for
 multirotors, helicopters and fixed wings. It is a full 10DOF with gyroscope,
 accelerometer, magnetometer and pressure sensors.
 
-.. image:: /img/Revolution_Side.jpg
+.. image:: img/Revolution_Side.jpg
 
-.. image:: /img/RevolutionBottom.jpg
+.. image:: img/RevolutionBottom.jpg
 
 Setting up your Revolution Board for the first time
 ---------------------------------------------------
@@ -48,7 +48,7 @@ the Ground Control Station (GCS) using the Vehicle Setup Wizard, follow the
 Sensor calibration
 ------------------
 
-:doc:`/appendices/revo_sensors`.
+:doc:`sensor_calibration`.
 
 Tuning your Revolution
 ----------------------
@@ -60,7 +60,7 @@ Connection diagram
 
 The diagram below summarizes how the overall Revolution system is connected.
 
-.. image:: /img/revo-full.jpg
+.. image:: img/revo-full.jpg
    :width: 600
 
 
@@ -89,7 +89,7 @@ function in the GCS (Ground Control Station).
 Modem
 ^^^^^
 
-The board features built-in 433MHz :doc:`OPLink Modem <oplink/index>`.
+The board features built-in 433MHz :doc:`OPLink Modem <../oplink/index>`.
 
 Dimensions
 ^^^^^^^^^^
@@ -99,12 +99,12 @@ dimensions and mounting holes as the OpenPilot Revo, GPS, OSD and PipX boards.
 
 *(All dimensions are in millimeters.)*
 
-.. image:: /img/RevoSchematic.jpg
+.. image:: img/RevoSchematic.jpg
 
 Ports
 ^^^^^
 
-.. image:: /img/RevoPorts.jpg
+.. image:: img/RevoPorts.jpg
 
 * **Servo 1-6**: These are the PWM outputs that go to servos or ESCs. Power is
   typically applied through these headers from only one of the ESCs. The
@@ -143,7 +143,7 @@ Ports
   development).
 
 * **RF Socket**: Antenna connection socket for on-board
-  :doc:`OPLink Modem <oplink/index>`.
+  :doc:`OPLink Modem <../oplink/index>`.
 
 * **Pwr Sen/Sonar Port**: JST-SH 4-pin. This port can be configured to
   accommodate an Autopilot current sensor and a low cost Sonar sensor such as
@@ -169,7 +169,7 @@ Sensor suite
 MPU
 """
 
-.. image:: /img/mpu6000.png
+.. image:: img/mpu6000.png
 
 The MPU-6000 combines a 3-axis gyroscope and a 3-axis accelerometer on the same
 silicon die. This sensor can also be found on the CC3D and already has a proven
@@ -178,7 +178,7 @@ track record of great flight performance.
 Pressure Sensor/Altimeter
 """""""""""""""""""""""""
 
-.. image:: /img/MS5611.jpg
+.. image:: img/MS5611.jpg
 
 When it came time to select a barometric pressure sensor, there were many to
 choose from and many were not up to the task. For the Revolution, OpenPilot
@@ -208,18 +208,18 @@ Flexi-IO Port. A lot of thought went into creating a small device that’s
 flexible for use with multirotor platforms, helicopters and fixed wing aircraft,
 as well as making connectivity as future proof as possible.
 
-.. image:: /img/revo-ports-2.jpg
+.. image:: img/revo-ports-2.jpg
 
-.. image:: /img/RevoMainPort.jpg
+.. image:: img/RevoMainPort.jpg
    :alt: MainPort
 
-.. image:: /img/RevoFlexiPort.jpg
+.. image:: img/RevoFlexiPort.jpg
    :alt: FlexiPort
 
-.. image:: /img/RevoSWD.jpg
+.. image:: img/RevoSWD.jpg
    :alt: SWD Port
 
-.. image:: /img/RevoUSB.jpg
+.. image:: img/RevoUSB.jpg
    :alt: Flexi-IO & USB Ports
 
 Flexi-IO
@@ -369,6 +369,8 @@ purpose input/output port or as a one or two channel analog input port.
 | Orange | 4      | 3.3V          | Voltage Input |
 |        |        | (5V Tolerant) |               |
 +--------+--------+---------------+---------------+
+
+See also: :doc:`voltage_current`
 
 PWM output headers
 ^^^^^^^^^^^^^^^^^^

@@ -50,5 +50,4 @@ your firmware is updated correctly:
 Next, Select your Flight Controller:
 
 * :doc:`CC - CC3D - Atom <cc3d>`
-* :doc:`Revolution <revo>`
-* :doc:`Revolution Nano <revo_nano>`
+* :doc:`Revolution <revo/index>`
