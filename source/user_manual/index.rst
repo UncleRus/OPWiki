@@ -17,6 +17,10 @@ OpenPilot User Manual
 
 .. rubric:: Introduction
 
+.. warning:: **OPENPILOT WAS DISCONTINUED!**
+
+   Use `LibrePilot <http://www.librepilot.org/>`_ instead.
+
 Welcome to the OpenPilot User Manual!
 
 We've designed this section and the OpenPilot Documentation as a whole to flow
