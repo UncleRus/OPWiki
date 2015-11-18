@@ -7,8 +7,8 @@ OpenPilot User Manual
    
    gcs_install
    firmware
-   revo/index
    cc3d
+   revo/index
    multirotor_hw
    multirotor_wizard
    first_flight

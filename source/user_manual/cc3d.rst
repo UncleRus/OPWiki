@@ -1,4 +1,4 @@
-CopterControl - CC3D - Atom Hardware Setup
+CopterControl / CC3D / Atom Hardware Setup
 ==========================================
 
 CopterControl3D (CC3D and Atom) and CopterControl Introduction
@@ -294,7 +294,7 @@ Receiver PWM connection
 
 There are several ways to connect your receiver to CopterControl. You can
 connect any plug from the CopterControl receiver cable to any channel of your
-receiver. The correct channel mapping is done in the GCS :doc:`/gcs/input`.
+receiver. The correct channel mapping is done in the GCS `<https://librepilot.atlassian.net/wiki/display/LPDOC/Input+Configuration>`_.
 However as a guideline for a standard PWM receiver, you may want to connect
 it as follows:
 

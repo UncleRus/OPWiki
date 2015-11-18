@@ -24,7 +24,7 @@ You will need to supply power and control data from the transmitter to the
 OPLink module. The OPLink Mini module requires three wires for normal operation
 with a transmitter.
 
-.. image:: /img/oplm_control.jpg
+.. image:: img/oplm_control.jpg
    :width: 500
 
 * Ground
@@ -67,13 +67,13 @@ cable in half and use that to make a neat connection to the transmitter. If you
 cut a trainer cable, you'll have to identify the correct wires with a
 multimeter.
 
-.. image:: /img/oplm_tx_pinout.jpg
+.. image:: img/oplm_tx_pinout.jpg
    :width: 500
 
 Mounting the OPLink module to the transmitter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: /img/oplm_tx.jpg
+.. image:: img/oplm_tx.jpg
    :width: 500
 
 There are many ways to attach the OPLink mini module to your transmitter. The

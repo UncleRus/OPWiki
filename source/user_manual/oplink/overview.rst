@@ -1,7 +1,7 @@
 Overview
 --------
 
-.. image:: /img/oplink_mini.png
+.. image:: img/oplink_mini.png
 
 The OPLink is a radio transceiver backed by an ARM32 powered digital packet
 processor specifically designed for the OpenPilot project, it was originally
@@ -85,7 +85,7 @@ Schematics, PCB Layout, Gerbers, BOM:
 Serial Bluetooth RF Transceiver Module RS232
 --------------------------------------------
 
-.. image:: /img/Bluetooth.jpg
+.. image:: img/Bluetooth.jpg
 
 This small size Bluetooth TTL transceiver module allows your target device to
 both send or receive the TTL data via Bluetooth technology without connecting a
@@ -107,6 +107,7 @@ The boards generally ship for around 10$ - 20$. Although the hardware is the
 same, several software or firmware revisions exist.
 
 Different input voltage versions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. important:: There are different versions available; 3VDC or 5VDC. You want
    the 5VDC version in order to connect directly to CopterControl. This module

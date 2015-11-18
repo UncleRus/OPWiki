@@ -1,6 +1,6 @@
-****************
-Revolution Board
-****************
+**********************
+Revolution Board Setup
+**********************
 
 .. toctree::
    :maxdepth: 2

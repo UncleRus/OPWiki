@@ -40,7 +40,7 @@ does for Virtual COM port ComBridge operation.
 HW method 1: Using an FTDI adapter
 """"""""""""""""""""""""""""""""""
 
-.. image:: /img/bt_connect.png
+.. image:: img/bt_connect.png
 
 Most R/C hobbyists are familiar with FTDI USB to serial adapters. This is
 probably the easiest method to connect to the Bluetooth module. An FTDI module
@@ -142,7 +142,7 @@ Connecting the Bluetooth module to OpenPilot devices
 Connecting directly to the flight controller
 """"""""""""""""""""""""""""""""""""""""""""
 
-.. image:: /img/bt_flight.png
+.. image:: img/bt_flight.png
 
 For direct connection from the flight controller to the Bluetooth module, the
 wiring is exactly the same as USB VCP ComBridge wiring. The flight controller
@@ -164,7 +164,7 @@ has to be configured to output telemetry data at the correct baud rate.
 Connecting to OPLink ground module
 """"""""""""""""""""""""""""""""""
 
-.. image:: /img/oplm_bluetooth.jpg
+.. image:: img/oplm_bluetooth.jpg
 
 For completely wireless telemetry with OPLink and Bluetooth module, the wiring
 has to be connected according to the diagram above. OPLink vehicle control is

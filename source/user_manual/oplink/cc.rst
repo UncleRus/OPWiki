@@ -28,7 +28,7 @@ two boards. It is recommended to use Main port for both boards, but you can
 also use other ports to connect telemetry. Just remember the changes in the
 Configuration steps below. Connect the boards like in the diagram:
 
-.. image:: /img/CC-OPLM-Telemetry.png
+.. image:: img/CC-OPLM-Telemetry.png
    :width: 600
 
 Telemetry and vehicle control
@@ -40,7 +40,7 @@ input pin on the flight controller. In this diagram the wire goes to PIN 8 on
 the controller, because that is the pin that allows OneShot125 and PWM Sync with
 CC3D. Revolution PPM remains on PIN 3.
 
-.. image:: /img/CC-OPLM-Telemetry+PPM.png
+.. image:: img/CC-OPLM-Telemetry+PPM.png
    :width: 600
 
 Configuration
@@ -60,7 +60,7 @@ Flight-side OPLink modem configuration
 * Click **Save**, wait a few seconds for the telemetry gadget (the meter at the
   bottom of the GCS) to calm down, and disconnect from the modem.
 
-.. image:: /img/oplm_cc_flight.png
+.. image:: img/oplm_cc_flight.png
    :width: 500
 
 Flight controller configuration

@@ -74,7 +74,7 @@ Coordinator side
 #. Write down the Device ID. You are going to use it later.
 #. Disconnect from the coordinating module.
 
-.. image:: /img/oplm_bind_coord.png
+.. image:: img/oplm_bind_coord.png
 
 The OPLink Save button will display a green "tick" when settings are saved, but
 it can disappear soon after settings are saved. This is normal behavior.
@@ -100,7 +100,7 @@ Slave side
    the bottom of the GCS) to calm down.
 #. Disconnect from the slave module. The bind is complete.
 
-.. image:: /img/oplm_bind_slave.png
+.. image:: img/oplm_bind_slave.png
 
 
 Testing the link for the first time
@@ -128,7 +128,7 @@ Congratulations! Your OPLink telemetry connection is now ready for use. If you
 wish to use the connection for vehicle control also, proceed to the
 :doc:`control` page.
 
-.. image:: /img/oplm_bind_success.png
+.. image:: img/oplm_bind_success.png
 
 
 Advanced topics
