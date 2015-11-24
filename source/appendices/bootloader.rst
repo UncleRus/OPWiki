@@ -37,11 +37,11 @@ Halt Option
 Connect the flight controller to GCS via USB and open the Firmware page.
 On the Firmware page, click **Halt**.
 
-.. image:: /img/bootloader_halt.png
+.. image:: img/bootloader_halt.png
 
 Once the board is halted, the bootloader (BL) version of the board is shown.
 
-.. image:: /img/bootloader_halted.png
+.. image:: img/bootloader_halted.png
 
 Click **Boot** to restart the flight controller once you have noted the
 bootloader version.
@@ -52,14 +52,14 @@ Rescue Method
 Ensure that the flight controller is **not** connected to GCS via USB.
 Click **Rescue** and connect the flight controller via USB when prompted.
 
-.. image:: /img/bootloader_rescue.png
+.. image:: img/bootloader_rescue.png
 
 When the board is connected, its bootloader (BL) version is shown.
 Click **Boot** to restart the flight controller once you have noted the
 bootloader version.
 
-OpenPilot Downloads
--------------------
+Downloads
+---------
 
 Bootloader Versions
 ^^^^^^^^^^^^^^^^^^^
@@ -99,31 +99,37 @@ Version 4 bootloaders can only be used with GCS versions 13.06.01 and newer.
 
 .. rubric:: Bootloader Updater Files
 
-+-----------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
-| Board     | BL      | Updater                                                                                                          | Note                |
-|           | Version | Bootloader                                                                                                       |                     |
-+===========+=========+==================================================================================================================+=====================+
-| CC        | 3       | :download:`bu_coptercontrol-20120630_5a1efef3.opfw </files/bootloaders/bu_coptercontrol-20120630_5a1efef3.opfw>` | For use with GCS    |
-|           |         |                                                                                                                  | 12.10.2 and lower   |
-+-----------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
-| CC3D      | 3       | :download:`bu_CC3D-20120620_f44b9d3.opfw </files/bootloaders/bu_CC3D-20120620_f44b9d3.opfw>`                     | For use with GCS    |
-|           |         |                                                                                                                  | 12.10.2 and lower   |
-+-----------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
-| CC        | 4       | CC V4                                                                                                            | For use with GCS    |
-|           |         | :download:`bu_cc.opfw </files/bootloaders/bu_cc.opfw>`                                                           | 13.06.01 and higher |
-+-----------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
-| CC3D/Atom | 4       | CC3D V4                                                                                                          | For use with GCS    |
-|           |         | :download:`bu_cc3d.opfw </files/bootloaders/bu_cc3d.opfw>`                                                       | 13.06.01 and higher |
-+-----------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
-| Revo      | 5       | Revo V5                                                                                                          | For use with GCS    |
-|           |         | :download:`bu_revolution.opfw </files/bootloaders/bu_revolution.opfw>`                                           | 13.06.01 and higher |
-+-----------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
-| OPLMini   | 4       | OPLM                                                                                                             | For use with GCS    |
-|           |         | :download:`bu_oplinkmini.opfw </files/bootloaders/bu_oplinkmini.opfw>`                                           | 13.06.01 and higher |
-+-----------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
-| OSD       | 5       | OSD                                                                                                              | For use with GCS    |
-|           |         | :download:`bu_osd.opfw </files/bootloaders/bu_osd.opfw>`                                                         | 13.06.01 and higher |
-+-----------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
++------------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
+| Board      | BL      | Updater                                                                                                          | Note                |
+|            | Version | Bootloader                                                                                                       |                     |
++============+=========+==================================================================================================================+=====================+
+| CC         | 3       | :download:`bu_coptercontrol-20120630_5a1efef3.opfw </files/bootloaders/bu_coptercontrol-20120630_5a1efef3.opfw>` | For use with GCS    |
+|            |         |                                                                                                                  | 12.10.2 and lower   |
++------------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
+| CC3D       | 3       | :download:`bu_CC3D-20120620_f44b9d3.opfw </files/bootloaders/bu_CC3D-20120620_f44b9d3.opfw>`                     | For use with GCS    |
+|            |         |                                                                                                                  | 12.10.2 and lower   |
++------------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
+| CC         | 4       | CC V4                                                                                                            | For use with GCS    |
+|            |         | :download:`bu_cc.opfw </files/bootloaders/bu_cc.opfw>`                                                           | 13.06.01 and higher |
++------------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
+| CC3D/Atom  | 4       | CC3D V4                                                                                                          | For use with GCS    |
+|            |         | :download:`bu_cc3d.opfw </files/bootloaders/bu_cc3d.opfw>`                                                       | 13.06.01 and higher |
++------------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
+| Revolution | 5       | Revo V5                                                                                                          | For use with GCS    |
+|            |         | :download:`bu_revolution.opfw </files/bootloaders/bu_revolution.opfw>`                                           | 13.06.01 and higher |
++------------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
+| Revolution | 6       | Revo V6                                                                                                          | For use with        |
+|            |         | :download:`bu_revolution_6.opfw </files/bootloaders/bu_revolution_6.opfw>`                                       | LibrePilot          |
++------------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
+| Revolution | 6       | Revolution Nano V6                                                                                               | For use with        |
+| Nano       |         | :download:`bu_revonano.opfw </files/bootloaders/bu_revonano.opfw>`                                               | LibrePilot          |
++------------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
+| OPLMini    | 4       | OPLink Mini                                                                                                      | For use with GCS    |
+|            |         | :download:`bu_oplinkmini.opfw </files/bootloaders/bu_oplinkmini.opfw>`                                           | 13.06.01 and higher |
++------------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
+| OSD        | 5       | OSD                                                                                                              | For use with GCS    |
+|            |         | :download:`bu_osd.opfw </files/bootloaders/bu_osd.opfw>`                                                         | 13.06.01 and higher |
++------------+---------+------------------------------------------------------------------------------------------------------------------+---------------------+
 
 
 How to Upgrade the Bootloader and Erase Settings

@@ -1,7 +1,7 @@
 JST-SH Connectors
 =================
 
-.. image:: /img/jst-sh.jpg
+.. image:: img/jst-sh.jpg
    :width: 400
 
 Description
