@@ -43,14 +43,14 @@ There is two ways of setting your home location:
   manually Zoom map up to your Location (Manual Select)
 * Once found, right click on the map and click on "Set the Home Location"
 
-.. image:: /img/home_location.png
+.. image:: img/home_location.png
 
 * Enter the Altitude of your Home Location in metres, click "OK"
 
 .. note:: You can check the Home Location coordinates by going the the
    Configuration Tab - Attitude/Settings tab
 
-.. image:: /img/home_location_settings.png
+.. image:: img/home_location_settings.png
 
 
 Thermal Calibration

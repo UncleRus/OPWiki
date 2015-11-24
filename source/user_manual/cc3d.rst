@@ -29,10 +29,10 @@ Getting to know your board
 CopterControl
 ^^^^^^^^^^^^^
 
-.. image:: /img/CC-top-300.png
+.. image:: img/CC-top-300.png
    :alt: CopterControl top side
 
-.. image:: /img/CC-bottom-300.png
+.. image:: img/CC-bottom-300.png
    :alt: CopterControl bottom side
 
 Weight: 8g
@@ -40,10 +40,10 @@ Weight: 8g
 CopterControl3D/CC3D
 ^^^^^^^^^^^^^^^^^^^^
 
-.. image:: /img/CC3D-top-300.png
+.. image:: img/CC3D-top-300.png
    :alt: CC3D Top
 
-.. image:: /img/CC3D-bottom-300.png
+.. image:: img/CC3D-bottom-300.png
    :alt: CC3D Bottom
 
 Weight: 8g
@@ -54,10 +54,10 @@ connectors.
 ATOM
 ^^^^
 
-.. image:: /img/Atom-top-300.png
+.. image:: img/Atom-top-300.png
    :alt: ATOM Top
 
-.. image:: /img/Atom-bottom-300.png
+.. image:: img/Atom-bottom-300.png
    :alt: ATOM Bottom
 
 Weight: 4g
@@ -72,7 +72,7 @@ Connection diagram
 
 The diagram below summarizes how the overall CopterControl system is connected.
 
-.. image:: /img/CopterControl-connections.png
+.. image:: img/CopterControl-connections.png
    :alt: CopterControl connection diagram
 
 
@@ -84,9 +84,10 @@ Ports
 
 CopterControl / CC3D / Atom have 4 ports.
 
-.. image:: /img/CopterControlPorts.png
-
-.. image:: /img/Atom-ports.png
+.. figure:: img/CC_CC3D_Atom_Pinout.png
+   :width: 600
+   
+*(click image to see full size)*
 
 * **Servo Output 1-6**: These are the PWM outputs that go to servos or ESCs.
   Power is typically applied through these headers from only one of the ESCs.
@@ -208,13 +209,13 @@ wire back in to the ESC plug. Also, remove the ground wire when removing the
 hot and insulate separately from the hot wire.
 
 
-.. image:: /img/Remove-pos1.png
+.. image:: img/Remove-pos1.png
    :height: 224
 
-.. image:: /img/Remove-pos2.png
+.. image:: img/Remove-pos2.png
    :height: 224
 
-.. image:: /img/Remove-pos3.png
+.. image:: img/Remove-pos3.png
    :height: 224
 
 
@@ -227,7 +228,7 @@ below to connect your receiver. Additionally, one 4-pin JST-SH cable is supplied
 to connect to the MainPort or FlexiPort. You can easily cut the 4-pins cable and
 connect your telemetry or Spektrum satellite.
 
-.. image:: /img/ReceiverCable.jpg
+.. image:: img/ReceiverCable.jpg
    :width: 400
 
 ReceiverPort
@@ -260,7 +261,7 @@ ReceiverPort
 |        | Output channel 10        |            |                       |
 +--------+--------------------------+------------+-----------------------+
 
-.. image:: /img/JSH-SH-8pin.png
+.. image:: img/JSH-SH-8pin.png
 
 MainPort and FlexiPort serial cable pinout
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -281,7 +282,7 @@ MainPort and FlexiPort serial cable pinout
 |        |        | (5V Tolerant) |              |              | (Signal)     | (Signal)     |
 +--------+--------+---------------+--------------+--------------+--------------+--------------+
 
-.. image:: /img/JSH-SH-4pin.png
+.. image:: img/JSH-SH-4pin.png
 
 .. caution:: The Spektrum adapter should only be powered by 3.3V, a step down
    adapter must be used.
@@ -385,5 +386,5 @@ CopterControl & CC3D used the standard OpenPilot footprint, and hence has the
 same dimensions and mounting holes as the OpenPilot Revo, GPS, OSD and PipX
 boards.
 
-.. image:: /img/ccmeasurements.png
+.. image:: img/ccmeasurements.png
 

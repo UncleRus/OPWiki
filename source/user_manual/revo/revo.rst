@@ -277,7 +277,7 @@ under control at all times.
 FlexiPort
 ^^^^^^^^^
 
-.. image:: /img/JSH-SH-4pin.png
+.. image:: img/JSH-SH-4pin.png
 
 The Revo uses the same FlexiPort as the CC3D. The port can be used as either a
 UART or for I2C bus connectivity. It can be connected to serial devices like
@@ -321,7 +321,7 @@ DSM2/DSMX satellites (to be used as a receiver), freeing in these cases the
 Flexi-IO port for other uses. These systems use a single wire to help cut
 down cable clutter.
 
-.. image:: /img/JSH-SH-4pin.png
+.. image:: img/JSH-SH-4pin.png
 
 .. rubric:: Pinout
 
@@ -349,7 +349,7 @@ This port can be configured to accommodate an Autopilot current sensor and a
 low cost Sonar sensor such as the HC-SR04. It can also be used as a general
 purpose input/output port or as a one or two channel analog input port.
 
-.. image:: /img/JSH-SH-4pin.png
+.. image:: img/JSH-SH-4pin.png
 
 .. rubric:: Pinout
 
@@ -387,7 +387,7 @@ SWD Port
 Serial wire debug port. This allows the use of cheap boards like the STM F4
 Discovery as an in-circuit debugger to ease the firmware development.
 
-.. image:: /img/JSH-SH-4pin.png
+.. image:: img/JSH-SH-4pin.png
 
 .. rubric:: Pinout
 
