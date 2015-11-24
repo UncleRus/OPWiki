@@ -40,9 +40,9 @@ Check your stick inputs
 **With props removed**, after you have armed your board, the blue LED should
 start flashing rapidly indicating that the board is armed. If you have
 specified that the "motors should spin at neutral output" in the
-:doc:`output configuration </gcs/output>`, the motors should start spinning
-right now. Otherwise you can now apply some throttle and get the motors
-spinning.
+`output configuration <https://librepilot.atlassian.net/wiki/display/LPDOC/Output+Configuration>`_,
+the motors should start spinning right now. Otherwise you can now apply some
+throttle and get the motors spinning.
 
 Verify that the correct motors follow your stick input. E.g. rolling left
 should increase the throttle on your right motor(s) and vice versa. If the
@@ -100,8 +100,9 @@ a problem.
 
 The following steps have been written on the assumption that 'Zero gyros while
 arming aircraft' has been selected on the
-:doc:`Attitude Configuration </gcs/attitude>` page of GCS (the recommended
-setting). This can help with the stabilization of the model.
+`Attitude Configuration <https://librepilot.atlassian.net/wiki/display/LPDOC/Attitude+Configuration>`_
+page of GCS (the recommended setting). This can help with the stabilization of
+the model.
 
 .. note:: Remember to keep the model still for several seconds after arming,
    while the gyros are zeroed.

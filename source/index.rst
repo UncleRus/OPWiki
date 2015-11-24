@@ -1,8 +1,6 @@
-.. OpenPilot Wiki master file
-
-#################################
-Welcome to OpenPilot Wiki archive
-#################################
+####################################
+Welcome to OpenPilot/LibrePilot Wiki
+####################################
 
 .. toctree::
    :maxdepth: 2

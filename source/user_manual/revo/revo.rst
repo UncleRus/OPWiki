@@ -53,7 +53,7 @@ Sensor calibration
 Tuning your Revolution
 ----------------------
 
-:doc:`/gcs/configuration`
+`LibrePilot Wiki <https://librepilot.atlassian.net/wiki/display/LPDOC/Configuration+tab>`_
 
 Connection diagram
 ------------------

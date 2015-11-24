@@ -1,8 +1,5 @@
-OpenPilot archived wiki
-=======================
-
-All text information still available in Google cache, but most pictures and
-all attachement files was lost :(.
+OpenPilot/Librepilot Wiki
+=========================
 
 See this docs on `ReadTheDocs <http://opwiki.readthedocs.org/en/latest/>`_
 

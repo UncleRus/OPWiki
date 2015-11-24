@@ -46,7 +46,7 @@ master_doc = u'index'
 
 
 # General information about the project.
-project = u'OpenPilot Wiki'
+project = u'OpenPilot/LibrePilot Wiki'
 
 copyright = u'OpenPilot/LibrePilot community'
 
