@@ -72,7 +72,8 @@ Connection diagram
 
 The diagram below summarizes how the overall CopterControl system is connected.
 
-.. image:: img/CopterControl-connections.png
+.. image:: img/CC-overall-connections.png
+   :width: 550
    :alt: CopterControl connection diagram
 
 
