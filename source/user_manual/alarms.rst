@@ -367,31 +367,55 @@ Pwr (Power)
 Batt
 """"
 
+.. |batt-off| image:: img/alarms/batt-off.png
+   :alt: Off
+
+.. |batt-crit| image:: img/alarms/batt-crit.png
+   :alt: Critical
+
+.. |batt-warn| image:: img/alarms/batt-warn.png
+   :alt: Warning
+   
+.. |batt-ok| image:: img/alarms/batt-ok.png
+   :alt: OK
+
 Battery status shows whether you have enough voltage in the battery to fly. Set
 limits for this in FlightBatt (CHECK this) settings. It requires a battery
 voltage sensor to work. Battery monitoring module can be enabled in system
 settings' optional modules.
 
-* *(BLACK)* Battery monitoring module is not enabled.
-* *(RED)* Not enough battery voltage to safely take off. Default limit is
+* |batt-off| Battery monitoring module is not enabled.
+* |batt-crit| Not enough battery voltage to safely take off. Default limit is
   3.1V/Cell.
-* *(ORANGE)* Battery voltage is low, but flying is possible. Default limit is
+* |batt-warn| Battery voltage is low, but flying is possible. Default limit is
   3.4V/Cell.
-* *(GREEN)* Battery voltage is ok.
+* |batt-ok| Battery voltage is ok.
 
 Time
 """"
+
+.. |time-off| image:: img/alarms/time-off.png
+   :alt: Off
+
+.. |time-crit| image:: img/alarms/time-crit.png
+   :alt: Critical
+
+.. |time-warn| image:: img/alarms/time-warn.png
+   :alt: Warning
+   
+.. |time-ok| image:: img/alarms/time-ok.png
+   :alt: OK
 
 Shows whether you have enough energy in the battery left for flying, and
 requires a battery voltage and current sensor to work. Currently has a bug when
 not using a current sensor; set the battery capacity to 0. This disables the
 estimated flight time counter and associated alarms.
 
-* *(BLACK)* Battery monitoring module is not enabled, see above Batt
+* |time-off| Battery monitoring module is not enabled, see above Batt
   explanation.
-* *(RED)* Battery energy is low, flying cannot be performed safely.
-* *(ORANGE)* Low amount of energy in the battery, flying is still possible.
-* *(GREEN)* Good amount of energy left in the battery to fly.
+* |time-crit| Battery energy is low, flying cannot be performed safely.
+* |time-warn| Low amount of energy in the battery, flying is still possible.
+* |time-ok| Good amount of energy left in the battery to fly.
 
 
 Misc
@@ -400,9 +424,15 @@ Misc
 Config
 """"""
 
+.. |config-crit| image:: img/alarms/config-crit.png
+   :alt: Critical
+
+.. |config-ok| image:: img/alarms/config-ok.png
+   :alt: OK
+
 Shows whether your flight controller board has been properly set up.
 
-* *(RED)* Board configuration problem. If you have set up GPS modes (GPS
+* |config-crit| Board configuration problem. If you have set up GPS modes (GPS
   Assist, PosHold, RTB) to one flight mode, then make sure that "GPS
   Navigation (INS13)" fusion algorithm is selected.
 
@@ -411,7 +441,7 @@ Shows whether your flight controller board has been properly set up.
   Select **GPS Navigation (INS13)** in **Config** > **Attitude tab** >
   **Parameters** > **Attitude Estimation Algorithm**.
 
-* *(GREEN)* Board configuration ok.
+* |config-ok| Board configuration ok.
 
 
 Sys (System)
@@ -420,10 +450,16 @@ Sys (System)
 Boot
 """"
 
+.. |boot-crit| image:: img/alarms/boot-crit.png
+   :alt: Critical
+
+.. |boot-ok| image:: img/alarms/boot-ok.png
+   :alt: OK
+
 Shows that a board reboot is required, or fail-safe settings have been loaded
 upon boot.
 
-* *(RED)* Boot alarm can be caused by various reasons:
+* |boot-crit| Boot alarm can be caused by various reasons:
 
   - No valid telemetry option selected, so board will boot with default USB
     telemetry
@@ -432,49 +468,79 @@ upon boot.
   - Board has been put to safe mode by the user
   - Board needs a reboot after hardware configuration changes
 
-* *(GREEN)* Flight controller booted up properly.
+* |boot-ok| Flight controller booted up properly.
 
 Mem
 """
 
+.. |mem-crit| image:: img/alarms/mem-crit.png
+   :alt: Critical
+
+.. |mem-warn| image:: img/alarms/mem-warn.png
+   :alt: Warning
+   
+.. |mem-ok| image:: img/alarms/mem-ok.png
+   :alt: OK
+
 Displays the status of remaining memory (RAM) that are used by processes
 internal to the flight controller.
 
-* *(RED)* Very low RAM left, flying cannot be done safely.
+* |mem-crit| Very low RAM left, flying cannot be done safely.
   Less than 40 bytes for CC/CC3D or 500 bytes for other boards.
-* *(ORANGE)* Low amount of RAM left, flying can be done but don't enable more
+* |mem-warn| Low amount of RAM left, flying can be done but don't enable more
   software modules. This is common with older flight controllers such as
   CopterControl.
   Less than 200 bytes for CC/CC3D or 1000 bytes for other boards.
-* *(GREEN)* Sufficient amount of RAM left for system to operate and expand.
+* |mem-ok| Sufficient amount of RAM left for system to operate and expand.
 
 Stack
 """""
 
+.. |stack-ok| image:: img/alarms/stack-ok.png
+   :alt: OK
+
 Shows the status of the microcontroller's stack, which is a place where
 low-level functions store data.
 
-* *(GREEN)* Stack status ok.
+* |stack-ok| Stack status ok.
 
 Event
 """""
 
+.. |event-crit| image:: img/alarms/event-crit.png
+   :alt: Critical
+
+.. |event-warn| image:: img/alarms/event-warn.png
+   :alt: Warning
+   
+.. |event-ok| image:: img/alarms/event-ok.png
+   :alt: OK
+
 Shows the status of event system. A very heavy load can cause the event system
 to be overloaded.
 
-* *(RED)* Event system error or overloaded. This can be caused by a bug or too
+* |event-crit| Event system error or overloaded. This can be caused by a bug or too
   high telemetry update rates when OPLink has low baud, for example.
-* *(ORANGE)* Event system at high stress. See above.
-* *(GREEN)* Event system ok.
+* |event-warn| Event system at high stress. See above.
+* |event-ok| Event system ok.
 
 CPU
 """
 
+.. |cpu-crit| image:: img/alarms/cpu-crit.png
+   :alt: Critical
+
+.. |cpu-warn| image:: img/alarms/cpu-warn.png
+   :alt: Warning
+   
+.. |cpu-ok| image:: img/alarms/cpu-ok.png
+   :alt: OK
+
 Indicates CPU load.
 
-* *(RED)* CPU load is very high, flight cannot be performed safely.
-* *(ORANGE)* CPU load is high, but flight can be performed. Don't enable more
+* |cpu-crit| CPU load is very high, flight cannot be performed safely.
+* |cpu-warn| CPU load is high, but flight can be performed. Don't enable more
   software modules like TPS or board rotation. Should only occurs for CC/CC3D.
-* *(GREEN)* CPU load is at an acceptable level, and flying is safe.
+* |cpu-ok| CPU load is at an acceptable level, and flying is safe.
 
 
