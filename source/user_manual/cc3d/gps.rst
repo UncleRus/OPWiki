@@ -107,6 +107,8 @@ Configure your GPS
 
 * All devices selected in blue.
 
+.. image:: img/Ubx_cc3d_save.png
+
 * Send config: |ucenter-send-config|
 
 .. note: Using this configuration you can't display satellite in GPS plugin
