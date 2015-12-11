@@ -8,7 +8,7 @@ The CopterControl, CC3D and Atom flight controllers are all types of
 stabilisation hardware which run the OpenPilot firmware. They can be configured
 to fly any airframe from fixed wing to an octocopter using the OpenPilot Ground
 Control Station (GCS) software. If you haven't already installed the Ground
-Control software, see :doc:`gcs_install`.
+Control software, see :doc:`../gcs_install`.
 
 The CopterControl was the first generation board, which ceased manufacture in
 2012 due to lack of availability of the gyro sensors used for stabilisation.
@@ -211,13 +211,13 @@ hot and insulate separately from the hot wire.
 
 
 .. image:: img/Remove-pos1.png
-   :height: 224
+   :height: 200
 
 .. image:: img/Remove-pos2.png
-   :height: 224
+   :height: 200
 
 .. image:: img/Remove-pos3.png
-   :height: 224
+   :height: 200
 
 
 Cables, colors & pin-outs

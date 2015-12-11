@@ -56,25 +56,28 @@ can easily be found on eBay.
 HW method 2: Using the flight controller Virtual COM port
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-.. todo:: FIXME: Images was lost
+.. image:: img/cc3d_bluetooth.png
 
 OpenPilot flight controllers can work as a USB-to-serial adapter with a feature
 called Virtual COM port (VCP). The configuration for VCP ComBridge is fairly
 straightforward. The VCP ComBridge feature works with all OpenPilot flight
 controllers.
 
-#. Connect the wires according to the diagram.
-#. Connect USB cable to the flight controller.
-#. Set the following settings:
+1. Connect the wires according to the diagram.
+2. Connect USB cable to the flight controller.
+3. Set the following settings:
 
-   #. USB VCP Function **ComBridge**
-   #. Main Port **ComBridge**
-   #. Speed **9600**
+   * USB VCP Function **ComBridge**
+   * Main Port **ComBridge**
+   * Speed **9600**
 
-#. Click **Save**, and wait a few seconds for the changes to apply.
-#. Reboot the flight controller, and the Virtual COM port should appear in the
+4. Click **Save**, and wait a few seconds for the changes to apply.
+5. Reboot the flight controller, and the Virtual COM port should appear in the
    Windows Device Manager.
-#. Proceed to the next step below: Software steps.
+
+.. image:: img/vcp_cc3d.jpg
+
+6. Proceed to the next step below: Software steps.
 
 .. note:: To power up the Bluetooth chip for configuration, the flight
    controller has to be powered up externally, with a flight battery and
@@ -159,8 +162,6 @@ has to be configured to output telemetry data at the correct baud rate.
 #. Click **Save** and wait a few seconds for changes to apply.
 #. Disconnect from the flight controller. You are now ready to test the link.
 
-.. todo:: FIXME: screenshot
-
 Connecting to OPLink ground module
 """"""""""""""""""""""""""""""""""
 
@@ -221,4 +222,6 @@ connection has to be opened manually by selecting a COM port, and clicking
 **Connect**.
 
 *(Virtual Com Bridge information was based on an OP Forum post by Zucky)*
+
+*Images was taken from LibrePilot Wiki*
 
