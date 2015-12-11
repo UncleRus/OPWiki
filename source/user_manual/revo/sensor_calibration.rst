@@ -27,6 +27,8 @@ by Corvus Corax
 
 `<https://vimeo.com/102013971>`_
 
+.. _setting-home-location:
+
 Setting Home Location
 ---------------------
 
