@@ -49,5 +49,5 @@ your firmware is updated correctly:
 
 Next, select your flight controller:
 
-* :doc:`CC / CC3D / Atom <cc3d>`
+* :doc:`CC / CC3D / Atom <cc3d/index>`
 * :doc:`Revolution <revo/index>`
