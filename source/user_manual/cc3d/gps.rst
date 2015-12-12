@@ -88,13 +88,13 @@ Select set of messages
 
 .. |ucenter-save-config| image:: img/Ucenter_save_icon.png
 
-.. note: Using this configuration you can't display satellite in GPS plugin
+* Save current configuration using a little icon with a gear on top.
+  |ucenter-save-config|
+
+.. note:: Using this configuration you can't display satellite in GPS plugin
    because GPS don't send this data (usually SVINFO message).
    
    CC3D works only with minimal messages. (POSLLH, DOP, SOL, VELNED)
-
-* Save current configuration using a little icon with a gear on top.
-  |ucenter-save-config|
 
 Setup port and protocol
 """""""""""""""""""""""
