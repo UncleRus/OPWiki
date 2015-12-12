@@ -40,6 +40,9 @@ Prerequisites
 Configure your GPS
 ------------------
 
+Connect
+"""""""
+
 * Connect GPS to USB serial or USB.
 * Start UCenter software.
 
@@ -54,6 +57,9 @@ Configure your GPS
 
 .. image:: img/ucenter_open_console.png
 
+Reset to defaults
+"""""""""""""""""
+
 * Open Configuration View window: **View** > **Configuration View**.
 
 * Reset current GPS config to defaults: Check **Revert to default configuration**.
@@ -63,6 +69,9 @@ Configure your GPS
 .. |ucenter-send-config| image:: img/Ucenter_send_config.png
 
 * Send config: |ucenter-send-config|
+
+Select set of messages
+""""""""""""""""""""""
 
 * Open Messages View window: **View** > **Messages View**.
 
@@ -79,21 +88,33 @@ Configure your GPS
 
 .. |ucenter-save-config| image:: img/Ucenter_save_icon.png
 
+.. note: Using this configuration you can't display satellite in GPS plugin
+   because GPS don't send this data (usually SVINFO message).
+   
+   CC3D works only with minimal messages. (POSLLH, DOP, SOL, VELNED)
+
 * Save current configuration using a little icon with a gear on top.
   |ucenter-save-config|
 
-* Back to configuration window. Move to **PRT (Ports)** in left column.
+Setup port and protocol
+"""""""""""""""""""""""
+
+* Open Configuration View window: **View** > **Configuration View**.
+  Move to **PRT (Ports)** in left column.
 
 * Change message output in UART1: only UBX for protocol in/out.
 
 * Change baudrate for UART1 port, same baudrate set for Flexi/Main GPS port.
 
-.. caution:: You should use **9600** or **19200** baudrate for CC3D, or packets are
-   dropped at higher speed. 
+.. caution:: You should use **9600** or **19200** baudrate for CC3D, or
+   packets are dropped at higher speed. 
 
 .. image:: img/Ubx_cc3d_port.png
 
 * Send config: |ucenter-send-config|
+
+Change refresh rate and save
+""""""""""""""""""""""""""""
 
 * Move to **Rate (Rates)** in left column
 
@@ -110,8 +131,3 @@ Configure your GPS
 .. image:: img/Ubx_cc3d_save.png
 
 * Send config: |ucenter-send-config|
-
-.. note: Using this configuration you can't display satellite in GPS plugin
-   because GPS don't send this data (usually SVINFO message).
-   
-   CC3D works only with minimal messages. (POSLLH, DOP, SOL,VELNED)
