@@ -38,7 +38,7 @@ by Corvus Corax
 Setting Home Location
 ---------------------
 
-.. warning:: You must set your Home Location before performing the Sensor
+.. warning:: You must set your home location before performing the Sensor
    Calibrations
 
 There is two ways of setting your home location:
@@ -47,15 +47,15 @@ There is two ways of setting your home location:
 #. Manually Select
 
 * Go to **Flight Data Tab**
-* Either wait for GPS to goto your Home Location (using GPS Module) or
-  manually Zoom map up to your Location (Manual Select)
+* Either wait for GPS to goto your home location (using GPS Module) or
+  manually zoom map up to your location (Manual Select)
 * Once found, right click on the map and click on **Set the Home Location**
 
 .. image:: img/home_location.png
 
-* Enter the Altitude of your Home Location in metres, click **OK**
+* Enter the Altitude of your home location in metres, click **OK**
 
-.. note:: You can check the Home Location coordinates by going the the
+.. note:: You can check the home location coordinates by going the the
    **Configuration Tab** - **Attitude/Settings tab**
 
 .. image:: img/home_location_settings.png
@@ -64,7 +64,7 @@ There is two ways of setting your home location:
 Thermal Calibration
 -------------------
 
-.. note:: The procedure below outlines the way to Thermally Calibrate the
+.. note:: The procedure below outlines the way to thermally calibrate the
    Revo to meet large temperature changes, it is not essential to put in
    the freezer as the min and max temp ranges of the calibration only need
    to be below and above the ambit temps of your location. 
@@ -79,8 +79,8 @@ Thermal Calibration
    of your board.
    
 1. Plug your USB cable into your Revo. Start the OP GCS and ensure that you
-   have disabled the OPLink modem (i.e. Max Power = 0). Then Save and
-   Disconnect. Remove USB cable from computer but leave Revo plugged in.
+   have disabled the OPLink modem (i.e. **Max Power** = 0). Then **Save** and
+   **Disconnect**. Remove USB cable from computer but leave Revo plugged in.
 2. Put your Revo in a plastic bag and seal it reasonably well, but with the
    USB cable exiting the baggie so it can be plugged in the computer.
 
@@ -95,7 +95,7 @@ Thermal Calibration
 
 3. Put Revo/baggie/cable in the freezer for 20 minutes or so.
 4. Take it out, put it in the hot box or wrapped up or in the sun, or not...
-   Immediately start the Thermal Calibration.
+   Immediately start the thermal calibration.
 
    * Don't move it at all while calibrating is best (gyros and baro are being
      calibrated).
@@ -110,12 +110,12 @@ Thermal Calibration
 .. note:: All these "is bests" aren't critical though. I understand that the 
    large number of samples taken masks a few bad samples.
 
-5. Watch the Thermal calibration and unplug the light bulb when it gets within
+5. Watch the thermal calibration and unplug the light bulb when it gets within
    a few degrees of your desired high temperature (i.e. 10-15 deg above what
    hottest day in your location).
-6. If it finishes Thermal calibration before reaching your desired temperature,
+6. If it finishes thermal calibration before reaching your desired temperature,
    you can start over or use what you have.
-7. Save your Thermal calibration with the Save button in the lower right.
+7. Save your thermal calibration with the **Save** button in the lower right.
 
 .. note:: You can check the temperature min-max (temp_calibrated_extent).
    Go to the **System Tab** then **Settings/AccelGyroSettings/temp_calibrated_extent**.
@@ -132,13 +132,13 @@ Accelerometer Calibration
    during each position calibration. Even vibrations on a table or someone
    walking past could upset the calibration.
 
-1. On the **Calibration Tab**, Click start "**Accelerometer calibration**".
+1. On the **Calibration Tab**, click start "**Accelerometer calibration**".
 2. Place the board as shown in the picture on screen and click **Save Position**.
 
 ...
 
 10. If the calibration failed, you will see above, you will need to restart
-    the Accelerometer Calibration over.
+    the accelerometer calibration over.
 
 
 
