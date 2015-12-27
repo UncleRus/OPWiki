@@ -24,7 +24,7 @@ settings.
 .. important:: The software on this page comes with no warranty. Use it at your
    own risk and please be careful!
 
-Visit the `LibrePilot forums <http://forums.librepilot.org/>`_  if you have
+Visit the `LibrePilot forums <http://forum.librepilot.org/>`_  if you have
 questions and/or suggestions. Extensive documentation about how the system
 works and how to install and configure it is available in the
 `LibrePilot wiki <https://librepilot.atlassian.net/wiki/display/LPDOC/Welcome>`_
