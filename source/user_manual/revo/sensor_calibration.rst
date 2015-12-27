@@ -25,7 +25,13 @@ How to Video
 
 by Corvus Corax
 
-`<https://vimeo.com/102013971>`_
+`<https://www.youtube.com/watch?v=dn9IDw2D1qw>`_
+
+.. raw:: html
+   
+   <iframe width="560" height="315" 
+   src="https://www.youtube.com/embed/dn9IDw2D1qw"
+   frameborder="0" allowfullscreen></iframe>
 
 .. _setting-home-location:
 
@@ -40,17 +46,17 @@ There is two ways of setting your home location:
 #. Using GPS Module
 #. Manually Select
 
-* Go to Flight Data Tab
+* Go to **Flight Data Tab**
 * Either wait for GPS to goto your Home Location (using GPS Module) or
   manually Zoom map up to your Location (Manual Select)
-* Once found, right click on the map and click on "Set the Home Location"
+* Once found, right click on the map and click on **Set the Home Location**
 
 .. image:: img/home_location.png
 
-* Enter the Altitude of your Home Location in metres, click "OK"
+* Enter the Altitude of your Home Location in metres, click **OK**
 
 .. note:: You can check the Home Location coordinates by going the the
-   Configuration Tab - Attitude/Settings tab
+   **Configuration Tab** - **Attitude/Settings tab**
 
 .. image:: img/home_location_settings.png
 
@@ -62,7 +68,7 @@ Thermal Calibration
    Revo to meet large temperature changes, it is not essential to put in
    the freezer as the min and max temp ranges of the calibration only need
    to be below and above the ambit temps of your location. 
-   (approx +- 10/15deg c above and below)
+   (approx +- 10/15 deg C above and below)
 
    However if the temperature rises or falls above or below the min/max temps
    you calibrated at, you will need to redo this calibration, so it is best
@@ -111,8 +117,8 @@ Thermal Calibration
    you can start over or use what you have.
 7. Save your Thermal calibration with the Save button in the lower right.
 
-.. note:: You can check the temperature min-max (temp_calibrated_extent)
-   Go to the System Tab then Settings/AccelGyroSettings/temp_calibrated_extent
+.. note:: You can check the temperature min-max (temp_calibrated_extent).
+   Go to the **System Tab** then **Settings/AccelGyroSettings/temp_calibrated_extent**.
    You can then see the min & max calibrated temps (below is screen shot of
    uncalibrated board showing 0 for both min & max, once calibrated you will
    see your boards min & max temps)
@@ -126,12 +132,12 @@ Accelerometer Calibration
    during each position calibration. Even vibrations on a table or someone
    walking past could upset the calibration.
 
-1. On the Calibration Tab, Click start "Accelerometer calibration".
-2. Place the board as shown in the picture on screen and click "Save Position".
+1. On the **Calibration Tab**, Click start "**Accelerometer calibration**".
+2. Place the board as shown in the picture on screen and click **Save Position**.
 
 ...
 
-10. If the Calibration Failed, you will see above, you will need to restart
+10. If the calibration failed, you will see above, you will need to restart
     the Accelerometer Calibration over.
 
 
