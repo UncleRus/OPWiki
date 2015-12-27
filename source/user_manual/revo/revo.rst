@@ -427,11 +427,11 @@ And all these at the same time.
 OPLink Modem
 ^^^^^^^^^^^^
 
-The Revolution has its own OPLink Mini built right onto the board! This is not
-only a 10DoF flight controller with an ST32F4 processor in the same small
-footprint as the CC3D, but also has its own LRS modem. The modem is directly
-powered from the Revolution itself, so you don't need to worry about any
-additional power supply.
+The Revolution has its own :doc:`OPLink Mini <../oplink/index>` built right
+onto the board! This is not only a 10DoF flight controller with an ST32F4
+processor in the same small footprint as the CC3D, but also has its own LRS
+modem. The modem is directly powered from the Revolution itself, so you don't
+need to worry about any additional power supply.
 
 Of course, the on-board modem will have the same functionality as the OPLink
 Mini. Both are fully configurable from the GCS.
