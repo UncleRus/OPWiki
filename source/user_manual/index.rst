@@ -1,5 +1,5 @@
 ********************************
-OpenPilot/LibrePilot User Manual
+LibrePilot/OpenPilot User Manual
 ********************************
 
 .. toctree::
@@ -21,7 +21,7 @@ OpenPilot/LibrePilot User Manual
 
    Use `LibrePilot <http://www.librepilot.org/>`_ instead.
 
-We've designed this section and the OpenPilot/LibrePilot Documentation as a whole to flow
+We've designed this section and the LibrePilot/OpenPilot Documentation as a whole to flow
 like a story, guiding you through all the steps necessary for successful setup
 and flight.
 
