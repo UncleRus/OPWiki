@@ -1,5 +1,5 @@
 ####################################
-Welcome to OpenPilot/LibrePilot Wiki
+Welcome to LibrePilot/OpenPilot Wiki
 ####################################
 
 .. toctree::
